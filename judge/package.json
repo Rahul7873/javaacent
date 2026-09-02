@@ -1,0 +1,7 @@
+{
+  "name": "isolated-judge-runner",
+  "version": "1.0.0",
+  "private": true,
+  "main": "server.js",
+  "dependencies": {}
+}

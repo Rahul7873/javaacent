@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - JUDGE_SERVICE_URL=http://judge:5000
+    depends_on:
+      - judge
+
+  judge:
+    build:
+      context: ./judge
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 256M
