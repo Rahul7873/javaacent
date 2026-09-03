@@ -20,7 +20,7 @@ import { Problem, Submission } from '@/types';
 import { usePlatform } from '@/context/PlatformContext';
 
 export default function DashboardPage() {
-  const { userProgress, isSolved } = usePlatform();
+  const { user, userProgress, isSolved } = usePlatform();
   const [problems, setProblems] = useState<Problem[]>([]);
   const [submissions, setSubmissions] = useState<Submission[]>([]);
   const [loading, setLoading] = useState(true);
@@ -48,7 +48,7 @@ export default function DashboardPage() {
       }
     }
     loadData();
-  }, []);
+  }, [user]);
 
   const totalProblems = problems.length;
   const solvedIds = userProgress?.solvedProblemIds || [];
@@ -97,13 +97,15 @@ export default function DashboardPage() {
           <div>
             <div className="flex items-center space-x-2 text-indigo-400 text-xs font-mono mb-1">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>LEARNER METRICS & STREAKS</span>
+              <span>{user ? `ACCOUNT: ${user.email}` : 'GUEST LEARNER'}</span>
             </div>
             <h1 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
-              Progress Dashboard
+              {user ? `Welcome back, ${user.firstName}!` : 'Progress Dashboard'}
             </h1>
             <p className="text-slate-400 text-xs sm:text-sm mt-0.5">
-              Track algorithm mastery, streak maintenance, and recent evaluations.
+              {user 
+                ? 'Your personal algorithm progression, streak status, and live evaluation track record.' 
+                : 'Track algorithm mastery, streak maintenance, and recent evaluations.'}
             </p>
           </div>
 

@@ -11,23 +11,30 @@ import {
   Cpu, 
   Filter, 
   Eye, 
-  X 
+  X,
+  User as UserIcon,
+  LogIn,
+  UserPlus
 } from 'lucide-react';
 import { Navbar } from '@/components/Navbar';
 import { Submission, SubmissionStatus, Language } from '@/types';
+import { usePlatform } from '@/context/PlatformContext';
 
 export default function SubmissionsPage() {
+  const { user } = usePlatform();
   const [submissions, setSubmissions] = useState<Submission[]>([]);
   const [loading, setLoading] = useState(true);
   const [statusFilter, setStatusFilter] = useState<string>('All');
   const [languageFilter, setLanguageFilter] = useState<string>('All');
+  const [showAllUsers, setShowAllUsers] = useState(false);
   const [inspectedSubmission, setInspectedSubmission] = useState<Submission | null>(null);
 
   useEffect(() => {
     async function loadSubmissions() {
       try {
         setLoading(true);
-        const res = await fetch('/api/submissions');
+        const url = showAllUsers ? '/api/submissions?all=true' : '/api/submissions';
+        const res = await fetch(url);
         if (res.ok) {
           const data = await res.json();
           setSubmissions(data.submissions || []);
@@ -39,7 +46,7 @@ export default function SubmissionsPage() {
       }
     }
     loadSubmissions();
-  }, []);
+  }, [showAllUsers]);
 
   const filtered = submissions.filter(sub => {
     const matchStatus = statusFilter === 'All' || sub.status === statusFilter;
@@ -52,20 +59,76 @@ export default function SubmissionsPage() {
       <Navbar />
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-1 w-full space-y-6">
+        {/* Guest Banner */}
+        {!user && (
+          <div className="p-4 rounded-xl bg-indigo-950/30 border border-indigo-500/30 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="flex items-center space-x-3">
+              <UserIcon className="w-5 h-5 text-indigo-400" />
+              <div>
+                <span className="text-xs font-semibold text-white">Log in to save your personal track record</span>
+                <p className="text-[11px] text-slate-400">
+                  Submissions made while logged in are permanently linked to your personal profile.
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center space-x-2">
+              <Link
+                href="/auth/login"
+                className="px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-white border border-slate-700 hover:bg-slate-700 transition-colors"
+              >
+                Sign In
+              </Link>
+              <Link
+                href="/auth/signup"
+                className="px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-gradient-to-r from-amber-500 to-orange-600 text-slate-950 font-bold transition-all"
+              >
+                Create Account
+              </Link>
+            </div>
+          </div>
+        )}
+
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div>
             <h1 className="text-2xl font-bold text-white tracking-tight flex items-center space-x-2">
               <History className="w-6 h-6 text-indigo-400" />
-              <span>Submission History</span>
+              <span>
+                {user ? `${user.firstName}'s Submission Track Record` : 'Submission History'}
+              </span>
             </h1>
             <p className="text-slate-400 text-xs sm:text-sm mt-1">
               Complete evaluation log of evaluated solutions, runtime metrics, and test case outcomes.
             </p>
           </div>
 
-          {/* Filters */}
-          <div className="flex items-center space-x-2">
+          {/* Filters & View Toggle */}
+          <div className="flex flex-wrap items-center gap-2">
+            {user && (
+              <div className="flex items-center bg-slate-900 border border-slate-800 rounded-lg p-0.5 text-xs">
+                <button
+                  onClick={() => setShowAllUsers(false)}
+                  className={`px-3 py-1.5 rounded-md font-medium transition-colors ${
+                    !showAllUsers
+                      ? 'bg-indigo-600 text-white shadow'
+                      : 'text-slate-400 hover:text-white'
+                  }`}
+                >
+                  My Submissions
+                </button>
+                <button
+                  onClick={() => setShowAllUsers(true)}
+                  className={`px-3 py-1.5 rounded-md font-medium transition-colors ${
+                    showAllUsers
+                      ? 'bg-indigo-600 text-white shadow'
+                      : 'text-slate-400 hover:text-white'
+                  }`}
+                >
+                  All Activity
+                </button>
+              </div>
+            )}
+
             <select
               value={statusFilter}
               onChange={e => setStatusFilter(e.target.value)}
@@ -103,7 +166,13 @@ export default function SubmissionsPage() {
           ) : filtered.length === 0 ? (
             <div className="text-center py-16 text-slate-500 text-xs space-y-2">
               <History className="w-8 h-8 text-slate-600 mx-auto" />
-              <p>No submissions found matching your filters.</p>
+              <p>No submissions found in this record.</p>
+              <Link
+                href="/problems"
+                className="inline-block px-3.5 py-1.5 rounded-lg bg-indigo-600 text-white font-medium hover:bg-indigo-500 transition-colors"
+              >
+                Solve a Problem
+              </Link>
             </div>
           ) : (
             <div className="overflow-x-auto">
@@ -111,6 +180,7 @@ export default function SubmissionsPage() {
                 <thead>
                   <tr className="border-b border-slate-800 bg-slate-900/80 text-slate-400 font-mono uppercase text-[10px]">
                     <th className="py-3 px-4">Problem</th>
+                    <th className="py-3 px-4">User</th>
                     <th className="py-3 px-4">Status</th>
                     <th className="py-3 px-4">Language</th>
                     <th className="py-3 px-4">Runtime</th>
@@ -130,6 +200,10 @@ export default function SubmissionsPage() {
                         >
                           {sub.problemTitle}
                         </Link>
+                      </td>
+
+                      <td className="py-3.5 px-4 font-medium text-slate-300">
+                        {sub.userName || 'Anonymous'}
                       </td>
 
                       <td className="py-3.5 px-4">
@@ -203,6 +277,8 @@ export default function SubmissionsPage() {
                   <span>{inspectedSubmission.status}</span>
                   <span>•</span>
                   <span>{inspectedSubmission.executionTimeMs} ms</span>
+                  <span>•</span>
+                  <span>Submitted by: {inspectedSubmission.userName}</span>
                 </div>
               </div>
 

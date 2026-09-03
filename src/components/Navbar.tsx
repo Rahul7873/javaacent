@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { 
@@ -14,13 +14,30 @@ import {
   Sun, 
   Moon, 
   Sparkles,
-  GraduationCap
+  GraduationCap,
+  LogIn,
+  UserPlus,
+  User as UserIcon,
+  LogOut,
+  ChevronDown
 } from 'lucide-react';
 import { usePlatform } from '@/context/PlatformContext';
 
 export function Navbar() {
   const pathname = usePathname();
-  const { userProgress, theme, toggleTheme } = usePlatform();
+  const { user, userProgress, logout, theme, toggleTheme } = usePlatform();
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setDropdownOpen(false);
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
 
   const navLinks = [
     { name: 'Problems', href: '/problems', icon: BookOpen },
@@ -30,8 +47,16 @@ export function Navbar() {
     { name: 'Admin', href: '/admin', icon: ShieldCheck }
   ];
 
-  const solvedCount = userProgress?.solvedProblemIds.length ?? 0;
+  const solvedCount = userProgress?.solvedProblemIds?.length ?? 0;
   const streakCount = userProgress?.currentStreak ?? 0;
+
+  const initials = user
+    ? `${user.firstName?.charAt(0) || ''}${user.lastName?.charAt(0) || ''}`.toUpperCase() || 'U'
+    : 'GL';
+
+  const displayName = user
+    ? `${user.firstName} ${user.lastName}`
+    : 'Guest Learner';
 
   return (
     <header className="sticky top-0 z-50 border-b border-slate-800/80 bg-[#0b0f19]/90 backdrop-blur-md">
@@ -118,18 +143,95 @@ export function Navbar() {
             {theme === 'dark' ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
           </button>
 
-          {/* User Profile avatar */}
-          <Link
-            href="/profile"
-            className="flex items-center space-x-2 pl-2 pr-1 py-1 rounded-full border border-slate-700 bg-slate-800/80 hover:border-indigo-500/50 transition-colors"
-          >
-            <span className="text-xs font-medium text-slate-200 hidden lg:inline">
-              {userProgress?.userName || 'Alex D.'}
-            </span>
-            <div className="w-7 h-7 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-600 flex items-center justify-center text-xs font-bold text-white shadow">
-              AD
+          {/* User Auth Section */}
+          {user ? (
+            <div className="relative" ref={dropdownRef}>
+              <button
+                onClick={() => setDropdownOpen(!dropdownOpen)}
+                className="flex items-center space-x-2 pl-2.5 pr-2 py-1 rounded-full border border-slate-700 bg-slate-800/80 hover:border-indigo-500/50 transition-colors"
+              >
+                <span className="text-xs font-medium text-slate-200 hidden lg:inline max-w-[120px] truncate">
+                  {displayName}
+                </span>
+                <div className="w-7 h-7 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-600 flex items-center justify-center text-xs font-bold text-white shadow">
+                  {initials}
+                </div>
+                <ChevronDown className="w-3.5 h-3.5 text-slate-400" />
+              </button>
+
+              {/* Dropdown Menu */}
+              {dropdownOpen && (
+                <div className="absolute right-0 mt-2 w-56 rounded-2xl bg-[#0d1220] border border-slate-800 shadow-2xl py-2 z-50 divide-y divide-slate-800/80">
+                  <div className="px-4 py-2.5">
+                    <p className="text-xs font-semibold text-white truncate">{displayName}</p>
+                    <p className="text-[11px] text-slate-400 truncate">{user.email}</p>
+                    <div className="mt-2 flex items-center space-x-2 text-[10px] font-mono text-emerald-400">
+                      <span>✓ {solvedCount} Solved</span>
+                      <span>•</span>
+                      <span className="text-orange-400">🔥 {streakCount}d Streak</span>
+                    </div>
+                  </div>
+
+                  <div className="py-1">
+                    <Link
+                      href="/profile"
+                      onClick={() => setDropdownOpen(false)}
+                      className="flex items-center space-x-2.5 px-4 py-2 text-xs text-slate-300 hover:text-white hover:bg-slate-800/60 transition-colors"
+                    >
+                      <UserIcon className="w-4 h-4 text-indigo-400" />
+                      <span>My Profile</span>
+                    </Link>
+                    <Link
+                      href="/dashboard"
+                      onClick={() => setDropdownOpen(false)}
+                      className="flex items-center space-x-2.5 px-4 py-2 text-xs text-slate-300 hover:text-white hover:bg-slate-800/60 transition-colors"
+                    >
+                      <LayoutDashboard className="w-4 h-4 text-indigo-400" />
+                      <span>Progress Dashboard</span>
+                    </Link>
+                    <Link
+                      href="/submissions"
+                      onClick={() => setDropdownOpen(false)}
+                      className="flex items-center space-x-2.5 px-4 py-2 text-xs text-slate-300 hover:text-white hover:bg-slate-800/60 transition-colors"
+                    >
+                      <History className="w-4 h-4 text-indigo-400" />
+                      <span>My Submissions</span>
+                    </Link>
+                  </div>
+
+                  <div className="py-1">
+                    <button
+                      onClick={() => {
+                        setDropdownOpen(false);
+                        logout();
+                      }}
+                      className="w-full flex items-center space-x-2.5 px-4 py-2 text-xs text-rose-400 hover:text-rose-300 hover:bg-rose-950/20 transition-colors"
+                    >
+                      <LogOut className="w-4 h-4" />
+                      <span>Sign Out</span>
+                    </button>
+                  </div>
+                </div>
+              )}
             </div>
-          </Link>
+          ) : (
+            <div className="flex items-center space-x-2">
+              <Link
+                href="/auth/login"
+                className="flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-300 hover:text-white hover:bg-slate-800/80 transition-colors"
+              >
+                <LogIn className="w-3.5 h-3.5" />
+                <span>Sign In</span>
+              </Link>
+              <Link
+                href="/auth/signup"
+                className="flex items-center space-x-1.5 px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 text-slate-950 shadow-md shadow-orange-500/20 transition-all"
+              >
+                <UserPlus className="w-3.5 h-3.5 text-slate-950" />
+                <span>Create Account</span>
+              </Link>
+            </div>
+          )}
         </div>
       </div>
     </header>

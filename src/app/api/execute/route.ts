@@ -1,7 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { getProblemById, recordSubmission } from '@/lib/store';
+import { getProblemById } from '@/lib/store';
 import { executeCode } from '@/lib/judge/runner';
 import { Language } from '@/types';
+import { getSessionUser } from '@/lib/auth';
+import { addSubmission, recordUserProblemAttempt } from '@/lib/db';
 
 export async function POST(req: NextRequest) {
   try {
@@ -40,9 +42,13 @@ export async function POST(req: NextRequest) {
 
     let submissionRecord = null;
     if (isSubmit) {
-      submissionRecord = recordSubmission({
-        userId: 'user-demo',
-        userName: 'Alex Developer',
+      const user = await getSessionUser();
+      const userId = user ? user.id : 'guest';
+      const userName = user ? `${user.firstName} ${user.lastName}` : 'Guest Learner';
+
+      submissionRecord = await addSubmission({
+        userId,
+        userName,
         problemId: problem.id,
         problemSlug: problem.slug,
         problemTitle: problem.title,
@@ -55,6 +61,16 @@ export async function POST(req: NextRequest) {
         totalCount: execResult.totalTests,
         errorMessage: execResult.compileError || execResult.runtimeError
       });
+
+      // Update user progress if authenticated
+      if (user) {
+        await recordUserProblemAttempt(
+          user.id,
+          userName,
+          problem.id,
+          execResult.status === 'Accepted'
+        );
+      }
     }
 
     return NextResponse.json({
@@ -62,6 +78,7 @@ export async function POST(req: NextRequest) {
       submission: submissionRecord
     });
   } catch (error: any) {
+    console.error('Code execution error:', error);
     return NextResponse.json(
       { error: error?.message || 'Internal execution error' },
       { status: 500 }
