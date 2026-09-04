@@ -14,6 +14,7 @@ import {
   ExternalLink, 
   BookOpen, 
   Layers,
+  ChevronLeft,
   ChevronRight,
   Filter,
   Check,
@@ -36,10 +37,16 @@ export default function BasicPracticePage() {
   const [selectedDifficulty, setSelectedDifficulty] = useState<string>('All');
   const [selectedTopic, setSelectedTopic] = useState<string>('All');
   const [statusFilter, setStatusFilter] = useState<'All' | 'Solved' | 'Attempted' | 'Todo'>('All');
+  const [currentPage, setCurrentPage] = useState(1);
+  const pageSize = 24;
 
   // Preview Drawer/Modal
   const [previewProblem, setPreviewProblem] = useState<Problem | null>(null);
   const [copiedCode, setCopiedCode] = useState(false);
+
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [searchQuery, selectedPart, selectedDifficulty, selectedTopic, statusFilter]);
 
   useEffect(() => {
     async function fetchBasicProblems() {
@@ -93,6 +100,9 @@ export default function BasicPracticePage() {
 
     return true;
   });
+
+  const totalPages = Math.max(1, Math.ceil(filteredProblems.length / pageSize));
+  const paginatedProblems = filteredProblems.slice((currentPage - 1) * pageSize, currentPage * pageSize);
 
   const part1Count = problems.filter(p => p.part === 1).length;
   const part2Count = problems.filter(p => p.part === 2).length;
@@ -298,7 +308,10 @@ export default function BasicPracticePage() {
 
         {/* Results Stats */}
         <div className="flex items-center justify-between text-xs text-slate-400 font-mono px-1">
-          <span>Showing {filteredProblems.length} of {problems.length} exercises</span>
+          <span>
+            Showing {filteredProblems.length > 0 ? (currentPage - 1) * pageSize + 1 : 0} -{' '}
+            {Math.min(currentPage * pageSize, filteredProblems.length)} of {filteredProblems.length} exercises (Page {currentPage} of {totalPages})
+          </span>
           {(searchQuery || selectedTopic !== 'All' || selectedDifficulty !== 'All' || statusFilter !== 'All') && (
             <button
               onClick={() => {
@@ -337,100 +350,165 @@ export default function BasicPracticePage() {
             </button>
           </div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {filteredProblems.map(prob => {
-              const solved = isSolved(prob.id);
-              const attempted = isAttempted(prob.id);
+          <>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {paginatedProblems.map(prob => {
+                const solved = isSolved(prob.id);
+                const attempted = isAttempted(prob.id);
 
-              return (
-                <div
-                  key={prob.id}
-                  className="rounded-2xl border border-slate-800/80 bg-[#0c101c]/90 hover:border-amber-500/40 transition-all p-5 flex flex-col justify-between space-y-4 group shadow-lg hover:shadow-amber-500/5"
-                >
-                  <div className="space-y-3">
-                    {/* Header: Part badge & status */}
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center space-x-2">
-                        <span className="px-2 py-0.5 rounded text-[10px] font-mono bg-slate-800 text-slate-400 border border-slate-700/60">
-                          Pt {prob.part || 1}
-                        </span>
-                        <span
-                          className={`px-2 py-0.5 rounded-full text-[10px] font-bold border ${
-                            prob.difficulty === 'Easy'
-                              ? 'bg-emerald-950/60 text-emerald-400 border-emerald-500/30'
-                              : 'bg-amber-950/60 text-amber-400 border-amber-500/30'
-                          }`}
-                        >
-                          {prob.difficulty}
-                        </span>
+                return (
+                  <div
+                    key={prob.id}
+                    className="rounded-2xl border border-slate-800/80 bg-[#0c101c]/90 hover:border-amber-500/40 transition-all p-5 flex flex-col justify-between space-y-4 group shadow-lg hover:shadow-amber-500/5"
+                  >
+                    <div className="space-y-3">
+                      {/* Header: Part badge & status */}
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center space-x-2">
+                          <span className="px-2 py-0.5 rounded text-[10px] font-mono bg-slate-800 text-slate-400 border border-slate-700/60">
+                            Pt {prob.part || 1}
+                          </span>
+                          <span
+                            className={`px-2 py-0.5 rounded-full text-[10px] font-bold border ${
+                              prob.difficulty === 'Easy'
+                                ? 'bg-emerald-950/60 text-emerald-400 border-emerald-500/30'
+                                : 'bg-amber-950/60 text-amber-400 border-amber-500/30'
+                            }`}
+                          >
+                            {prob.difficulty}
+                          </span>
+                        </div>
+
+                        {/* Status indicator */}
+                        <div>
+                          {solved ? (
+                            <div className="flex items-center space-x-1 text-emerald-400 text-xs" title="Solved">
+                              <CheckCircle2 className="w-4 h-4" />
+                              <span className="text-[10px] font-mono">Solved</span>
+                            </div>
+                          ) : attempted ? (
+                            <div className="flex items-center space-x-1 text-amber-400 text-xs" title="Attempted">
+                              <Circle className="w-3.5 h-3.5" />
+                              <span className="text-[10px] font-mono">Attempted</span>
+                            </div>
+                          ) : (
+                            <span className="w-2 h-2 rounded-full bg-slate-700 inline-block" />
+                          )}
+                        </div>
                       </div>
 
-                      {/* Status indicator */}
-                      <div>
-                        {solved ? (
-                          <div className="flex items-center space-x-1 text-emerald-400 text-xs" title="Solved">
-                            <CheckCircle2 className="w-4 h-4" />
-                            <span className="text-[10px] font-mono">Solved</span>
-                          </div>
-                        ) : attempted ? (
-                          <div className="flex items-center space-x-1 text-amber-400 text-xs" title="Attempted">
-                            <Circle className="w-3.5 h-3.5" />
-                            <span className="text-[10px] font-mono">Attempted</span>
-                          </div>
-                        ) : (
-                          <span className="w-2 h-2 rounded-full bg-slate-700 inline-block" />
-                        )}
+                      {/* Title */}
+                      <Link
+                        href={`/problems/${prob.slug}`}
+                        className="font-bold text-sm text-slate-100 group-hover:text-amber-400 transition-colors block line-clamp-1"
+                      >
+                        {prob.title}
+                      </Link>
+
+                      {/* Description Excerpt */}
+                      <p className="text-xs text-slate-400 line-clamp-2 leading-relaxed">
+                        {prob.description}
+                      </p>
+
+                      {/* Topic Tags */}
+                      <div className="flex flex-wrap gap-1.5 pt-1">
+                        {prob.topics.filter(t => t !== 'Basic Practice').map(topic => (
+                          <span
+                            key={topic}
+                            className="px-2 py-0.5 rounded bg-slate-900 text-slate-400 text-[10px] font-mono border border-slate-800"
+                          >
+                            {topic}
+                          </span>
+                        ))}
                       </div>
                     </div>
 
-                    {/* Title */}
-                    <Link
-                      href={`/problems/${prob.slug}`}
-                      className="font-bold text-sm text-slate-100 group-hover:text-amber-400 transition-colors block line-clamp-1"
-                    >
-                      {prob.title}
-                    </Link>
+                    {/* Actions */}
+                    <div className="pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs">
+                      <button
+                        onClick={() => setPreviewProblem(prob)}
+                        className="text-slate-400 hover:text-slate-200 flex items-center space-x-1 transition-colors"
+                      >
+                        <Eye className="w-3.5 h-3.5" />
+                        <span>Details</span>
+                      </button>
 
-                    {/* Description Excerpt */}
-                    <p className="text-xs text-slate-400 line-clamp-2 leading-relaxed">
-                      {prob.description}
-                    </p>
-
-                    {/* Topic Tags */}
-                    <div className="flex flex-wrap gap-1.5 pt-1">
-                      {prob.topics.filter(t => t !== 'Basic Practice').map(topic => (
-                        <span
-                          key={topic}
-                          className="px-2 py-0.5 rounded bg-slate-900 text-slate-400 text-[10px] font-mono border border-slate-800"
-                        >
-                          {topic}
-                        </span>
-                      ))}
+                      <Link
+                        href={`/problems/${prob.slug}`}
+                        className="inline-flex items-center space-x-1 px-3 py-1.5 rounded-xl bg-amber-500/10 hover:bg-amber-500 text-amber-300 hover:text-slate-950 font-semibold border border-amber-500/30 transition-all text-xs"
+                      >
+                        <span>Solve in Java 17</span>
+                        <ArrowRight className="w-3 h-3" />
+                      </Link>
                     </div>
                   </div>
+                );
+              })}
+            </div>
 
-                  {/* Actions */}
-                  <div className="pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs">
-                    <button
-                      onClick={() => setPreviewProblem(prob)}
-                      className="text-slate-400 hover:text-slate-200 flex items-center space-x-1 transition-colors"
-                    >
-                      <Eye className="w-3.5 h-3.5" />
-                      <span>Details</span>
-                    </button>
-
-                    <Link
-                      href={`/problems/${prob.slug}`}
-                      className="inline-flex items-center space-x-1 px-3 py-1.5 rounded-xl bg-amber-500/10 hover:bg-amber-500 text-amber-300 hover:text-slate-950 font-semibold border border-amber-500/30 transition-all text-xs"
-                    >
-                      <span>Solve in Java 17</span>
-                      <ArrowRight className="w-3 h-3" />
-                    </Link>
-                  </div>
+            {/* Pagination Controls */}
+            {totalPages > 1 && (
+              <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-slate-800 text-xs font-mono">
+                <div className="text-slate-400">
+                  Page <span className="text-amber-400 font-bold">{currentPage}</span> of {totalPages} ({filteredProblems.length} total exercises)
                 </div>
-              );
-            })}
-          </div>
+
+                <div className="flex items-center space-x-1.5">
+                  <button
+                    onClick={() => {
+                      setCurrentPage(prev => Math.max(1, prev - 1));
+                      window.scrollTo({ top: 400, behavior: 'smooth' });
+                    }}
+                    disabled={currentPage === 1}
+                    className="flex items-center space-x-1 px-3 py-1.5 rounded-lg border border-slate-800 bg-[#0c101c] text-slate-300 hover:text-white hover:border-slate-700 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+                  >
+                    <ChevronLeft className="w-3.5 h-3.5" />
+                    <span>Previous</span>
+                  </button>
+
+                  <div className="flex items-center space-x-1">
+                    {Array.from({ length: totalPages }, (_, i) => i + 1)
+                      .filter(page => page === 1 || page === totalPages || Math.abs(page - currentPage) <= 2)
+                      .map((page, idx, arr) => {
+                        const prevPage = arr[idx - 1];
+                        return (
+                          <React.Fragment key={page}>
+                            {prevPage && page - prevPage > 1 && (
+                              <span className="px-1 text-slate-600">...</span>
+                            )}
+                            <button
+                              onClick={() => {
+                                setCurrentPage(page);
+                                window.scrollTo({ top: 400, behavior: 'smooth' });
+                              }}
+                              className={`w-8 h-8 rounded-lg flex items-center justify-center font-bold transition-all ${
+                                currentPage === page
+                                  ? 'bg-amber-500 text-slate-950 shadow-md shadow-amber-500/20'
+                                  : 'border border-slate-800 bg-[#0c101c] text-slate-400 hover:text-white hover:border-slate-700'
+                              }`}
+                            >
+                              {page}
+                            </button>
+                          </React.Fragment>
+                        );
+                      })}
+                  </div>
+
+                  <button
+                    onClick={() => {
+                      setCurrentPage(prev => Math.min(totalPages, prev + 1));
+                      window.scrollTo({ top: 400, behavior: 'smooth' });
+                    }}
+                    disabled={currentPage === totalPages}
+                    className="flex items-center space-x-1 px-3 py-1.5 rounded-lg border border-slate-800 bg-[#0c101c] text-slate-300 hover:text-white hover:border-slate-700 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+                  >
+                    <span>Next</span>
+                    <ChevronRight className="w-3.5 h-3.5" />
+                  </button>
+                </div>
+              </div>
+            )}
+          </>
         )}
 
         {/* Modal / Drawer for Quick Preview */}

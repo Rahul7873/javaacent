@@ -19,7 +19,9 @@ import {
   UserPlus,
   User as UserIcon,
   LogOut,
-  ChevronDown
+  ChevronDown,
+  Menu,
+  X
 } from 'lucide-react';
 import { usePlatform } from '@/context/PlatformContext';
 
@@ -27,6 +29,7 @@ export function Navbar() {
   const pathname = usePathname();
   const { user, userProgress, logout, theme, toggleTheme } = usePlatform();
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -232,8 +235,47 @@ export function Navbar() {
               </Link>
             </div>
           )}
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle navigation menu"
+            className="md:hidden p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors border border-slate-800 ml-1"
+          >
+            {mobileMenuOpen ? <X className="w-5 h-5 text-amber-400" /> : <Menu className="w-5 h-5" />}
+          </button>
         </div>
       </div>
+
+      {/* Mobile Navigation Drawer */}
+      {mobileMenuOpen && (
+        <div className="md:hidden border-t border-slate-800 bg-[#090d16] px-4 py-3 space-y-1.5 shadow-2xl animate-in slide-in-from-top-2 duration-200">
+          {navLinks.map(link => {
+            const Icon = link.icon;
+            const isActive = pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href));
+            return (
+              <Link
+                key={link.name}
+                href={link.href}
+                onClick={() => setMobileMenuOpen(false)}
+                className={`flex items-center space-x-3 px-3.5 py-2.5 rounded-xl text-sm font-medium transition-all ${
+                  isActive
+                    ? 'bg-amber-500/15 text-amber-300 border border-amber-500/30 font-semibold'
+                    : 'text-slate-300 hover:text-white hover:bg-slate-800/60'
+                }`}
+              >
+                <Icon className={`w-4 h-4 ${isActive ? 'text-amber-400' : 'text-slate-400'}`} />
+                <span>{link.name}</span>
+                {link.name === 'Basic Practice' && (
+                  <span className="ml-auto px-2 py-0.5 rounded-full text-[10px] bg-amber-500/20 text-amber-400 font-mono">
+                    249 Ex
+                  </span>
+                )}
+              </Link>
+            );
+          })}
+        </div>
+      )}
     </header>
   );
 }

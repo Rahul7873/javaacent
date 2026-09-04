@@ -100,18 +100,40 @@ export function getProblems(includeUnpublished = false): Problem[] {
 }
 
 export function getProblemBySlug(slug: string): Problem | undefined {
-  const p = globalStore.problems.find(p => p.slug === slug);
-  if (p) return p;
-  return BASIC_PRACTICE_PROBLEMS.find(p => p.slug === slug) || INITIAL_PROBLEMS.find(p => p.slug === slug);
+  if (!slug) return undefined;
+  const normalized = slug.trim().toLowerCase();
+
+  // 1. Check exact slug or id match across globalStore and datasets
+  const allProblems = [
+    ...BASIC_PRACTICE_PROBLEMS,
+    ...INITIAL_PROBLEMS,
+    ...globalStore.problems
+  ];
+
+  let found = allProblems.find(
+    p => p.slug.toLowerCase() === normalized || p.id.toLowerCase() === normalized
+  );
+  if (found) return found;
+
+  // 2. Flexible number-based resolution (e.g. "1", "basic-1", "exercise-1", "java-1")
+  const digits = normalized.replace(/[^0-9]/g, '');
+  if (digits) {
+    found = allProblems.find(
+      p =>
+        p.id === `basic-prob-${digits}` ||
+        p.slug === `java-basic-exercise-${digits}` ||
+        p.id === `prob-${digits}`
+    );
+    if (found) return found;
+  }
+
+  return undefined;
 }
 
 export function getProblemById(id: string): Problem | undefined {
-  // Check static datasets first to guarantee latest test cases
-  const basic = BASIC_PRACTICE_PROBLEMS.find(p => p.id === id);
-  if (basic) return basic;
-  const initial = INITIAL_PROBLEMS.find(p => p.id === id);
-  if (initial) return initial;
-  return globalStore.problems.find(p => p.id === id);
+  if (!id) return undefined;
+  // Use flexible slug resolver since it checks id, slug, and aliases
+  return getProblemBySlug(id);
 }
 
 export function addProblem(problem: Omit<Problem, 'id' | 'createdAt'>): Problem {
