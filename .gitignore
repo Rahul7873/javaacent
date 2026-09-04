@@ -45,3 +45,6 @@ next-env.d.ts
 
 # local database storage
 .data/
+
+# portable jdk directory
+/.jdk

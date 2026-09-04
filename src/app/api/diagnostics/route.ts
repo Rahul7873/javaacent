@@ -1,5 +1,7 @@
 import { NextResponse } from 'next/server';
 import { spawnSync } from 'child_process';
+import path from 'path';
+import fs from 'fs';
 
 export async function GET() {
   const checkCommand = (cmd: string, args: string[]) => {
@@ -19,18 +21,22 @@ export async function GET() {
     }
   };
 
-  const javacCheck = checkCommand('javac', ['-version']);
-  const javaCheck = checkCommand('java', ['-version']);
+
+  const localJdkBin = path.join(process.cwd(), '.jdk', 'bin');
+  const localJavacPath = path.join(localJdkBin, process.platform === 'win32' ? 'javac.exe' : 'javac');
+  const localJavaPath = path.join(localJdkBin, process.platform === 'win32' ? 'java.exe' : 'java');
+
+  const javacCheck = checkCommand(fs.existsSync(localJavacPath) ? localJavacPath : 'javac', ['-version']);
+  const javaCheck = checkCommand(fs.existsSync(localJavaPath) ? localJavaPath : 'java', ['-version']);
   const pythonCheck = checkCommand('python3', ['--version']);
 
   return NextResponse.json({
     status: 'ok',
-    deployedCommit: '48e2265-perf-judge',
     buildTimestamp: new Date().toISOString(),
     environment: {
       platform: process.platform,
       nodeVersion: process.version,
-      isDocker: process.platform === 'linux'
+      hasLocalJdk: fs.existsSync(localJavacPath)
     },
     tools: {
       javac: javacCheck,
@@ -38,4 +44,5 @@ export async function GET() {
       python3: pythonCheck
     }
   });
+
 }

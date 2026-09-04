@@ -364,13 +364,18 @@ public class JudgeHarness {
     fs.writeFileSync(path.join(tempDir, 'Solution.java'), solutionSource, 'utf-8');
     fs.writeFileSync(path.join(tempDir, 'JudgeHarness.java'), mainHarness, 'utf-8');
 
+    const { javac: javacCmd, java: javaCmd, envPath } = getJdkPaths();
+
     // Step 1: Compile with javac (-g:none and -nowarn for rapid compilation on cloud instances)
     const compileResult = await runProcess(
-      'javac',
+      javacCmd,
       ['-g:none', '-nowarn', '-encoding', 'UTF-8', 'ListNode.java', 'TreeNode.java', 'Solution.java', 'JudgeHarness.java'],
       tempDir,
-      25000
+      25000,
+      undefined,
+      envPath
     );
+
 
     if (compileResult.exitCode !== 0) {
       let cleanErr = compileResult.stderr
@@ -406,12 +411,14 @@ public class JudgeHarness {
 
     // Step 3: Run with java -Xmx256m -Xss2m JudgeHarness
     const runResult = await runProcess(
-      'java',
+      javaCmd,
       ['-Xmx256m', '-Xss2m', '-Dfile.encoding=UTF-8', 'JudgeHarness'],
       tempDir,
       timeLimitMs + 2000,
-      stdinData
+      stdinData,
+      envPath
     );
+
 
     if (runResult.timedOut) {
       return {
@@ -530,19 +537,50 @@ public class JudgeHarness {
   }
 }
 
+function getJdkPaths() {
+  const isWin = process.platform === 'win32';
+  const localJdkBin = path.join(process.cwd(), '.jdk', 'bin');
+  const javacCandidate = path.join(localJdkBin, isWin ? 'javac.exe' : 'javac');
+  const javaCandidate = path.join(localJdkBin, isWin ? 'java.exe' : 'java');
+
+  let javac = 'javac';
+  let java = 'java';
+  let envPath = process.env.PATH || '';
+
+  if (fs.existsSync(javacCandidate)) {
+    javac = javacCandidate;
+    java = fs.existsSync(javaCandidate) ? javaCandidate : 'java';
+    envPath = localJdkBin + path.delimiter + envPath;
+  } else if (process.env.JAVA_HOME) {
+    const jhBin = path.join(process.env.JAVA_HOME, 'bin');
+    const jhJavac = path.join(jhBin, isWin ? 'javac.exe' : 'javac');
+    const jhJava = path.join(jhBin, isWin ? 'java.exe' : 'java');
+    if (fs.existsSync(jhJavac)) {
+      javac = jhJavac;
+      java = fs.existsSync(jhJava) ? jhJava : 'java';
+      envPath = jhBin + path.delimiter + envPath;
+    }
+  }
+
+  return { javac, java, envPath };
+}
+
 function runProcess(
   command: string,
   args: string[],
   cwd: string,
   timeoutMs: number,
-  stdinData?: string
+  stdinData?: string,
+  customPath?: string
 ): Promise<{ exitCode: number | null; stdout: string; stderr: string; timedOut: boolean }> {
   return new Promise(resolve => {
     let stdout = '';
     let stderr = '';
     let timedOut = false;
 
-    const proc = spawn(command, args, { cwd });
+    const env = customPath ? { ...process.env, PATH: customPath } : process.env;
+    const proc = spawn(command, args, { cwd, env });
+
 
     const timer = setTimeout(() => {
       timedOut = true;
