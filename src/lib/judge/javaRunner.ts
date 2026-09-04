@@ -91,23 +91,28 @@ public class TreeNode {
     const allImports = Array.from(new Set([...defaultImports, ...userImports])).join('\n');
     let userBody = codeLinesWithoutImports.join('\n').trim();
 
-    // Normalize class names if user wrote public class Exercise1 or public class Main instead of Solution
-    if (/public\s+class\s+([A-Za-z0-9_]+)/.test(userBody)) {
-      userBody = userBody.replace(/public\s+class\s+([A-Za-z0-9_]+)/g, (match, className) => {
-        if (className === 'Solution') return 'public class Solution';
-        return 'class Solution';
+    // Normalize any class declaration (public or package-private) to public class Solution
+    let normalizedBody = userBody;
+    if (!/(?:public\s+)?class\s+[A-Za-z0-9_]+/.test(normalizedBody)) {
+      normalizedBody = `public class Solution {\n${normalizedBody}\n}`;
+    } else {
+      normalizedBody = normalizedBody.replace(/(?:public\s+)?class\s+([A-Za-z0-9_]+)/g, (match, className) => {
+        if (className === 'ListNode' || className === 'TreeNode' || className === 'JudgeHarness') {
+          return match;
+        }
+        return 'public class Solution';
       });
     }
 
-    const solutionSource = `${allImports}\n\n${userBody}\n`;
+    const solutionSource = `${allImports}\n\n${normalizedBody}\n`;
 
-    // 4. Prepare Main.java test harness
+    // 4. Prepare JudgeHarness.java test harness
     const mainHarness = `
 import java.util.*;
 import java.io.*;
 import java.lang.reflect.*;
 
-public class Main {
+public class JudgeHarness {
     public static void main(String[] args) {
         try {
             Solution sol = new Solution();
@@ -357,16 +362,28 @@ public class Main {
     fs.writeFileSync(path.join(tempDir, 'ListNode.java'), listNodeSource, 'utf-8');
     fs.writeFileSync(path.join(tempDir, 'TreeNode.java'), treeNodeSource, 'utf-8');
     fs.writeFileSync(path.join(tempDir, 'Solution.java'), solutionSource, 'utf-8');
-    fs.writeFileSync(path.join(tempDir, 'Main.java'), mainHarness, 'utf-8');
+    fs.writeFileSync(path.join(tempDir, 'JudgeHarness.java'), mainHarness, 'utf-8');
 
-    // Step 1: Compile with javac
-    const compileResult = await runProcess('javac', ['-encoding', 'UTF-8', 'ListNode.java', 'TreeNode.java', 'Solution.java', 'Main.java'], tempDir, 5000);
+    // Step 1: Compile with javac (15s timeout for cold start)
+    const compileResult = await runProcess(
+      'javac',
+      ['-encoding', 'UTF-8', 'ListNode.java', 'TreeNode.java', 'Solution.java', 'JudgeHarness.java'],
+      tempDir,
+      15000
+    );
 
     if (compileResult.exitCode !== 0) {
       let cleanErr = compileResult.stderr
         .replace(new RegExp(tempDir.replace(/\\/g, '\\\\'), 'g'), '')
         .replace(/Solution\.java:/g, 'Line ')
+        .replace(/JudgeHarness\.java:/g, 'Harness: ')
         .trim();
+
+      if (compileResult.timedOut) {
+        cleanErr = 'Java compilation timed out (exceeded 15s). Please check your code and try running again.';
+      } else if (!cleanErr && compileResult.stdout) {
+        cleanErr = compileResult.stdout.trim();
+      }
 
       return {
         status: 'Compile Error',
@@ -387,12 +404,12 @@ public class Main {
     }
     stdinData += '__END_INPUT__\n';
 
-    // Step 3: Run with java -Xmx256m -Xss2m Main
+    // Step 3: Run with java -Xmx256m -Xss2m JudgeHarness
     const runResult = await runProcess(
       'java',
-      ['-Xmx256m', '-Xss2m', '-Dfile.encoding=UTF-8', 'Main'],
+      ['-Xmx256m', '-Xss2m', '-Dfile.encoding=UTF-8', 'JudgeHarness'],
       tempDir,
-      timeLimitMs + 1000,
+      timeLimitMs + 2000,
       stdinData
     );
 
@@ -530,12 +547,18 @@ function runProcess(
     const timer = setTimeout(() => {
       timedOut = true;
       try {
-        proc.kill('SIGKILL');
+        if (process.platform === 'win32' && proc.pid) {
+          spawn('taskkill', ['/pid', String(proc.pid), '/f', '/t']);
+        } else {
+          proc.kill('SIGKILL');
+        }
       } catch {}
     }, timeoutMs);
 
     if (stdinData) {
       proc.stdin.write(stdinData);
+      proc.stdin.end();
+    } else if (proc.stdin) {
       proc.stdin.end();
     }
 
