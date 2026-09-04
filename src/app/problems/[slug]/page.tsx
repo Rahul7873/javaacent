@@ -287,14 +287,15 @@ export default function ProblemWorkspacePage({
             <span
               className={`text-[10px] font-bold px-2 py-0.5 rounded-full border ${
                 problem.difficulty === 'Easy'
-                  ? 'bg-emerald-950/60 text-emerald-400 border-emerald-500/30'
+                  ? 'bg-emerald-500/10 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 border-emerald-500/30'
                   : problem.difficulty === 'Medium'
-                  ? 'bg-amber-950/60 text-amber-400 border-amber-500/30'
-                  : 'bg-rose-950/60 text-rose-400 border-rose-500/30'
+                  ? 'bg-amber-500/10 dark:bg-amber-950/60 text-amber-600 dark:text-amber-400 border-amber-500/30'
+                  : 'bg-rose-500/10 dark:bg-rose-950/60 text-rose-600 dark:text-rose-400 border-rose-500/30'
               }`}
             >
               {problem.difficulty}
             </span>
+
           </div>
         </div>
 

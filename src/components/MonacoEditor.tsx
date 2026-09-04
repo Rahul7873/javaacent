@@ -17,7 +17,7 @@ interface MonacoEditorProps {
   value: string;
   onChange: (val: string) => void;
   onReset: () => void;
-  theme?: 'vs-dark' | 'light';
+  theme?: 'vs-dark' | 'vs' | 'light';
   readOnly?: boolean;
 }
 
@@ -37,6 +37,8 @@ export function MonacoEditor({
   theme = 'vs-dark',
   readOnly = false
 }: MonacoEditorProps) {
+  const activeMonacoTheme = (theme === 'light' || theme === 'vs') ? 'vs' : 'vs-dark';
+
   const [fontSize, setFontSize] = useState<number>(14);
   const [minimap, setMinimap] = useState<boolean>(false);
   const [isFullscreen, setIsFullscreen] = useState<boolean>(false);
@@ -133,8 +135,9 @@ export function MonacoEditor({
           height="100%"
           language={MONACO_LANGUAGE_MAP[language]}
           value={value}
-          theme={theme}
+          theme={activeMonacoTheme}
           onChange={val => onChange(val || '')}
+
           onMount={handleEditorMount}
           options={{
             fontSize,

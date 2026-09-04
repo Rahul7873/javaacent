@@ -26,14 +26,20 @@ body {
   overflow-x: hidden;
 }
 
-/* Light Mode Global Overrides */
+/* Premium Light Mode Architecture */
 html.light body {
   background-color: #f8fafc !important;
   color: #0f172a !important;
 }
 
-html.light header,
-html.light nav,
+/* Frosted glass header */
+html.light header {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  border-bottom-color: #e2e8f0 !important;
+  box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.04);
+}
+
+/* Elevated cards, panels, and sections */
 html.light .bg-\[\#070a13\],
 html.light .bg-\[\#070a12\],
 html.light .bg-\[\#080c16\],
@@ -42,9 +48,7 @@ html.light .bg-\[\#090d17\],
 html.light .bg-\[\#090d18\],
 html.light .bg-\[\#0a0e1a\],
 html.light .bg-\[\#0b0f19\],
-html.light .bg-\[\#0b0f19\]\/90,
 html.light .bg-\[\#0b0f1a\],
-html.light .bg-\[\#0b0f1a\]\/95,
 html.light .bg-\[\#0b0f1d\],
 html.light .bg-\[\#0c0e14\],
 html.light .bg-\[\#0c101c\],
@@ -56,15 +60,16 @@ html.light .bg-\[\#060810\] {
   background-color: #ffffff !important;
 }
 
+/* Subtle secondary surfaces, pill containers, and toolbars */
 html.light .bg-slate-950,
 html.light .bg-slate-900,
 html.light .bg-slate-900\/90,
-html.light .bg-slate-800,
 html.light .bg-slate-800\/80,
 html.light .bg-slate-800\/60 {
   background-color: #f1f5f9 !important;
 }
 
+/* Hairline borders */
 html.light .border-slate-800,
 html.light .border-slate-800\/80,
 html.light .border-slate-800\/90,
@@ -73,21 +78,48 @@ html.light .border-slate-700\/80 {
   border-color: #e2e8f0 !important;
 }
 
-html.light .text-white,
-html.light .text-slate-100,
-html.light .text-slate-200 {
+/* Primary text only when NOT inside colored buttons */
+html.light h1,
+html.light h2,
+html.light h3,
+html.light h4,
+html.light h5,
+html.light h6,
+html.light p:not([class*="text-"]),
+html.light span:not([class*="text-"]):not([class*="bg-"]) {
+  color: #0f172a;
+}
+
+html.light .text-slate-100:not([class*="bg-indigo"]):not([class*="bg-emerald"]):not([class*="bg-amber"]):not([class*="bg-rose"]):not([class*="bg-gradient"]),
+html.light .text-slate-200:not([class*="bg-indigo"]):not([class*="bg-emerald"]):not([class*="bg-amber"]):not([class*="bg-rose"]):not([class*="bg-gradient"]) {
   color: #0f172a !important;
 }
 
-html.light .text-slate-300,
-html.light .text-slate-400 {
-  color: #475569 !important;
+html.light .text-slate-300:not([class*="bg-indigo"]):not([class*="bg-emerald"]):not([class*="bg-amber"]):not([class*="bg-rose"]):not([class*="bg-gradient"]) {
+  color: #334155 !important;
+}
+
+html.light .text-slate-400:not([class*="bg-indigo"]):not([class*="bg-emerald"]):not([class*="bg-amber"]):not([class*="bg-rose"]):not([class*="bg-gradient"]) {
+  color: #64748b !important;
 }
 
 html.light .text-slate-500 {
   color: #64748b !important;
 }
 
+/* Preserve bright crisp white text on colored buttons, pills, badges, and avatars */
+html.light [class*="bg-indigo-"] .text-white,
+html.light [class*="bg-emerald-"] .text-white,
+html.light [class*="bg-amber-"] .text-white,
+html.light [class*="bg-rose-"] .text-white,
+html.light [class*="bg-gradient-"] .text-white,
+html.light button.bg-indigo-600,
+html.light button[class*="bg-gradient-"],
+html.light .text-white[class*="bg-gradient-"] {
+  color: #ffffff !important;
+}
+
+/* Inputs, textareas and filters in light mode */
 html.light input,
 html.light textarea,
 html.light select {
@@ -96,9 +128,28 @@ html.light select {
   border-color: #cbd5e1 !important;
 }
 
+html.light input:focus,
+html.light textarea:focus,
+html.light select:focus {
+  border-color: #6366f1 !important;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12) !important;
+}
+
 html.light input::placeholder,
 html.light textarea::placeholder {
   color: #94a3b8 !important;
+}
+
+/* Table rows and hover states in light mode */
+html.light tr:hover {
+  background-color: #f8fafc !important;
+}
+
+/* Problem workspace specifics */
+html.light [data-problem-desc] {
+  background-color: #ffffff !important;
+  color: #1e293b !important;
 }
 
 /* Custom scrollbars */
@@ -112,7 +163,7 @@ html.light textarea::placeholder {
 }
 
 html.light ::-webkit-scrollbar-track {
-  background: rgba(241, 245, 249, 0.8);
+  background: #f1f5f9;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -121,10 +172,11 @@ html.light ::-webkit-scrollbar-track {
 }
 
 html.light ::-webkit-scrollbar-thumb {
-  background: rgba(148, 163, 184, 0.6);
+  background: #cbd5e1;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(99, 102, 241, 0.6);
+html.light ::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
 }
+
 

@@ -452,7 +452,7 @@ export default function ProblemsPage() {
                             {prob.topics.map(topic => (
                               <span
                                 key={topic}
-                                className="px-2 py-0.5 rounded bg-slate-800 text-slate-300 text-[10px] font-mono"
+                                className="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-[10px] font-mono border border-slate-200 dark:border-transparent"
                               >
                                 {topic}
                               </span>
@@ -465,14 +465,15 @@ export default function ProblemsPage() {
                           <span
                             className={`px-2.5 py-0.5 rounded-full text-[10px] font-bold border ${
                               prob.difficulty === 'Easy'
-                                ? 'bg-emerald-950/60 text-emerald-400 border-emerald-500/30'
+                                ? 'bg-emerald-500/10 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 border-emerald-500/30'
                                 : prob.difficulty === 'Medium'
-                                ? 'bg-amber-950/60 text-amber-400 border-amber-500/30'
-                                : 'bg-rose-950/60 text-rose-400 border-rose-500/30'
+                                ? 'bg-amber-500/10 dark:bg-amber-950/60 text-amber-600 dark:text-amber-400 border-amber-500/30'
+                                : 'bg-rose-500/10 dark:bg-rose-950/60 text-rose-600 dark:text-rose-400 border-rose-500/30'
                             }`}
                           >
                             {prob.difficulty}
                           </span>
+
                         </td>
 
                         {/* Acceptance */}

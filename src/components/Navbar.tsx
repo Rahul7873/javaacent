@@ -74,14 +74,14 @@ export function Navbar() {
             </div>
             <div>
               <div className="flex items-center space-x-1.5">
-                <span className="font-bold text-lg tracking-tight text-white font-mono">
-                  Java<span className="text-amber-400">Ascent</span>
+                <span className="font-bold text-lg tracking-tight text-slate-900 dark:text-white font-mono">
+                  Java<span className="text-amber-500 dark:text-amber-400">Ascent</span>
                 </span>
-                <span className="px-1.5 py-0.5 text-[10px] font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/30 rounded-full">
+                <span className="px-1.5 py-0.5 text-[10px] font-semibold bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/30 rounded-full">
                   JAVA 17 LTS
                 </span>
               </div>
-              <p className="text-[11px] text-slate-400 tracking-wide">Java DSA & AI Learning Platform</p>
+              <p className="text-[11px] text-slate-500 dark:text-slate-400 tracking-wide">Java DSA & AI Learning Platform</p>
             </div>
           </Link>
 
@@ -96,8 +96,8 @@ export function Navbar() {
                   href={link.href}
                   className={`flex items-center space-x-2 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                     isActive
-                      ? 'bg-indigo-500/15 text-indigo-400 border border-indigo-500/30'
-                      : 'text-slate-300 hover:text-white hover:bg-slate-800/60'
+                      ? 'bg-indigo-500/15 text-indigo-600 dark:text-indigo-400 border border-indigo-500/30'
+                      : 'text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800/60'
                   }`}
                 >
                   <Icon className="w-4 h-4" />
@@ -106,6 +106,7 @@ export function Navbar() {
               );
             })}
           </nav>
+
         </div>
 
         {/* Right Action Widgets */}
