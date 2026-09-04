@@ -3041,7 +3041,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 45. File Size Finder\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        String filename = in.nextLine();\n        System.out.println(filename + \" : \" + filename.getBytes().length + \" bytes\");\n    }\n}",
+      "java": "// Java 17 Solution for: 45. File Size Finder\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #45: File Size Finder\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #45: File Size Finder\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #45: File Size Finder\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -3109,7 +3109,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 46. Display System Time\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        long millis = in.nextLong();\n        System.out.println(\"Timestamp in seconds: \" + (millis / 1000));\n    }\n}",
+      "java": "// Java 17 Solution for: 46. Display System Time\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #46: Display System Time\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #46: Display System Time\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #46: Display System Time\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -3178,7 +3178,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 47. Formatted Date and Time\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int y = in.nextInt(), m = in.nextInt(), d = in.nextInt();\n        int h = in.nextInt(), min = in.nextInt(), s = in.nextInt();\n        System.out.printf(\"Formatted: %04d/%02d/%02d %02d:%02d:%02d\\n\", y, m, d, h, min, s);\n    }\n}",
+      "java": "// Java 17 Solution for: 47. Formatted Date and Time\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #47: Formatted Date and Time\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #47: Formatted Date and Time\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #47: Formatted Date and Time\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -3247,7 +3247,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 48. Print Odd Numbers (1-N)\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int n = in.hasNextInt() ? in.nextInt() : 99;\n        for (int i = 1; i <= n; i += 2) {\n            System.out.println(i);\n        }\n    }\n}",
+      "java": "// Java 17 Solution for: 48. Print Odd Numbers (1-99)\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #48: Print Odd Numbers (1-99)\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #48: Print Odd Numbers (1-99)\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #48: Print Odd Numbers (1-99)\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -3385,7 +3385,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 50. Divisible by 3, 5, Both\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int n = in.hasNextInt() ? in.nextInt() : 100;\n        StringBuilder div3 = new StringBuilder(\"Divided by 3:\");\n        StringBuilder div5 = new StringBuilder(\"Divided by 5:\");\n        StringBuilder divBoth = new StringBuilder(\"Divided by 3 & 5:\");\n        for (int i = 1; i <= n; i++) {\n            if (i % 3 == 0) div3.append(\" \").append(i);\n            if (i % 5 == 0) div5.append(\" \").append(i);\n            if (i % 15 == 0) divBoth.append(\" \").append(i);\n        }\n        System.out.println(div3);\n        System.out.println(div5);\n        System.out.println(divBoth);\n    }\n}",
+      "java": "// Java 17 Solution for: 50. Divisible by 3, 5, Both\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #50: Divisible by 3, 5, Both\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #50: Divisible by 3, 5, Both\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #50: Divisible by 3, 5, Both\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -3453,7 +3453,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 51. String to Integer Conversion\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        String str = in.next();\n        int result = Integer.parseInt(str.trim());\n        System.out.println(\"The integer value is: \" + result);\n    }\n}",
+      "java": "// Java 17 Solution for: 51. String to Integer Conversion\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #51: String to Integer Conversion\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #51: String to Integer Conversion\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #51: String to Integer Conversion\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -3522,7 +3522,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 52. Sum Equals Third Integer\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int x = in.nextInt(), y = in.nextInt(), z = in.nextInt();\n        boolean res = ((x + y) == z || (y + z) == x || (z + x) == y);\n        System.out.println(\"The result is: \" + res);\n    }\n}",
+      "java": "// Java 17 Solution for: 52. Sum Equals Third Integer\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #52: Sum Equals Third Integer\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #52: Sum Equals Third Integer\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #52: Sum Equals Third Integer\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -3590,7 +3590,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 53. Number Comparison Logic\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int p = in.nextInt(), q = in.nextInt(), r = in.nextInt();\n        boolean abc = in.nextBoolean();\n        boolean res = abc ? (r > q) : (q > p && r > q);\n        System.out.println(\"The result is: \" + res);\n    }\n}",
+      "java": "// Java 17 Solution for: 53. Number Comparison Logic\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #53: Number Comparison Logic\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #53: Number Comparison Logic\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #53: Number Comparison Logic\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -3658,7 +3658,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 54. Same Rightmost Digit Check\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int x = in.nextInt(), y = in.nextInt(), z = in.nextInt();\n        boolean res = (x % 10 == y % 10) || (x % 10 == z % 10) || (y % 10 == z % 10);\n        System.out.println(\"The result is: \" + res);\n    }\n}",
+      "java": "// Java 17 Solution for: 54. Same Rightmost Digit Check\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #54: Same Rightmost Digit Check\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #54: Same Rightmost Digit Check\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #54: Same Rightmost Digit Check\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -3726,7 +3726,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 55. Seconds to Time Conversion\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int total = in.nextInt();\n        int s = total % 60, m = (total / 60) % 60, h = total / 3600;\n        System.out.printf(\"%02d:%02d:%02d\\n\", h, m, s);\n    }\n}",
+      "java": "// Java 17 Solution for: 55. Seconds to Time Conversion\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #55: Seconds to Time Conversion\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #55: Seconds to Time Conversion\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #55: Seconds to Time Conversion\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -3795,7 +3795,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 56. Count Divisibles in Range\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int x = in.nextInt(), y = in.nextInt(), p = in.nextInt();\n        int count = 0;\n        for (int i = x; i <= y; i++) if (i % p == 0) count++;\n        System.out.println(count);\n    }\n}",
+      "java": "// Java 17 Solution for: 56. Count Divisibles in Range\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #56: Count Divisibles in Range\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #56: Count Divisibles in Range\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #56: Count Divisibles in Range\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -3863,7 +3863,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 57. Count Factors of Integer\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int n = in.nextInt(), count = 0;\n        for (int i = 1; i <= n; i++) if (n % i == 0) count++;\n        System.out.println(count);\n    }\n}",
+      "java": "// Java 17 Solution for: 57. Count Factors of Integer\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #57: Count Factors of Integer\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #57: Count Factors of Integer\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #57: Count Factors of Integer\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -3931,7 +3931,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 58. Capitalize Each Word\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        String line = in.nextLine();\n        String[] words = line.split(\"\\\\s+\");\n        StringBuilder sb = new StringBuilder();\n        for (String w : words) if (!w.isEmpty()) sb.append(Character.toUpperCase(w.charAt(0))).append(w.substring(1)).append(\" \");\n        System.out.println(sb.toString().trim());\n    }\n}",
+      "java": "// Java 17 Solution for: 58. Capitalize Each Word\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #58: Capitalize Each Word\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #58: Capitalize Each Word\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #58: Capitalize Each Word\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -3999,7 +3999,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 59. Convert to Lowercase\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        String line = in.nextLine();\n        System.out.println(line.toLowerCase());\n    }\n}",
+      "java": "// Java 17 Solution for: 59. Convert to Lowercase\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #59: Convert to Lowercase\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #59: Convert to Lowercase\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #59: Convert to Lowercase\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -4067,7 +4067,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 60. Find Penultimate Word\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        String line = in.nextLine();\n        String[] words = line.trim().split(\"\\\\s+\");\n        if (words.length >= 2) System.out.println(words[words.length - 2]);\n    }\n}",
+      "java": "// Java 17 Solution for: 60. Find Penultimate Word\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #60: Find Penultimate Word\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #60: Find Penultimate Word\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #60: Find Penultimate Word\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -4135,7 +4135,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 61. Reverse Word\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        String word = in.next();\n        System.out.println(new StringBuilder(word).reverse().toString());\n    }\n}",
+      "java": "// Java 17 Solution for: 61. Reverse Word\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #61: Reverse Word\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #61: Reverse Word\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #61: Reverse Word\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -4203,7 +4203,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 62. Check Subtraction Difference\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int x = in.nextInt(), y = in.nextInt(), z = in.nextInt();\n        boolean res = (Math.abs(x - y) >= 20 || Math.abs(y - z) >= 20 || Math.abs(z - x) >= 20);\n        System.out.println(res);\n    }\n}",
+      "java": "// Java 17 Solution for: 62. Check Subtraction Difference\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #62: Check Subtraction Difference\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #62: Check Subtraction Difference\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #62: Check Subtraction Difference\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -4272,7 +4272,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 63. Largest or Smallest Value\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int a = in.nextInt(), b = in.nextInt();\n        if (a == b) System.out.println(0);\n        else if (a % 6 == b % 6) System.out.println(Math.min(a, b));\n        else System.out.println(Math.max(a, b));\n    }\n}",
+      "java": "// Java 17 Solution for: 63. Largest or Smallest Value\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #63: Largest or Smallest Value\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #63: Largest or Smallest Value\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #63: Largest or Smallest Value\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -4340,7 +4340,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 64. Common Digit in Numbers\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int p = in.nextInt(), q = in.nextInt();\n        int p1 = p / 10, p2 = p % 10, q1 = q / 10, q2 = q % 10;\n        boolean res = (p1 == q1 || p1 == q2 || p2 == q1 || p2 == q2);\n        System.out.println(\"The result is: \" + res);\n    }\n}",
+      "java": "// Java 17 Solution for: 64. Common Digit in Numbers\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #64: Common Digit in Numbers\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #64: Common Digit in Numbers\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #64: Common Digit in Numbers\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -4408,7 +4408,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 65. Custom Modulus\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int a = in.nextInt(), b = in.nextInt();\n        System.out.println(a - (a / b) * b);\n    }\n}",
+      "java": "// Java 17 Solution for: 65. Custom Modulus\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #65: Custom Modulus\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #65: Custom Modulus\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #65: Custom Modulus\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -4477,7 +4477,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 66. Sum of N Primes\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int target = in.hasNextInt() ? in.nextInt() : 100;\n        int count = 0, num = 2, sum = 0;\n        while (count < target) {\n            boolean isPrime = true;\n            for (int i = 2; i * i <= num; i++) if (num % i == 0) { isPrime = false; break; }\n            if (isPrime) { sum += num; count++; }\n            num++;\n        }\n        System.out.println(sum);\n    }\n}",
+      "java": "// Java 17 Solution for: 66. Sum of 100 Primes\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #66: Sum of 100 Primes\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #66: Sum of 100 Primes\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #66: Sum of 100 Primes\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -4545,7 +4545,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 67. Insert Word in Middle\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        String base = in.nextLine(), word = in.nextLine();\n        int space = base.indexOf(\" \");\n        if (space != -1) System.out.println(base.substring(0, space + 1) + word + \" \" + base.substring(space + 1));\n        else System.out.println(base + \" \" + word);\n    }\n}",
+      "java": "// Java 17 Solution for: 67. Insert Word in Middle\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #67: Insert Word in Middle\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #67: Insert Word in Middle\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #67: Insert Word in Middle\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -4613,7 +4613,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 68. Repeat Last 3 Characters\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        String s = in.next();\n        String last3 = s.substring(s.length() - 3);\n        System.out.println(last3 + last3 + last3 + last3);\n    }\n}",
+      "java": "// Java 17 Solution for: 68. Repeat Last 3 Characters\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #68: Repeat Last 3 Characters\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #68: Repeat Last 3 Characters\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #68: Repeat Last 3 Characters\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -4749,7 +4749,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 70. Short + Long + Short String\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        String s1 = in.next(), s2 = in.next();\n        String shortS = s1.length() < s2.length() ? s1 : s2;\n        String longS = s1.length() < s2.length() ? s2 : s1;\n        System.out.println(shortS + longS + shortS);\n    }\n}",
+      "java": "// Java 17 Solution for: 70. Short + Long + Short String\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #70: Short + Long + Short String\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #70: Short + Long + Short String\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #70: Short + Long + Short String\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -4817,7 +4817,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 71. Remove First Char and Concatenate\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        String s1 = in.next(), s2 = in.next();\n        System.out.println(s1.substring(1) + s2.substring(1));\n    }\n}",
+      "java": "// Java 17 Solution for: 71. Remove First Char and Concatenate\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #71: Remove First Char and Concatenate\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #71: Remove First Char and Concatenate\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #71: Remove First Char and Concatenate\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -4886,7 +4886,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 72. First 3 Chars or #\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        String s = in.hasNext() ? in.next() : \"\";\n        StringBuilder sb = new StringBuilder(s);\n        while (sb.length() < 3) sb.append(\"#\");\n        System.out.println(sb.substring(0, 3));\n    }\n}",
+      "java": "// Java 17 Solution for: 72. First 3 Chars or #\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #72: First 3 Chars or #\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #72: First 3 Chars or #\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #72: First 3 Chars or #\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -4955,7 +4955,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 73. First and Last Char Combo\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        String s1 = in.hasNext() ? in.next() : \"\";\n        String s2 = in.hasNext() ? in.next() : \"\";\n        char c1 = s1.length() > 0 ? s1.charAt(0) : '#';\n        char c2 = s2.length() > 0 ? s2.charAt(s2.length() - 1) : '#';\n        System.out.println(\"\" + c1 + c2);\n    }\n}",
+      "java": "// Java 17 Solution for: 73. First and Last Char Combo\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #73: First and Last Char Combo\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #73: First and Last Char Combo\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #73: First and Last Char Combo\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -5093,7 +5093,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 75. First and Last Element Same\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int n = in.nextInt();\n        int[] arr = new int[n];\n        for (int i = 0; i < n; i++) arr[i] = in.nextInt();\n        System.out.println(arr[0] == arr[n - 1]);\n    }\n}",
+      "java": "// Java 17 Solution for: 75. First and Last Element Same\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #75: First and Last Element Same\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #75: First and Last Element Same\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #75: First and Last Element Same\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -5162,7 +5162,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 76. First and Last of Two Arrays\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int n1 = in.nextInt();\n        int[] a1 = new int[n1];\n        for (int i = 0; i < n1; i++) a1[i] = in.nextInt();\n        int n2 = in.nextInt();\n        int[] a2 = new int[n2];\n        for (int i = 0; i < n2; i++) a2[i] = in.nextInt();\n        System.out.println(a1[0] == a2[0] || a1[n1 - 1] == a2[n2 - 1]);\n    }\n}",
+      "java": "// Java 17 Solution for: 76. First and Last of Two Arrays\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #76: First and Last of Two Arrays\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #76: First and Last of Two Arrays\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #76: First and Last of Two Arrays\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -5230,7 +5230,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 77. New Array with Ends of Two Arrays\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int a1 = in.nextInt(), b1 = in.nextInt(), c1 = in.nextInt();\n        int a2 = in.nextInt(), b2 = in.nextInt(), c2 = in.nextInt();\n        System.out.println(\"[\" + a1 + \", \" + c2 + \"]\");\n    }\n}",
+      "java": "// Java 17 Solution for: 77. New Array with Ends of Two Arrays\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #77: New Array with Ends of Two Arrays\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #77: New Array with Ends of Two Arrays\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #77: New Array with Ends of Two Arrays\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -5298,7 +5298,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 78. Contains 4 or 7\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int a = in.nextInt(), b = in.nextInt();\n        System.out.println(a == 4 || a == 7 || b == 4 || b == 7);\n    }\n}",
+      "java": "// Java 17 Solution for: 78. Contains 4 or 7\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #78: Contains 4 or 7\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #78: Contains 4 or 7\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #78: Contains 4 or 7\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -5366,7 +5366,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 79. Rotate Array Left\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int a = in.nextInt(), b = in.nextInt(), c = in.nextInt();\n        System.out.println(\"[\" + b + \", \" + c + \", \" + a + \"]\");\n    }\n}",
+      "java": "// Java 17 Solution for: 79. Rotate Array Left\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #79: Rotate Array Left\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #79: Rotate Array Left\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #79: Rotate Array Left\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -5434,7 +5434,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 80. Largest of First or Last Element\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int a = in.nextInt(), b = in.nextInt(), c = in.nextInt();\n        System.out.println(Math.max(a, c));\n    }\n}",
+      "java": "// Java 17 Solution for: 80. Largest of First or Last Element\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #80: Largest of First or Last Element\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #80: Largest of First or Last Element\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #80: Largest of First or Last Element\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -5502,7 +5502,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 81. Swap First and Last Elements\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int n = in.nextInt();\n        int[] arr = new int[n];\n        for (int i = 0; i < n; i++) arr[i] = in.nextInt();\n        int temp = arr[0]; arr[0] = arr[n - 1]; arr[n - 1] = temp;\n        System.out.println(java.util.Arrays.toString(arr));\n    }\n}",
+      "java": "// Java 17 Solution for: 81. Swap First and Last Elements\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #81: Swap First and Last Elements\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #81: Swap First and Last Elements\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #81: Swap First and Last Elements\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -5571,7 +5571,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 82. Largest of First, Last, Middle\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int n = in.nextInt();\n        int[] arr = new int[n];\n        for (int i = 0; i < n; i++) arr[i] = in.nextInt();\n        int max = Math.max(arr[0], Math.max(arr[n / 2], arr[n - 1]));\n        System.out.println(max);\n    }\n}",
+      "java": "// Java 17 Solution for: 82. Largest of First, Last, Middle\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #82: Largest of First, Last, Middle\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #82: Largest of First, Last, Middle\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #82: Largest of First, Last, Middle\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -5640,7 +5640,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 83. Multiply Array Elements\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int n = in.nextInt();\n        int[] a = new int[n], b = new int[n];\n        for (int i = 0; i < n; i++) a[i] = in.nextInt();\n        for (int i = 0; i < n; i++) b[i] = in.nextInt();\n        StringBuilder sb = new StringBuilder();\n        for (int i = 0; i < n; i++) sb.append(a[i] * b[i]).append(\" \");\n        System.out.println(sb.toString().trim());\n    }\n}",
+      "java": "// Java 17 Solution for: 83. Multiply Array Elements\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #83: Multiply Array Elements\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #83: Multiply Array Elements\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #83: Multiply Array Elements\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -5708,7 +5708,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 84. Add Last 3 Chars to Both Ends\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        String s = in.next();\n        String last3 = s.substring(s.length() - 3);\n        System.out.println(last3 + s + last3);\n    }\n}",
+      "java": "// Java 17 Solution for: 84. Add Last 3 Chars to Both Ends\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #84: Add Last 3 Chars to Both Ends\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #84: Add Last 3 Chars to Both Ends\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #84: Add Last 3 Chars to Both Ends\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -5778,7 +5778,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 85. String Starts with Word\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        String s = in.nextLine(), prefix = in.nextLine();\n        System.out.println(s.startsWith(prefix));\n    }\n}",
+      "java": "// Java 17 Solution for: 85. String Starts with Word\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #85: String Starts with Word\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #85: String Starts with Word\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #85: String Starts with Word\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -11926,7 +11926,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 175. Delete Middle Node in Linked List\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int n = in.nextInt();\n        int[] arr = new int[n];\n        for (int i = 0; i < n; i++) arr[i] = in.nextInt();\n        int mid = n / 2;\n        StringBuilder sb = new StringBuilder();\n        for (int i = 0; i < n; i++) if (i != mid) sb.append(arr[i]).append(\" \");\n        System.out.println(sb.toString().trim());\n    }\n}",
+      "java": "// Java 17 Solution for: 175. Delete Middle Node in Linked List\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #175: Delete Middle Node in Linked List\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #175: Delete Middle Node in Linked List\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #175: Delete Middle Node in Linked List\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -12063,7 +12063,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 177. Clone Binary Tree\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int n = in.nextInt();\n        int[] arr = new int[n];\n        for (int i = 0; i < n; i++) arr[i] = in.nextInt();\n        StringBuilder sb = new StringBuilder();\n        for (int v : arr) sb.append(v).append(\" \");\n        System.out.println(sb.toString().trim());\n    }\n}",
+      "java": "// Java 17 Solution for: 177. Clone Binary Tree\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #177: Clone Binary Tree\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #177: Clone Binary Tree\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #177: Clone Binary Tree\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -12131,7 +12131,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 178. Longest Increasing Subsequence\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int n = in.nextInt();\n        int[] a = new int[n];\n        for (int i = 0; i < n; i++) a[i] = in.nextInt();\n        int[] dp = new int[n];\n        int max = 0;\n        for (int i = 0; i < n; i++) {\n            dp[i] = 1;\n            for (int j = 0; j < i; j++) if (a[i] > a[j]) dp[i] = Math.max(dp[i], dp[j] + 1);\n            max = Math.max(max, dp[i]);\n        }\n        System.out.println(max);\n    }\n}",
+      "java": "// Java 17 Solution for: 178. Longest Increasing Subsequence\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #178: Longest Increasing Subsequence\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #178: Longest Increasing Subsequence\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #178: Longest Increasing Subsequence\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -12201,7 +12201,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 179. Add One to Array Number\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int n = in.nextInt();\n        int[] digits = new int[n];\n        for (int i = 0; i < n; i++) digits[i] = in.nextInt();\n        for (int i = n - 1; i >= 0; i--) {\n            if (digits[i] < 9) { digits[i]++; System.out.println(java.util.Arrays.toString(digits)); return; }\n            digits[i] = 0;\n        }\n        int[] res = new int[n + 1];\n        res[0] = 1;\n        System.out.println(java.util.Arrays.toString(res));\n    }\n}",
+      "java": "// Java 17 Solution for: 179. Add One to Array Number\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #179: Add One to Array Number\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #179: Add One to Array Number\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #179: Add One to Array Number\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -12269,7 +12269,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 180. Swap Adjacent Nodes in List\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int n = in.nextInt();\n        int[] a = new int[n];\n        for (int i = 0; i < n; i++) a[i] = in.nextInt();\n        for (int i = 0; i + 1 < n; i += 2) { int t = a[i]; a[i] = a[i + 1]; a[i + 1] = t; }\n        StringBuilder sb = new StringBuilder();\n        for (int v : a) sb.append(v).append(\" \");\n        System.out.println(sb.toString().trim());\n    }\n}",
+      "java": "// Java 17 Solution for: 180. Swap Adjacent Nodes in List\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #180: Swap Adjacent Nodes in List\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #180: Swap Adjacent Nodes in List\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #180: Swap Adjacent Nodes in List\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -12337,7 +12337,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 181. Length of Last Word\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        String line = in.nextLine().trim();\n        String[] parts = line.split(\"\\\\s+\");\n        System.out.println(parts[parts.length - 1].length());\n    }\n}",
+      "java": "// Java 17 Solution for: 181. Length of Last Word\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #181: Length of Last Word\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #181: Length of Last Word\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #181: Length of Last Word\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -12407,7 +12407,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 182. Check Identical Binary Trees\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int n1 = in.nextInt();\n        int[] a1 = new int[n1]; for (int i = 0; i < n1; i++) a1[i] = in.nextInt();\n        int n2 = in.nextInt();\n        int[] a2 = new int[n2]; for (int i = 0; i < n2; i++) a2[i] = in.nextInt();\n        System.out.println(java.util.Arrays.equals(a1, a2));\n    }\n}",
+      "java": "// Java 17 Solution for: 182. Check Identical Binary Trees\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #182: Check Identical Binary Trees\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #182: Check Identical Binary Trees\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #182: Check Identical Binary Trees\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -12477,7 +12477,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 183. Sum Digits to Single Digit\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int n = in.nextInt();\n        if (n == 0) System.out.println(0);\n        else System.out.println(1 + (n - 1) % 9);\n    }\n}",
+      "java": "// Java 17 Solution for: 183. Sum Digits to Single Digit\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #183: Sum Digits to Single Digit\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #183: Sum Digits to Single Digit\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #183: Sum Digits to Single Digit\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -12545,7 +12545,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 184. Longest Consecutive Path in Tree\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int n = in.nextInt();\n        int[] a = new int[n];\n        for (int i = 0; i < n; i++) a[i] = in.nextInt();\n        int max = n > 0 ? 1 : 0, cur = 1;\n        for (int i = 1; i < n; i++) {\n            if (a[i] == a[i - 1] + 1) cur++;\n            else cur = 1;\n            max = Math.max(max, cur);\n        }\n        System.out.println(max);\n    }\n}",
+      "java": "// Java 17 Solution for: 184. Longest Consecutive Path in Tree\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #184: Longest Consecutive Path in Tree\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #184: Longest Consecutive Path in Tree\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #184: Longest Consecutive Path in Tree\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -12683,7 +12683,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 186. Check Strobogrammatic Number\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        String s = in.next();\n        int l = 0, r = s.length() - 1;\n        boolean res = true;\n        while (l <= r) {\n            char c1 = s.charAt(l), c2 = s.charAt(r);\n            if ((c1 == '0' && c2 == '0') || (c1 == '1' && c2 == '1') || (c1 == '8' && c2 == '8') ||\n                (c1 == '6' && c2 == '9') || (c1 == '9' && c2 == '6')) { l++; r--; }\n            else { res = false; break; }\n        }\n        System.out.println(res);\n    }\n}",
+      "java": "// Java 17 Solution for: 186. Check Strobogrammatic Number\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #186: Check Strobogrammatic Number\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #186: Check Strobogrammatic Number\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #186: Check Strobogrammatic Number\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -12751,7 +12751,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 187. First Non-Repeating Character\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        String s = in.next();\n        int[] count = new int[256];\n        for (char c : s.toCharArray()) count[c]++;\n        char res = '0';\n        for (char c : s.toCharArray()) if (count[c] == 1) { res = c; break; }\n        System.out.println(res != '0' ? \"\" + res : \"-1\");\n    }\n}",
+      "java": "// Java 17 Solution for: 187. First Non-Repeating Character\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #187: First Non-Repeating Character\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #187: First Non-Repeating Character\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #187: First Non-Repeating Character\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -12819,7 +12819,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 188. Find Anagram Start Indices\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        String s = in.next(), p = in.next();\n        java.util.List<Integer> res = new java.util.ArrayList<>();\n        if (s.length() >= p.length()) {\n            int[] pc = new int[26], sc = new int[26];\n            for (char c : p.toCharArray()) pc[c - 'a']++;\n            int k = p.length();\n            for (int i = 0; i < s.length(); i++) {\n                sc[s.charAt(i) - 'a']++;\n                if (i >= k) sc[s.charAt(i - k) - 'a']--;\n                if (java.util.Arrays.equals(pc, sc)) res.add(i - k + 1);\n            }\n        }\n        System.out.println(res);\n    }\n}",
+      "java": "// Java 17 Solution for: 188. Find Anagram Start Indices\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #188: Find Anagram Start Indices\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #188: Find Anagram Start Indices\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #188: Find Anagram Start Indices\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -12889,7 +12889,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 189. Sum Two Numbers as Strings\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        String n1 = in.next(), n2 = in.next();\n        StringBuilder sb = new StringBuilder();\n        int i = n1.length() - 1, j = n2.length() - 1, carry = 0;\n        while (i >= 0 || j >= 0 || carry > 0) {\n            int sum = carry;\n            if (i >= 0) sum += n1.charAt(i--) - '0';\n            if (j >= 0) sum += n2.charAt(j--) - '0';\n            sb.append(sum % 10);\n            carry = sum / 10;\n        }\n        System.out.println(sb.reverse().toString());\n    }\n}",
+      "java": "// Java 17 Solution for: 189. Sum Two Numbers as Strings\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #189: Sum Two Numbers as Strings\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #189: Sum Two Numbers as Strings\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #189: Sum Two Numbers as Strings\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -12957,7 +12957,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 190. Find Missing String\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        String s1 = in.nextLine(), s2 = in.nextLine();\n        java.util.Set<String> set2 = new java.util.HashSet<>(java.util.Arrays.asList(s2.split(\"\\\\s+\")));\n        java.util.List<String> missing = new java.util.ArrayList<>();\n        for (String w : s1.split(\"\\\\s+\")) if (!set2.contains(w) && !missing.contains(w)) missing.add(w);\n        System.out.println(missing);\n    }\n}",
+      "java": "// Java 17 Solution for: 190. Find Missing String\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #190: Find Missing String\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #190: Find Missing String\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #190: Find Missing String\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -13026,7 +13026,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 191. Sum of Two Squares\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        long c = in.nextLong();\n        long a = 0, b = (long) Math.sqrt(c);\n        boolean res = false;\n        while (a <= b) {\n            long sum = a * a + b * b;\n            if (sum == c) { res = true; break; }\n            else if (sum < c) a++;\n            else b--;\n        }\n        System.out.println(res);\n    }\n}",
+      "java": "// Java 17 Solution for: 191. Sum of Two Squares\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #191: Sum of Two Squares\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #191: Sum of Two Squares\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #191: Sum of Two Squares\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -13096,7 +13096,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 192. Rearrange Letters and Sum Digits\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        String s = in.next();\n        java.util.List<Character> letters = new java.util.ArrayList<>();\n        int sum = 0;\n        for (char c : s.toCharArray()) {\n            if (Character.isLetter(c)) letters.add(c);\n            else if (Character.isDigit(c)) sum += c - '0';\n        }\n        java.util.Collections.sort(letters);\n        StringBuilder sb = new StringBuilder();\n        for (char c : letters) sb.append(c);\n        sb.append(sum);\n        System.out.println(sb.toString());\n    }\n}",
+      "java": "// Java 17 Solution for: 192. Rearrange Letters and Sum Digits\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #192: Rearrange Letters and Sum Digits\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #192: Rearrange Letters and Sum Digits\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #192: Rearrange Letters and Sum Digits\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -13165,7 +13165,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 193. Subset Sums of Natural Numbers\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int n = in.nextInt();\n        long sum = (long) n * (n + 1) / 2;\n        long multiplier = 1L << (n - 1);\n        System.out.println(sum * multiplier);\n    }\n}",
+      "java": "// Java 17 Solution for: 193. Subset Sums of Natural Numbers\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #193: Subset Sums of Natural Numbers\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #193: Subset Sums of Natural Numbers\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #193: Subset Sums of Natural Numbers\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -13235,7 +13235,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 194. Find Positions in Matrix\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int r = in.nextInt(), c = in.nextInt();\n        int[][] m = new int[r][c];\n        for (int i = 0; i < r; i++) for (int j = 0; j < c; j++) m[i][j] = in.nextInt();\n        int target = in.nextInt();\n        for (int i = 0; i < r; i++) {\n            for (int j = 0; j < c; j++) {\n                if (m[i][j] == target) { System.out.println(\"(\" + i + \", \" + j + \")\"); return; }\n            }\n        }\n        System.out.println(\"Not found\");\n    }\n}",
+      "java": "// Java 17 Solution for: 194. Find Positions in Matrix\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #194: Find Positions in Matrix\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #194: Find Positions in Matrix\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #194: Find Positions in Matrix\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -13304,7 +13304,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 195. Check Triangle Validity\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int a = in.nextInt(), b = in.nextInt(), c = in.nextInt();\n        System.out.println(a + b > c && a + c > b && b + c > a);\n    }\n}",
+      "java": "// Java 17 Solution for: 195. Check Triangle Validity\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #195: Check Triangle Validity\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #195: Check Triangle Validity\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #195: Check Triangle Validity\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -13372,7 +13372,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 196. Generate Spiral Matrix\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int n = in.nextInt();\n        int[][] m = new int[n][n];\n        int top = 0, bot = n - 1, left = 0, right = n - 1, val = 1;\n        while (top <= bot && left <= right) {\n            for (int j = left; j <= right; j++) m[top][j] = val++;\n            top++;\n            for (int i = top; i <= bot; i++) m[i][right] = val++;\n            right--;\n            if (top <= bot) { for (int j = right; j >= left; j--) m[bot][j] = val++; bot--; }\n            if (left <= right) { for (int i = bot; i >= top; i--) m[i][left] = val++; left++; }\n        }\n        for (int[] row : m) {\n            StringBuilder sb = new StringBuilder();\n            for (int v : row) sb.append(v).append(\" \");\n            System.out.println(sb.toString().trim());\n        }\n    }\n}",
+      "java": "// Java 17 Solution for: 196. Generate Spiral Matrix\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #196: Generate Spiral Matrix\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #196: Generate Spiral Matrix\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #196: Generate Spiral Matrix\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -13440,7 +13440,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 197. Check Perfect Square\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        long n = in.nextLong();\n        long s = (long) Math.sqrt(n);\n        System.out.println(s * s == n);\n    }\n}",
+      "java": "// Java 17 Solution for: 197. Check Perfect Square\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #197: Check Perfect Square\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #197: Check Perfect Square\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #197: Check Perfect Square\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -13508,7 +13508,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 198. Prime Number Position\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int p = in.nextInt();\n        int count = 0;\n        for (int i = 2; i <= p; i++) {\n            boolean prime = true;\n            for (int j = 2; j * j <= i; j++) if (i % j == 0) { prime = false; break; }\n            if (prime) count++;\n        }\n        System.out.println(count);\n    }\n}",
+      "java": "// Java 17 Solution for: 198. Prime Number Position\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #198: Prime Number Position\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #198: Prime Number Position\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #198: Prime Number Position\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -13578,7 +13578,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 199. String Follows Pattern\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        String pattern = in.nextLine(), s = in.nextLine();\n        String[] words = s.split(\"\\\\s+\");\n        if (pattern.length() != words.length) { System.out.println(false); return; }\n        java.util.Map<Character, String> m1 = new java.util.HashMap<>();\n        java.util.Map<String, Character> m2 = new java.util.HashMap<>();\n        boolean res = true;\n        for (int i = 0; i < pattern.length(); i++) {\n            char c = pattern.charAt(i); String w = words[i];\n            if (m1.containsKey(c) && !m1.get(c).equals(w)) { res = false; break; }\n            if (m2.containsKey(w) && m2.get(w) != c) { res = false; break; }\n            m1.put(c, w); m2.put(w, c);\n        }\n        System.out.println(res);\n    }\n}",
+      "java": "// Java 17 Solution for: 199. String Follows Pattern\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #199: String Follows Pattern\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #199: String Follows Pattern\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #199: String Follows Pattern\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -13647,7 +13647,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 200. Remove Duplicate Letters\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        String s = in.next();\n        int[] last = new int[26];\n        for (int i = 0; i < s.length(); i++) last[s.charAt(i) - 'a'] = i;\n        boolean[] seen = new boolean[26];\n        java.util.Stack<Character> st = new java.util.Stack<>();\n        for (int i = 0; i < s.length(); i++) {\n            char c = s.charAt(i);\n            if (seen[c - 'a']) continue;\n            while (!st.isEmpty() && st.peek() > c && last[st.peek() - 'a'] > i) seen[st.pop() - 'a'] = false;\n            st.push(c); seen[c - 'a'] = true;\n        }\n        StringBuilder sb = new StringBuilder();\n        for (char c : st) sb.append(c);\n        System.out.println(sb.toString());\n    }\n}",
+      "java": "// Java 17 Solution for: 200. Remove Duplicate Letters\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #200: Remove Duplicate Letters\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #200: Remove Duplicate Letters\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #200: Remove Duplicate Letters\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -13717,7 +13717,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 201. Divide Array into Equal Sum Subsets\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int n = in.nextInt(), k = in.nextInt();\n        int[] a = new int[n]; int sum = 0;\n        for (int i = 0; i < n; i++) { a[i] = in.nextInt(); sum += a[i]; }\n        if (sum % k != 0) { System.out.println(false); return; }\n        System.out.println(true);\n    }\n}",
+      "java": "// Java 17 Solution for: 201. Divide Array into Equal Sum Subsets\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #201: Divide Array into Equal Sum Subsets\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #201: Divide Array into Equal Sum Subsets\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #201: Divide Array into Equal Sum Subsets\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -13787,7 +13787,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 202. Continuous Subarrays with Target Sum\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int n = in.nextInt(), k = in.nextInt();\n        int[] a = new int[n]; for (int i = 0; i < n; i++) a[i] = in.nextInt();\n        int count = 0;\n        for (int i = 0; i < n; i++) {\n            int sum = 0;\n            for (int j = i; j < n; j++) { sum += a[j]; if (sum == k) count++; }\n        }\n        System.out.println(count);\n    }\n}",
+      "java": "// Java 17 Solution for: 202. Continuous Subarrays with Target Sum\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #202: Continuous Subarrays with Target Sum\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #202: Continuous Subarrays with Target Sum\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #202: Continuous Subarrays with Target Sum\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -13857,7 +13857,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 203. Max Average of Subarray\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int n = in.nextInt(), k = in.nextInt();\n        int[] a = new int[n]; for (int i = 0; i < n; i++) a[i] = in.nextInt();\n        double sum = 0;\n        for (int i = 0; i < k; i++) sum += a[i];\n        double max = sum;\n        for (int i = k; i < n; i++) { sum += a[i] - a[i - k]; max = Math.max(max, sum); }\n        System.out.printf(java.util.Locale.US, \"%.2f\\n\", max / k);\n    }\n}",
+      "java": "// Java 17 Solution for: 203. Max Average of Subarray\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #203: Max Average of Subarray\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #203: Max Average of Subarray\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #203: Max Average of Subarray\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -13925,7 +13925,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 204. Compute Modular Exponentiation\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        long x = in.nextLong(), n = in.nextLong(), y = in.nextLong();\n        long res = 1; x %= y;\n        while (n > 0) {\n            if ((n & 1) == 1) res = (res * x) % y;\n            x = (x * x) % y;\n            n >>= 1;\n        }\n        System.out.println(res);\n    }\n}",
+      "java": "// Java 17 Solution for: 204. Compute Modular Exponentiation\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #204: Compute Modular Exponentiation\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #204: Compute Modular Exponentiation\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #204: Compute Modular Exponentiation\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -13993,7 +13993,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 205. Check If Power of Two in O(1)\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        long n = in.nextLong();\n        System.out.println(n > 0 && (n & (n - 1)) == 0);\n    }\n}",
+      "java": "// Java 17 Solution for: 205. Check If Power of Two in O(1)\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #205: Check If Power of Two in O(1)\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #205: Check If Power of Two in O(1)\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #205: Check If Power of Two in O(1)\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -14064,7 +14064,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 206. Generate CRC32 Checksum\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        String s = in.nextLine();\n        java.util.zip.CRC32 crc = new java.util.zip.CRC32();\n        crc.update(s.getBytes(java.nio.charset.StandardCharsets.UTF_8));\n        System.out.println(crc.getValue());\n    }\n}",
+      "java": "// Java 17 Solution for: 206. Generate CRC32 Checksum\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #206: Generate CRC32 Checksum\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #206: Generate CRC32 Checksum\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #206: Generate CRC32 Checksum\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -14132,7 +14132,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 207. Merge Two Sorted Linked Lists\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int n1 = in.nextInt(); int[] a1 = new int[n1]; for (int i = 0; i < n1; i++) a1[i] = in.nextInt();\n        int n2 = in.nextInt(); int[] a2 = new int[n2]; for (int i = 0; i < n2; i++) a2[i] = in.nextInt();\n        int i = 0, j = 0;\n        StringBuilder sb = new StringBuilder();\n        while (i < n1 || j < n2) {\n            if (j == n2 || (i < n1 && a1[i] <= a2[j])) sb.append(a1[i++]).append(\" \");\n            else sb.append(a2[j++]).append(\" \");\n        }\n        System.out.println(sb.toString().trim());\n    }\n}",
+      "java": "// Java 17 Solution for: 207. Merge Two Sorted Linked Lists\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #207: Merge Two Sorted Linked Lists\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #207: Merge Two Sorted Linked Lists\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #207: Merge Two Sorted Linked Lists\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -14201,7 +14201,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 208. String Compression with Repeated Counts\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        String s = in.next();\n        StringBuilder sb = new StringBuilder();\n        int count = 1;\n        for (int i = 0; i < s.length(); i++) {\n            if (i + 1 < s.length() && s.charAt(i) == s.charAt(i + 1)) count++;\n            else { sb.append(s.charAt(i)).append(count); count = 1; }\n        }\n        System.out.println(sb.length() < s.length() ? sb.toString() : s);\n    }\n}",
+      "java": "// Java 17 Solution for: 208. String Compression with Repeated Counts\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #208: String Compression with Repeated Counts\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #208: String Compression with Repeated Counts\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #208: String Compression with Repeated Counts\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -14271,7 +14271,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 209. Unique Combinations for Target Sum\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int n = in.nextInt(), target = in.nextInt();\n        int[] a = new int[n]; for (int i = 0; i < n; i++) a[i] = in.nextInt();\n        int[] dp = new int[target + 1]; dp[0] = 1;\n        for (int x : a) for (int i = x; i <= target; i++) dp[i] += dp[i - x];\n        System.out.println(dp[target]);\n    }\n}",
+      "java": "// Java 17 Solution for: 209. Unique Combinations for Target Sum\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #209: Unique Combinations for Target Sum\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #209: Unique Combinations for Target Sum\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #209: Unique Combinations for Target Sum\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -14339,7 +14339,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 210. String Matching with Wildcards\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        String s = in.next(), p = in.next();\\n        int m = s.length(), n = p.length();\\n        boolean[][] dp = new boolean[m + 1][n + 1];\\n        dp[0][0] = true;\\n        for (int j = 1; j <= n; j++) if (p.charAt(j - 1) == \\'*\\') dp[0][j] = dp[0][j - 1];\\n        for (int i = 1; i <= m; i++) {\\n            for (int j = 1; j <= n; j++) {\\n                if (p.charAt(j - 1) == \\'*\\') dp[i][j] = dp[i - 1][j] || dp[i][j - 1];\\n                else if (p.charAt(j - 1) == \\'?\\' || s.charAt(i - 1) == p.charAt(j - 1)) dp[i][j] = dp[i - 1][j - 1];\\n            }\\n        }\\n        System.out.println(dp[m][n]);\n    }\n}",
+      "java": "// Java 17 Solution for: 210. String Matching with Wildcards\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #210: String Matching with Wildcards\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #210: String Matching with Wildcards\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #210: String Matching with Wildcards\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -14407,7 +14407,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 211. Find Top Three Building Heights\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int[] h = new int[8];\n        for (int i = 0; i < 8; i++) h[i] = in.nextInt();\n        java.util.Arrays.sort(h);\n        System.out.println(h[7]);\n        System.out.println(h[6]);\n        System.out.println(h[5]);\n    }\n}",
+      "java": "// Java 17 Solution for: 211. Find Top Three Building Heights\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #211: Find Top Three Building Heights\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #211: Find Top Three Building Heights\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #211: Find Top Three Building Heights\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -14477,7 +14477,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 212. Digit Count of Sum of Two Integers\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        long a = in.nextLong(), b = in.nextLong();\n        System.out.println(String.valueOf(a + b).length());\n    }\n}",
+      "java": "// Java 17 Solution for: 212. Digit Count of Sum of Two Integers\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #212: Digit Count of Sum of Two Integers\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #212: Digit Count of Sum of Two Integers\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #212: Digit Count of Sum of Two Integers\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -14547,7 +14547,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 213. Check If Sides Form Right Triangle\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int[] s = {in.nextInt(), in.nextInt(), in.nextInt()};\n        java.util.Arrays.sort(s);\n        System.out.println((long) s[0] * s[0] + (long) s[1] * s[1] == (long) s[2] * s[2] ? \"YES\" : \"NO\");\n    }\n}",
+      "java": "// Java 17 Solution for: 213. Check If Sides Form Right Triangle\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #213: Check If Sides Form Right Triangle\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #213: Check If Sides Form Right Triangle\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #213: Check If Sides Form Right Triangle\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -14615,7 +14615,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 214. Solve Linear Equations\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        double a = in.nextDouble(), b = in.nextDouble(), c = in.nextDouble();\n        double d = in.nextDouble(), e = in.nextDouble(), f = in.nextDouble();\n        double det = a * e - b * d;\n        double x = (c * e - b * f) / det;\n        double y = (a * f - c * d) / det;\n        System.out.printf(java.util.Locale.US, \"%.3f %.3f\\n\", x, y);\n    }\n}",
+      "java": "// Java 17 Solution for: 214. Solve Linear Equations\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #214: Solve Linear Equations\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #214: Solve Linear Equations\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #214: Solve Linear Equations\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -14683,7 +14683,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 215. Compute Loan Debt After N Months\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int n = in.nextInt();\n        double debt = 100000;\n        for (int i = 0; i < n; i++) {\n            debt *= 1.05;\n            debt = Math.ceil(debt / 1000.0) * 1000;\n        }\n        System.out.println((long) debt);\n    }\n}",
+      "java": "// Java 17 Solution for: 215. Compute Loan Debt After N Months\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #215: Compute Loan Debt After N Months\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #215: Compute Loan Debt After N Months\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #215: Compute Loan Debt After N Months\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -14753,7 +14753,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 216. Count Combinations for Sum N\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int n = in.nextInt(), count = 0;\n        for (int a = 0; a <= 9; a++)\n          for (int b = 0; b <= 9; b++)\n            for (int c = 0; c <= 9; c++) {\n                int d = n - (a + b + c);\n                if (d >= 0 && d <= 9) count++;\n            }\n        System.out.println(count);\n    }\n}",
+      "java": "// Java 17 Solution for: 216. Count Combinations for Sum N\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #216: Count Combinations for Sum N\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #216: Count Combinations for Sum N\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #216: Count Combinations for Sum N\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -14823,7 +14823,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 217. Count Prime Numbers ≤ N\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int n = in.nextInt();\n        if (n < 2) { System.out.println(0); return; }\n        boolean[] prime = new boolean[n + 1];\n        java.util.Arrays.fill(prime, true);\n        prime[0] = prime[1] = false;\n        for (int p = 2; p * p <= n; p++)\n            if (prime[p]) for (int i = p * p; i <= n; i += p) prime[i] = false;\n        int count = 0;\n        for (int i = 2; i <= n; i++) if (prime[i]) count++;\n        System.out.println(count);\n    }\n}",
+      "java": "// Java 17 Solution for: 217. Count Prime Numbers ≤ N\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #217: Count Prime Numbers ≤ N\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #217: Count Prime Numbers ≤ N\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #217: Count Prime Numbers ≤ N\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -14892,7 +14892,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 218. Compute Circle from Three Points\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        double x1 = in.nextDouble(), y1 = in.nextDouble();\n        double x2 = in.nextDouble(), y2 = in.nextDouble();\n        double x3 = in.nextDouble(), y3 = in.nextDouble();\n        double a = Math.hypot(x2 - x3, y2 - y3);\n        double b = Math.hypot(x1 - x3, y1 - y3);\n        double c = Math.hypot(x1 - x2, y1 - y2);\n        double area = Math.abs(x1*(y2-y3) + x2*(y3-y1) + x3*(y1-y2)) / 2.0;\n        double r = (a * b * c) / (4.0 * area);\n        System.out.printf(java.util.Locale.US, \"%.3f\\n\", r);\n    }\n}",
+      "java": "// Java 17 Solution for: 218. Compute Circle from Three Points\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #218: Compute Circle from Three Points\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #218: Compute Circle from Three Points\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #218: Compute Circle from Three Points\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -14961,7 +14961,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 219. Check Point Inside Triangle\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        double x1 = in.nextDouble(), y1 = in.nextDouble();\n        double x2 = in.nextDouble(), y2 = in.nextDouble();\n        double x3 = in.nextDouble(), y3 = in.nextDouble();\n        double xp = in.nextDouble(), yp = in.nextDouble();\n        double a = Math.abs((x1*(y2-y3) + x2*(y3-y1) + x3*(y1-y2))/2.0);\n        double a1 = Math.abs((xp*(y2-y3) + x2*(y3-yp) + x3*(yp-y2))/2.0);\n        double a2 = Math.abs((x1*(yp-y3) + xp*(y3-y1) + x3*(y1-yp))/2.0);\n        double a3 = Math.abs((x1*(y2-yp) + x2*(yp-y1) + xp*(y1-y2))/2.0);\n        System.out.println(Math.abs(a - (a1 + a2 + a3)) < 1e-6 && a1 > 0 && a2 > 0 && a3 > 0 ? \"YES\" : \"NO\");\n    }\n}",
+      "java": "// Java 17 Solution for: 219. Check Point Inside Triangle\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #219: Check Point Inside Triangle\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #219: Check Point Inside Triangle\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #219: Check Point Inside Triangle\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -15032,7 +15032,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 220. Sum of Two Large Integers with Overflow Check\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        java.math.BigInteger b1 = new java.math.BigInteger(in.next());\n        java.math.BigInteger b2 = new java.math.BigInteger(in.next());\n        String sum = b1.add(b2).toString();\n        System.out.println(sum.length() > 80 ? \"overflow\" : sum);\n    }\n}",
+      "java": "// Java 17 Solution for: 220. Sum of Two Large Integers with Overflow Check\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #220: Sum of Two Large Integers with Overflow Check\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #220: Sum of Two Large Integers with Overflow Check\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #220: Sum of Two Large Integers with Overflow Check\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -15100,7 +15100,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 221. Sort Six Numbers in Descending Order\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int[] a = new int[6];\n        for (int i = 0; i < 6; i++) a[i] = in.nextInt();\n        java.util.Arrays.sort(a);\n        StringBuilder sb = new StringBuilder();\n        for (int i = 5; i >= 0; i--) sb.append(a[i]).append(\" \");\n        System.out.println(sb.toString().trim());\n    }\n}",
+      "java": "// Java 17 Solution for: 221. Sort Six Numbers in Descending Order\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #221: Sort Six Numbers in Descending Order\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #221: Sort Six Numbers in Descending Order\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #221: Sort Six Numbers in Descending Order\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -15169,7 +15169,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 222. Test If Two Lines Are Parallel\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        double x1 = in.nextDouble(), y1 = in.nextDouble();\n        double x2 = in.nextDouble(), y2 = in.nextDouble();\n        double x3 = in.nextDouble(), y3 = in.nextDouble();\n        double x4 = in.nextDouble(), y4 = in.nextDouble();\n        double dy1 = y2 - y1, dx1 = x2 - x1;\n        double dy2 = y4 - y3, dx2 = x4 - x3;\n        boolean parallel = Math.abs(dy1 * dx2 - dy2 * dx1) < 1e-7;\n        System.out.println(parallel ? \"YES\" : \"NO\");\n    }\n}",
+      "java": "// Java 17 Solution for: 222. Test If Two Lines Are Parallel\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #222: Test If Two Lines Are Parallel\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #222: Test If Two Lines Are Parallel\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #222: Test If Two Lines Are Parallel\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -15237,7 +15237,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 223. Maximum Sum of Contiguous Subsequence\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int n = in.nextInt();\n        long max = Long.MIN_VALUE, cur = 0;\n        for (int i = 0; i < n; i++) {\n            long v = in.nextLong();\n            cur = Math.max(v, cur + v);\n            max = Math.max(max, cur);\n        }\n        System.out.println(max);\n    }\n}",
+      "java": "// Java 17 Solution for: 223. Maximum Sum of Contiguous Subsequence\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #223: Maximum Sum of Contiguous Subsequence\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #223: Maximum Sum of Contiguous Subsequence\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #223: Maximum Sum of Contiguous Subsequence\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -15306,7 +15306,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 224. Test Relationship Between Two Circles\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        double x1 = in.nextDouble(), y1 = in.nextDouble(), r1 = in.nextDouble();\n        double x2 = in.nextDouble(), y2 = in.nextDouble(), r2 = in.nextDouble();\n        double d = Math.hypot(x1 - x2, y1 - y2);\n        if (d > r1 + r2) System.out.println(\"Separate\");\n        else if (Math.abs(d - (r1 + r2)) < 1e-6 || Math.abs(d - Math.abs(r1 - r2)) < 1e-6) System.out.println(\"Touch\");\n        else if (d < Math.abs(r1 - r2)) System.out.println(\"Inside\");\n        else System.out.println(\"Intersect\");\n    }\n}",
+      "java": "// Java 17 Solution for: 224. Test Relationship Between Two Circles\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #224: Test Relationship Between Two Circles\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #224: Test Relationship Between Two Circles\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #224: Test Relationship Between Two Circles\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -15374,7 +15374,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 225. Find Day of the Week for a Date (2004)\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int m = in.nextInt(), d = in.nextInt();\n        java.time.LocalDate dt = java.time.LocalDate.of(2004, m, d);\n        String dow = dt.getDayOfWeek().toString();\n        System.out.println(dow.charAt(0) + dow.substring(1).toLowerCase());\n    }\n}",
+      "java": "// Java 17 Solution for: 225. Find Day of the Week for a Date (2004)\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #225: Find Day of the Week for a Date (2004)\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #225: Find Day of the Week for a Date (2004)\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #225: Find Day of the Week for a Date (2004)\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -15443,7 +15443,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 226. Find Mode Values in Integer Sequence\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int n = in.nextInt();\n        java.util.Map<Integer, Integer> counts = new java.util.HashMap<>();\n        int maxFreq = 0, mode = 0;\n        for (int i = 0; i < n; i++) {\n            int v = in.nextInt();\n            int f = counts.merge(v, 1, Integer::sum);\n            if (f > maxFreq) { maxFreq = f; mode = v; }\n        }\n        System.out.println(mode);\n    }\n}",
+      "java": "// Java 17 Solution for: 226. Find Mode Values in Integer Sequence\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #226: Find Mode Values in Integer Sequence\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #226: Find Mode Values in Integer Sequence\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #226: Find Mode Values in Integer Sequence\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -15513,7 +15513,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 227. Most Frequent and Longest Words in Text\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        String line = in.nextLine();\n        String[] words = line.split(\"\\\\s+\");\n        java.util.Map<String, Integer> freq = new java.util.HashMap<>();\n        String mostFreq = \"\", longest = \"\";\n        int maxF = 0;\n        for (String w : words) {\n            int f = freq.merge(w, 1, Integer::sum);\n            if (f > maxF) { maxF = f; mostFreq = w; }\n            if (w.length() > longest.length()) longest = w;\n        }\n        System.out.println(mostFreq + \" \" + longest);\n    }\n}",
+      "java": "// Java 17 Solution for: 227. Most Frequent and Longest Words in Text\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #227: Most Frequent and Longest Words in Text\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #227: Most Frequent and Longest Words in Text\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #227: Most Frequent and Longest Words in Text\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -15584,7 +15584,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 228. Count Combinations of Digits with Target Sum\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int n = in.nextInt(), s = in.nextInt();\n        System.out.println(count(0, n, s));\n    }\n    static int count(int start, int n, int s) {\n        if (n == 0) return s == 0 ? 1 : 0;\n        int res = 0;\n        for (int d = start; d <= 9; d++) if (s >= d) res += count(d + 1, n - 1, s - d);\n        return res;\n    }\n}",
+      "java": "// Java 17 Solution for: 228. Count Combinations of Digits with Target Sum\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #228: Count Combinations of Digits with Target Sum\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #228: Count Combinations of Digits with Target Sum\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #228: Count Combinations of Digits with Target Sum\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -15653,7 +15653,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 229. Check Rectangle or Rhombus from Parallelogram Sides\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int a = in.nextInt(), b = in.nextInt(), d = in.nextInt();\n        if (a * a + b * b == d * d) System.out.println(\"Rectangle\");\n        else if (a == b) System.out.println(\"Rhombus\");\n        else System.out.println(\"Neither\");\n    }\n}",
+      "java": "// Java 17 Solution for: 229. Check Rectangle or Rhombus from Parallelogram Sides\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #229: Check Rectangle or Rhombus from Parallelogram Sides\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #229: Check Rectangle or Rhombus from Parallelogram Sides\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #229: Check Rectangle or Rhombus from Parallelogram Sides\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -15721,7 +15721,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 230. Replace \"python\" with \"java\" and Vice Versa\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        String s = in.nextLine();\n        s = s.replaceAll(\"python\", \"###TEMP###\");\n        s = s.replaceAll(\"java\", \"python\");\n        s = s.replaceAll(\"###TEMP###\", \"java\");\n        System.out.println(s);\n    }\n}",
+      "java": "// Java 17 Solution for: 230. Replace \"python\" with \"java\" and Vice Versa\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #230: Replace \"python\" with \"java\" and Vice Versa\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #230: Replace \"python\" with \"java\" and Vice Versa\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #230: Replace \"python\" with \"java\" and Vice Versa\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -15789,7 +15789,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 231. Difference Between Largest and Smallest Integer\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        String s = in.next();\n        char[] c = s.toCharArray();\n        java.util.Arrays.sort(c);\n        long min = Long.parseLong(new String(c));\n        String maxS = new StringBuilder(new String(c)).reverse().toString();\n        long max = Long.parseLong(maxS);\n        System.out.println(max - min);\n    }\n}",
+      "java": "// Java 17 Solution for: 231. Difference Between Largest and Smallest Integer\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #231: Difference Between Largest and Smallest Integer\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #231: Difference Between Largest and Smallest Integer\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #231: Difference Between Largest and Smallest Integer\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -15858,7 +15858,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 232. Sum of First n Prime Numbers\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int n = in.nextInt();\n        long sum = 0; int count = 0, num = 2;\n        while (count < n) {\n            boolean p = true;\n            for (int i = 2; i * i <= num; i++) if (num % i == 0) { p = false; break; }\n            if (p) { sum += num; count++; }\n            num++;\n        }\n        System.out.println(sum);\n    }\n}",
+      "java": "// Java 17 Solution for: 232. Sum of First n Prime Numbers\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #232: Sum of First n Prime Numbers\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #232: Sum of First n Prime Numbers\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #232: Sum of First n Prime Numbers\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -15929,7 +15929,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 233. Goldbach Combinations of Even Number\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int n = in.nextInt();\n        boolean[] isP = new boolean[n + 1];\n        java.util.Arrays.fill(isP, true);\n        isP[0] = isP[1] = false;\n        for (int p = 2; p * p <= n; p++) if (isP[p]) for (int i = p * p; i <= n; i += p) isP[i] = false;\n        int count = 0;\n        for (int i = 2; i <= n / 2; i++) if (isP[i] && isP[n - i]) count++;\n        System.out.println(count);\n    }\n}",
+      "java": "// Java 17 Solution for: 233. Goldbach Combinations of Even Number\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #233: Goldbach Combinations of Even Number\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #233: Goldbach Combinations of Even Number\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #233: Goldbach Combinations of Even Number\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -16000,7 +16000,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 234. Maximum Regions from Straight Lines\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        long n = in.nextLong();\n        System.out.println(n * (n + 1) / 2 + 1);\n    }\n}",
+      "java": "// Java 17 Solution for: 234. Maximum Regions from Straight Lines\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #234: Maximum Regions from Straight Lines\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #234: Maximum Regions from Straight Lines\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #234: Maximum Regions from Straight Lines\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -16138,7 +16138,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 236. Sum of Numerical Values in a Sentence\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        String line = in.nextLine();\n        java.util.regex.Matcher m = java.util.regex.Pattern.compile(\"\\\\d+\").matcher(line);\n        long sum = 0;\n        while (m.find()) sum += Long.parseLong(m.group());\n        System.out.println(sum);\n    }\n}",
+      "java": "// Java 17 Solution for: 236. Sum of Numerical Values in a Sentence\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #236: Sum of Numerical Values in a Sentence\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #236: Sum of Numerical Values in a Sentence\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #236: Sum of Numerical Values in a Sentence\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -16207,7 +16207,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 237. Count Islands from Grid\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int r = in.nextInt(), c = in.nextInt();\n        int[][] g = new int[r][c];\n        for (int i = 0; i < r; i++) for (int j = 0; j < c; j++) g[i][j] = in.nextInt();\n        int count = 0;\n        for (int i = 0; i < r; i++) {\n            for (int j = 0; j < c; j++) {\n                if (g[i][j] == 1) { count++; dfs(g, i, j, r, c); }\n            }\n        }\n        System.out.println(count);\n    }\n    static void dfs(int[][] g, int i, int j, int r, int c) {\n        if (i < 0 || i >= r || j < 0 || j >= c || g[i][j] == 0) return;\n        g[i][j] = 0;\n        dfs(g, i+1, j, r, c); dfs(g, i-1, j, r, c); dfs(g, i, j+1, r, c); dfs(g, i, j-1, r, c);\n    }\n}",
+      "java": "// Java 17 Solution for: 237. Count Islands from Grid\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #237: Count Islands from Grid\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #237: Count Islands from Grid\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #237: Count Islands from Grid\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -16276,7 +16276,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 238. Restore String from Compression Rule\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        String s = in.next();\n        StringBuilder sb = new StringBuilder();\n        for (int i = 0; i < s.length(); i++) {\n            if (s.charAt(i) == '@') {\n                int n = s.charAt(++i) - '0';\n                char c = s.charAt(++i);\n                for (int k = 0; k < n; k++) sb.append(c);\n            } else sb.append(s.charAt(i));\n        }\n        System.out.println(sb.toString());\n    }\n}",
+      "java": "// Java 17 Solution for: 238. Restore String from Compression Rule\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #238: Restore String from Compression Rule\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #238: Restore String from Compression Rule\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #238: Restore String from Compression Rule\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -16344,7 +16344,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 239. Extract Words of Length 3 to 6 from Sentence\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        String line = in.nextLine();\n        String[] words = line.split(\"\\\\s+\");\n        StringBuilder sb = new StringBuilder();\n        for (String w : words) if (w.length() >= 3 && w.length() <= 6) sb.append(w).append(\" \");\n        System.out.println(sb.toString().trim());\n    }\n}",
+      "java": "// Java 17 Solution for: 239. Extract Words of Length 3 to 6 from Sentence\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #239: Extract Words of Length 3 to 6 from Sentence\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #239: Extract Words of Length 3 to 6 from Sentence\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #239: Extract Words of Length 3 to 6 from Sentence\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -16412,7 +16412,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 240. Maximum Path Sum from Hilltop Data\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int n = in.nextInt();\n        int[][] t = new int[n][n];\n        for (int i = 0; i < n; i++) for (int j = 0; j <= i; j++) t[i][j] = in.nextInt();\n        for (int i = n - 2; i >= 0; i--) for (int j = 0; j <= i; j++) t[i][j] += Math.max(t[i + 1][j], t[i + 1][j + 1]);\n        System.out.println(t[0][0]);\n    }\n}",
+      "java": "// Java 17 Solution for: 240. Maximum Path Sum from Hilltop Data\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #240: Maximum Path Sum from Hilltop Data\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #240: Maximum Path Sum from Hilltop Data\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #240: Maximum Path Sum from Hilltop Data\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -16481,7 +16481,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for: 241. Count Combinations Satisfying Sum of Variables\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int n = in.nextInt();\n        // Stars and bars: C(n + 3, 3) = (n + 1)(n + 2)(n + 3) / 6\n        long res = (long) (n + 1) * (n + 2) * (n + 3) / 6;\n        System.out.println(res);\n    }\n}",
+      "java": "// Java 17 Solution for: 241. Count Combinations Satisfying Sum of Variables\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #241: Count Combinations Satisfying Sum of Variables\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #241: Count Combinations Satisfying Sum of Variables\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #241: Count Combinations Satisfying Sum of Variables\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
