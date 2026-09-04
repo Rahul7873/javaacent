@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { 
   Search, 
@@ -35,28 +35,136 @@ export default function ProblemsPage() {
   const [currentPage, setCurrentPage] = useState(1);
   const pageSize = 25;
 
-  useEffect(() => {
-    async function fetchProblems() {
+  const goToPage = (page: number) => {
+    setCurrentPage(page);
+    if (typeof window !== 'undefined') {
       try {
-        setLoading(true);
-        const res = await fetch('/api/problems');
-        if (res.ok) {
-          const data = await res.json();
-          setProblems(data.problems || []);
-        }
-      } catch (err) {
-        console.error('Failed to load problems', err);
-      } finally {
-        setLoading(false);
-      }
+        localStorage.setItem('javaascent_problems_page', String(page));
+        const url = new URL(window.location.href);
+        url.searchParams.set('page', String(page));
+        window.history.pushState({}, '', url.toString());
+        localStorage.setItem('javaascent_last_catalog_url', `/problems?page=${page}`);
+      } catch (e) {}
     }
-    fetchProblems();
+  };
+
+  const handleSearchChange = (query: string) => {
+    setSearchQuery(query);
+    goToPage(1);
+  };
+
+  const handleCurriculumChange = (curr: 'All' | 'DSA' | 'Basic Practice') => {
+    setSelectedCurriculum(curr);
+    goToPage(1);
+    if (typeof window !== 'undefined') {
+      try {
+        localStorage.setItem('javaascent_problems_curriculum', curr);
+      } catch (e) {}
+    }
+  };
+
+  const handleDifficultyChange = (diff: string) => {
+    setSelectedDifficulty(diff);
+    goToPage(1);
+    if (typeof window !== 'undefined') {
+      try {
+        localStorage.setItem('javaascent_problems_diff', diff);
+      } catch (e) {}
+    }
+  };
+
+  const handleTopicChange = (topic: string) => {
+    setSelectedTopic(topic);
+    goToPage(1);
+    if (typeof window !== 'undefined') {
+      try {
+        localStorage.setItem('javaascent_problems_topic', topic);
+      } catch (e) {}
+    }
+  };
+
+  const handleStatusChange = (st: 'All' | 'Solved' | 'Attempted' | 'Todo') => {
+    setStatusFilter(st);
+    goToPage(1);
+    if (typeof window !== 'undefined') {
+      try {
+        localStorage.setItem('javaascent_problems_status', st);
+      } catch (e) {}
+    }
+  };
+
+  const handleResetFilters = () => {
+    setSearchQuery('');
+    setSelectedCurriculum('All');
+    setSelectedDifficulty('All');
+    setSelectedTopic('All');
+    setStatusFilter('All');
+    goToPage(1);
+    if (typeof window !== 'undefined') {
+      try {
+        localStorage.removeItem('javaascent_problems_curriculum');
+        localStorage.removeItem('javaascent_problems_diff');
+        localStorage.removeItem('javaascent_problems_topic');
+        localStorage.removeItem('javaascent_problems_status');
+      } catch (e) {}
+    }
+  };
+
+  // Restore saved shared preferences on initial mount
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    try {
+      const searchParams = new URLSearchParams(window.location.search);
+      const urlPage = searchParams.get('page');
+      const savedPage = localStorage.getItem('javaascent_problems_page');
+      
+      let targetPage = 1;
+      if (urlPage && !isNaN(Number(urlPage)) && Number(urlPage) > 0) {
+        targetPage = Number(urlPage);
+      } else if (savedPage && !isNaN(Number(savedPage)) && Number(savedPage) > 0) {
+        targetPage = Number(savedPage);
+      }
+      setCurrentPage(targetPage);
+
+      const savedCurriculum = localStorage.getItem('javaascent_problems_curriculum');
+      if (savedCurriculum) setSelectedCurriculum(savedCurriculum as any);
+
+      const savedDiff = localStorage.getItem('javaascent_problems_diff');
+      if (savedDiff) setSelectedDifficulty(savedDiff);
+
+      const savedTopic = localStorage.getItem('javaascent_problems_topic');
+      if (savedTopic) setSelectedTopic(savedTopic);
+
+      const savedStatus = localStorage.getItem('javaascent_problems_status');
+      if (savedStatus) setStatusFilter(savedStatus as any);
+
+      localStorage.setItem('javaascent_last_catalog_url', `/problems?page=${targetPage}`);
+    } catch (e) {
+      console.warn('Could not restore problems catalog preferences', e);
+    }
   }, []);
 
-  // Reset page on filter changes
+  // Sync browser back/forward buttons
   useEffect(() => {
-    setCurrentPage(1);
-  }, [searchQuery, selectedCurriculum, selectedDifficulty, selectedTopic, statusFilter]);
+    const handlePopState = () => {
+      const params = new URLSearchParams(window.location.search);
+      const p = params.get('page');
+      if (p && !isNaN(Number(p)) && Number(p) > 0) {
+        setCurrentPage(Number(p));
+      }
+    };
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
+
+  const handleProblemClick = () => {
+    if (typeof window !== 'undefined') {
+      try {
+        localStorage.setItem('javaascent_problems_page', String(currentPage));
+        localStorage.setItem('javaascent_last_catalog_url', `/problems?page=${currentPage}`);
+      } catch (e) {}
+    }
+  };
 
   // Collect unique topics
   const allTopics = Array.from(
@@ -152,7 +260,7 @@ export default function ProblemsPage() {
         <div className="flex flex-wrap items-center justify-between gap-3 bg-[#0d1220] p-2.5 rounded-2xl border border-slate-800 shadow-md">
           <div className="flex items-center space-x-1.5 overflow-x-auto">
             <button
-              onClick={() => setSelectedCurriculum('All')}
+              onClick={() => handleCurriculumChange('All')}
               className={`px-3.5 py-2 rounded-xl text-xs font-semibold transition-all ${
                 selectedCurriculum === 'All'
                   ? 'bg-indigo-600 text-white shadow-md shadow-indigo-600/20'
@@ -162,7 +270,7 @@ export default function ProblemsPage() {
               All Curricula ({totalCount})
             </button>
             <button
-              onClick={() => setSelectedCurriculum('DSA')}
+              onClick={() => handleCurriculumChange('DSA')}
               className={`px-3.5 py-2 rounded-xl text-xs font-semibold transition-all ${
                 selectedCurriculum === 'DSA'
                   ? 'bg-indigo-600 text-white shadow-md shadow-indigo-600/20'
@@ -172,7 +280,7 @@ export default function ProblemsPage() {
               Algorithms & DSA ({dsaCount})
             </button>
             <button
-              onClick={() => setSelectedCurriculum('Basic Practice')}
+              onClick={() => handleCurriculumChange('Basic Practice')}
               className={`px-3.5 py-2 rounded-xl text-xs font-semibold transition-all ${
                 selectedCurriculum === 'Basic Practice'
                   ? 'bg-amber-500 text-slate-950 shadow-md shadow-amber-500/20'
@@ -203,7 +311,7 @@ export default function ProblemsPage() {
                 type="text"
                 placeholder="Search by title, topic, or keyword..."
                 value={searchQuery}
-                onChange={e => setSearchQuery(e.target.value)}
+                onChange={e => handleSearchChange(e.target.value)}
                 className="w-full pl-9 pr-3 py-2 rounded-lg bg-slate-900/90 border border-slate-700/80 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-indigo-500"
               />
             </div>
@@ -213,7 +321,7 @@ export default function ProblemsPage() {
               {['All', 'Easy', 'Medium', 'Hard'].map(diff => (
                 <button
                   key={diff}
-                  onClick={() => setSelectedDifficulty(diff)}
+                  onClick={() => handleDifficultyChange(diff)}
                   className={`px-3 py-1.5 rounded-md font-medium transition-colors ${
                     selectedDifficulty === diff
                       ? 'bg-indigo-600 text-white shadow'
@@ -230,7 +338,7 @@ export default function ProblemsPage() {
               {(['All', 'Solved', 'Attempted', 'Todo'] as const).map(st => (
                 <button
                   key={st}
-                  onClick={() => setStatusFilter(st)}
+                  onClick={() => handleStatusChange(st)}
                   className={`px-3 py-1.5 rounded-md font-medium transition-colors ${
                     statusFilter === st
                       ? 'bg-slate-800 text-indigo-400 border border-indigo-500/40'
@@ -250,7 +358,7 @@ export default function ProblemsPage() {
               <span>Topics:</span>
             </span>
             <button
-              onClick={() => setSelectedTopic('All')}
+              onClick={() => handleTopicChange('All')}
               className={`px-2.5 py-1 rounded-full text-xs font-mono shrink-0 transition-colors ${
                 selectedTopic === 'All'
                   ? 'bg-indigo-500/20 text-indigo-300 border border-indigo-500/40'
@@ -262,7 +370,7 @@ export default function ProblemsPage() {
             {allTopics.map(topic => (
               <button
                 key={topic}
-                onClick={() => setSelectedTopic(topic)}
+                onClick={() => handleTopicChange(topic)}
                 className={`px-2.5 py-1 rounded-full text-xs font-mono shrink-0 transition-colors ${
                   selectedTopic === topic
                     ? 'bg-indigo-500/20 text-indigo-300 border border-indigo-500/40'
@@ -287,12 +395,7 @@ export default function ProblemsPage() {
               <Code2 className="w-10 h-10 text-slate-600 mx-auto" />
               <p className="text-sm">No problems match your current search and filters.</p>
               <button
-                onClick={() => {
-                  setSearchQuery('');
-                  setSelectedDifficulty('All');
-                  setSelectedTopic('All');
-                  setStatusFilter('All');
-                }}
+                onClick={handleResetFilters}
                 className="text-xs text-indigo-400 hover:underline"
               >
                 Clear all filters
@@ -336,6 +439,7 @@ export default function ProblemsPage() {
                         <td className="py-3.5 px-4">
                           <Link
                             href={`/problems/${prob.slug}`}
+                            onClick={handleProblemClick}
                             className="font-semibold text-slate-100 group-hover:text-indigo-400 transition-colors flex items-center space-x-2"
                           >
                             <span>{prob.title}</span>
@@ -380,6 +484,7 @@ export default function ProblemsPage() {
                         <td className="py-3.5 px-4 text-right">
                           <Link
                             href={`/problems/${prob.slug}`}
+                            onClick={handleProblemClick}
                             className="inline-flex items-center space-x-1 px-3 py-1.5 rounded-lg bg-indigo-600/20 hover:bg-indigo-600 text-indigo-300 hover:text-white border border-indigo-500/30 font-medium transition-colors"
                           >
                             <span>Solve</span>
@@ -400,7 +505,7 @@ export default function ProblemsPage() {
                   </div>
                   <div className="flex items-center space-x-2">
                     <button
-                      onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
+                      onClick={() => goToPage(Math.max(1, currentPage - 1))}
                       disabled={currentPage === 1}
                       className="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 hover:text-white disabled:opacity-40 disabled:cursor-not-allowed border border-slate-700 flex items-center space-x-1"
                     >
@@ -411,7 +516,7 @@ export default function ProblemsPage() {
                       Page {currentPage} / {totalPages}
                     </span>
                     <button
-                      onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
+                      onClick={() => goToPage(Math.min(totalPages, currentPage + 1))}
                       disabled={currentPage === totalPages}
                       className="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 hover:text-white disabled:opacity-40 disabled:cursor-not-allowed border border-slate-700 flex items-center space-x-1"
                     >

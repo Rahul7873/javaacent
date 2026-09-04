@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, use } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { 
   Play, 
   Send, 
@@ -40,6 +41,7 @@ export default function ProblemWorkspacePage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = use(params);
+  const router = useRouter();
   const { refreshProgress, isSolved } = usePlatform();
 
   const [problem, setProblem] = useState<Problem | null>(null);
@@ -59,6 +61,22 @@ export default function ProblemWorkspacePage({
   const [isJavaSheetOpen, setIsJavaSheetOpen] = useState(false);
   const [submissionsList, setSubmissionsList] = useState<Submission[]>([]);
 
+  // Smart back navigation preserving previous page & filters
+  const handleBack = () => {
+    if (typeof window !== 'undefined') {
+      const lastCatalog = localStorage.getItem('javaascent_last_catalog_url');
+      if (lastCatalog) {
+        router.push(lastCatalog);
+        return;
+      }
+    }
+    if (problem?.category === 'Basic Practice') {
+      router.push('/basic-practice');
+    } else {
+      router.push('/problems');
+    }
+  };
+
   // Fetch problem details
   useEffect(() => {
     async function loadProblem() {
@@ -70,8 +88,16 @@ export default function ProblemWorkspacePage({
         }
         const data: Problem = await res.json();
         setProblem(data);
-        // Default starter code to Java 17
-        setCode(data.starterCode.java || data.starterCode.python || '');
+        
+        // Restore user's in-progress code from localStorage (shared preferences) or use starter code
+        let initialCode = data.starterCode.java || data.starterCode.python || '';
+        if (typeof window !== 'undefined') {
+          const saved = localStorage.getItem(`javaascent_code_${data.id}_java`);
+          if (saved && saved.trim()) {
+            initialCode = saved;
+          }
+        }
+        setCode(initialCode);
       } catch (err: any) {
         setError(err.message || 'Failed to load problem');
       } finally {
@@ -81,18 +107,40 @@ export default function ProblemWorkspacePage({
     loadProblem();
   }, [slug]);
 
-  // Update starter code when language changes
-  const handleLanguageChange = (newLang: Language) => {
-    setLanguage(newLang);
-    if (problem?.starterCode[newLang]) {
-      setCode(problem.starterCode[newLang]);
+  // Handle code edit with localStorage persistence
+  const handleCodeChange = (newCode: string) => {
+    setCode(newCode);
+    if (problem && typeof window !== 'undefined') {
+      try {
+        localStorage.setItem(`javaascent_code_${problem.id}_${language}`, newCode);
+      } catch (e) {}
     }
   };
 
-  // Reset code to current language's starter template
+  // Update code when language changes
+  const handleLanguageChange = (newLang: Language) => {
+    setLanguage(newLang);
+    if (problem) {
+      let langCode = problem.starterCode[newLang] || '';
+      if (typeof window !== 'undefined') {
+        const saved = localStorage.getItem(`javaascent_code_${problem.id}_${newLang}`);
+        if (saved && saved.trim()) {
+          langCode = saved;
+        }
+      }
+      setCode(langCode);
+    }
+  };
+
+  // Reset code to current language's starter template and clear saved preference
   const handleResetCode = () => {
     if (problem && problem.starterCode[language]) {
       setCode(problem.starterCode[language]);
+      if (typeof window !== 'undefined') {
+        try {
+          localStorage.removeItem(`javaascent_code_${problem.id}_${language}`);
+        } catch (e) {}
+      }
     }
   };
 
@@ -197,12 +245,12 @@ export default function ProblemWorkspacePage({
           <p className="text-slate-400 text-sm mb-4">
             The problem "{slug}" could not be loaded or does not exist.
           </p>
-          <Link
-            href="/problems"
+          <button
+            onClick={handleBack}
             className="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg text-sm transition-colors"
           >
             Back to Problems
-          </Link>
+          </button>
         </div>
       </div>
     );
@@ -217,13 +265,13 @@ export default function ProblemWorkspacePage({
       {/* Top Workspace Action Ribbon */}
       <div className="h-12 bg-[#0b0f1a] border-b border-slate-800/80 px-4 flex items-center justify-between shrink-0">
         <div className="flex items-center space-x-3">
-          <Link
-            href="/problems"
+          <button
+            onClick={handleBack}
             className="p-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-white border border-slate-800 transition-colors"
-            title="Back to Problems Catalog"
+            title="Back to Previous Page"
           >
             <ChevronLeft className="w-4 h-4" />
-          </Link>
+          </button>
 
           <div className="flex items-center space-x-2">
             <h1 className="text-sm font-semibold text-white tracking-tight flex items-center space-x-2">
@@ -582,7 +630,7 @@ export default function ProblemWorkspacePage({
             <MonacoEditor
               language={language}
               value={code}
-              onChange={setCode}
+              onChange={handleCodeChange}
               onReset={handleResetCode}
             />
           </div>

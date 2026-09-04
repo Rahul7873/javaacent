@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { 
   Search, 
@@ -31,7 +31,7 @@ export default function BasicPracticePage() {
   const [problems, setProblems] = useState<Problem[]>([]);
   const [loading, setLoading] = useState(true);
 
-  // Filters
+  // Filters & State
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedPart, setSelectedPart] = useState<'All' | 1 | 2>('All');
   const [selectedDifficulty, setSelectedDifficulty] = useState<string>('All');
@@ -44,9 +44,130 @@ export default function BasicPracticePage() {
   const [previewProblem, setPreviewProblem] = useState<Problem | null>(null);
   const [copiedCode, setCopiedCode] = useState(false);
 
+  // Explicit pagination change with pushState & shared preferences
+  const goToPage = (page: number) => {
+    setCurrentPage(page);
+    if (typeof window !== 'undefined') {
+      try {
+        localStorage.setItem('javaascent_basic_page', String(page));
+        const url = new URL(window.location.href);
+        url.searchParams.set('page', String(page));
+        window.history.pushState({}, '', url.toString());
+        localStorage.setItem('javaascent_last_catalog_url', `/basic-practice?page=${page}`);
+      } catch (e) {}
+    }
+  };
+
+  const handleSearchChange = (query: string) => {
+    setSearchQuery(query);
+    goToPage(1);
+  };
+
+  const handlePartChange = (part: 'All' | 1 | 2) => {
+    setSelectedPart(part);
+    goToPage(1);
+    if (typeof window !== 'undefined') {
+      try {
+        localStorage.setItem('javaascent_basic_part', String(part));
+      } catch (e) {}
+    }
+  };
+
+  const handleDifficultyChange = (diff: string) => {
+    setSelectedDifficulty(diff);
+    goToPage(1);
+    if (typeof window !== 'undefined') {
+      try {
+        localStorage.setItem('javaascent_basic_diff', diff);
+      } catch (e) {}
+    }
+  };
+
+  const handleTopicChange = (topic: string) => {
+    setSelectedTopic(topic);
+    goToPage(1);
+    if (typeof window !== 'undefined') {
+      try {
+        localStorage.setItem('javaascent_basic_topic', topic);
+      } catch (e) {}
+    }
+  };
+
+  const handleStatusChange = (st: 'All' | 'Solved' | 'Attempted' | 'Todo') => {
+    setStatusFilter(st);
+    goToPage(1);
+    if (typeof window !== 'undefined') {
+      try {
+        localStorage.setItem('javaascent_basic_status', st);
+      } catch (e) {}
+    }
+  };
+
+  const handleResetFilters = () => {
+    setSearchQuery('');
+    setSelectedPart('All');
+    setSelectedDifficulty('All');
+    setSelectedTopic('All');
+    setStatusFilter('All');
+    goToPage(1);
+    if (typeof window !== 'undefined') {
+      try {
+        localStorage.removeItem('javaascent_basic_part');
+        localStorage.removeItem('javaascent_basic_diff');
+        localStorage.removeItem('javaascent_basic_topic');
+        localStorage.removeItem('javaascent_basic_status');
+      } catch (e) {}
+    }
+  };
+
+  // Restore saved shared preferences from URL & localStorage on initial mount
   useEffect(() => {
-    setCurrentPage(1);
-  }, [searchQuery, selectedPart, selectedDifficulty, selectedTopic, statusFilter]);
+    if (typeof window === 'undefined') return;
+    try {
+      const searchParams = new URLSearchParams(window.location.search);
+      const urlPage = searchParams.get('page');
+      const savedPage = localStorage.getItem('javaascent_basic_page');
+      
+      let targetPage = 1;
+      if (urlPage && !isNaN(Number(urlPage)) && Number(urlPage) > 0) {
+        targetPage = Number(urlPage);
+      } else if (savedPage && !isNaN(Number(savedPage)) && Number(savedPage) > 0) {
+        targetPage = Number(savedPage);
+      }
+      setCurrentPage(targetPage);
+
+      const savedPart = localStorage.getItem('javaascent_basic_part');
+      if (savedPart === '1' || savedPart === '2') {
+        setSelectedPart(Number(savedPart) as 1 | 2);
+      }
+
+      const savedDiff = localStorage.getItem('javaascent_basic_diff');
+      if (savedDiff) setSelectedDifficulty(savedDiff);
+
+      const savedTopic = localStorage.getItem('javaascent_basic_topic');
+      if (savedTopic) setSelectedTopic(savedTopic);
+
+      const savedStatus = localStorage.getItem('javaascent_basic_status');
+      if (savedStatus) setStatusFilter(savedStatus as any);
+
+      localStorage.setItem('javaascent_last_catalog_url', `/basic-practice?page=${targetPage}`);
+    } catch (e) {
+      console.warn('Could not restore basic practice preferences', e);
+    }
+  }, []);
+
+  // Sync browser back/forward buttons
+  useEffect(() => {
+    const handlePopState = () => {
+      const params = new URLSearchParams(window.location.search);
+      const p = params.get('page');
+      if (p && !isNaN(Number(p)) && Number(p) > 0) {
+        setCurrentPage(Number(p));
+      }
+    };
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
 
   useEffect(() => {
     async function fetchBasicProblems() {
@@ -65,6 +186,15 @@ export default function BasicPracticePage() {
     }
     fetchBasicProblems();
   }, []);
+
+  const handleProblemClick = () => {
+    if (typeof window !== 'undefined') {
+      try {
+        localStorage.setItem('javaascent_basic_page', String(currentPage));
+        localStorage.setItem('javaascent_last_catalog_url', `/basic-practice?page=${currentPage}`);
+      } catch (e) {}
+    }
+  };
 
   // Filtered list
   const filteredProblems = problems.filter(prob => {
@@ -202,7 +332,7 @@ export default function BasicPracticePage() {
         <div className="flex flex-wrap items-center justify-between gap-4 border-b border-slate-800 pb-4">
           <div className="flex items-center space-x-2 bg-[#0c101c] p-1.5 rounded-xl border border-slate-800">
             <button
-              onClick={() => setSelectedPart('All')}
+              onClick={() => handlePartChange('All')}
               className={`px-4 py-2 rounded-lg text-xs font-semibold transition-all ${
                 selectedPart === 'All'
                   ? 'bg-amber-500 text-slate-950 shadow-md shadow-amber-500/20'
@@ -212,7 +342,7 @@ export default function BasicPracticePage() {
               All Exercises ({problems.length})
             </button>
             <button
-              onClick={() => setSelectedPart(1)}
+              onClick={() => handlePartChange(1)}
               className={`px-4 py-2 rounded-lg text-xs font-semibold transition-all ${
                 selectedPart === 1
                   ? 'bg-amber-500 text-slate-950 shadow-md shadow-amber-500/20'
@@ -222,7 +352,7 @@ export default function BasicPracticePage() {
               Part-I: Foundations (1–150)
             </button>
             <button
-              onClick={() => setSelectedPart(2)}
+              onClick={() => handlePartChange(2)}
               className={`px-4 py-2 rounded-lg text-xs font-semibold transition-all ${
                 selectedPart === 2
                   ? 'bg-amber-500 text-slate-950 shadow-md shadow-amber-500/20'
@@ -238,7 +368,7 @@ export default function BasicPracticePage() {
             {(['All', 'Solved', 'Attempted', 'Todo'] as const).map(st => (
               <button
                 key={st}
-                onClick={() => setStatusFilter(st)}
+                onClick={() => handleStatusChange(st)}
                 className={`px-3 py-1.5 rounded-lg font-medium transition-colors ${
                   statusFilter === st
                     ? 'bg-slate-800 text-amber-400 border border-amber-500/30'
@@ -261,7 +391,7 @@ export default function BasicPracticePage() {
                 type="text"
                 placeholder="Search by exercise number, title, or topic..."
                 value={searchQuery}
-                onChange={e => setSearchQuery(e.target.value)}
+                onChange={e => handleSearchChange(e.target.value)}
                 className="w-full pl-10 pr-4 py-2 rounded-xl bg-slate-900/90 border border-slate-700/80 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-amber-500 transition-colors"
               />
             </div>
@@ -271,7 +401,7 @@ export default function BasicPracticePage() {
               {['All', 'Easy', 'Medium'].map(diff => (
                 <button
                   key={diff}
-                  onClick={() => setSelectedDifficulty(diff)}
+                  onClick={() => handleDifficultyChange(diff)}
                   className={`px-3 py-1.5 rounded-lg font-medium transition-colors ${
                     selectedDifficulty === diff
                       ? 'bg-amber-500/20 text-amber-300 border border-amber-500/40'
@@ -293,7 +423,7 @@ export default function BasicPracticePage() {
             {TOPIC_OPTIONS.map(topic => (
               <button
                 key={topic}
-                onClick={() => setSelectedTopic(topic)}
+                onClick={() => handleTopicChange(topic)}
                 className={`px-3 py-1 rounded-full text-xs font-mono shrink-0 transition-colors ${
                   selectedTopic === topic
                     ? 'bg-amber-500/20 text-amber-300 border border-amber-500/50'
@@ -312,14 +442,9 @@ export default function BasicPracticePage() {
             Showing {filteredProblems.length > 0 ? (currentPage - 1) * pageSize + 1 : 0} -{' '}
             {Math.min(currentPage * pageSize, filteredProblems.length)} of {filteredProblems.length} exercises (Page {currentPage} of {totalPages})
           </span>
-          {(searchQuery || selectedTopic !== 'All' || selectedDifficulty !== 'All' || statusFilter !== 'All') && (
+          {(searchQuery || selectedTopic !== 'All' || selectedDifficulty !== 'All' || statusFilter !== 'All' || selectedPart !== 'All') && (
             <button
-              onClick={() => {
-                setSearchQuery('');
-                setSelectedTopic('All');
-                setSelectedDifficulty('All');
-                setStatusFilter('All');
-              }}
+              onClick={handleResetFilters}
               className="text-amber-400 hover:underline flex items-center space-x-1"
             >
               <span>Reset filters</span>
@@ -400,6 +525,7 @@ export default function BasicPracticePage() {
                       {/* Title */}
                       <Link
                         href={`/problems/${prob.slug}`}
+                        onClick={handleProblemClick}
                         className="font-bold text-sm text-slate-100 group-hover:text-amber-400 transition-colors block line-clamp-1"
                       >
                         {prob.title}
@@ -435,6 +561,7 @@ export default function BasicPracticePage() {
 
                       <Link
                         href={`/problems/${prob.slug}`}
+                        onClick={handleProblemClick}
                         className="inline-flex items-center space-x-1 px-3 py-1.5 rounded-xl bg-amber-500/10 hover:bg-amber-500 text-amber-300 hover:text-slate-950 font-semibold border border-amber-500/30 transition-all text-xs"
                       >
                         <span>Solve in Java 17</span>
@@ -456,7 +583,7 @@ export default function BasicPracticePage() {
                 <div className="flex items-center space-x-1.5">
                   <button
                     onClick={() => {
-                      setCurrentPage(prev => Math.max(1, prev - 1));
+                      goToPage(Math.max(1, currentPage - 1));
                       window.scrollTo({ top: 400, behavior: 'smooth' });
                     }}
                     disabled={currentPage === 1}
@@ -478,7 +605,7 @@ export default function BasicPracticePage() {
                             )}
                             <button
                               onClick={() => {
-                                setCurrentPage(page);
+                                goToPage(page);
                                 window.scrollTo({ top: 400, behavior: 'smooth' });
                               }}
                               className={`w-8 h-8 rounded-lg flex items-center justify-center font-bold transition-all ${
@@ -496,7 +623,7 @@ export default function BasicPracticePage() {
 
                   <button
                     onClick={() => {
-                      setCurrentPage(prev => Math.min(totalPages, prev + 1));
+                      goToPage(Math.min(totalPages, currentPage + 1));
                       window.scrollTo({ top: 400, behavior: 'smooth' });
                     }}
                     disabled={currentPage === totalPages}
@@ -604,6 +731,7 @@ export default function BasicPracticePage() {
 
                 <Link
                   href={`/problems/${previewProblem.slug}`}
+                  onClick={handleProblemClick}
                   className="px-5 py-2 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs flex items-center space-x-2 transition-colors shadow-lg shadow-amber-500/20"
                 >
                   <Code2 className="w-4 h-4" />
