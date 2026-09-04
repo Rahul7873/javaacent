@@ -27,7 +27,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #1: Hello and Name Printer\n// Problem: Hello and Name Printer\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #1: Hello and Name Printer\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 1. Hello and Name Printer\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #1: Hello and Name Printer\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #1: Hello and Name Printer\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #1: Hello and Name Printer\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -37,16 +37,23 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       {
         "id": "tc-basic-1-1",
         "input": "Alexandra Abramov",
-        "expectedOutput": "Hello Alexandra Abramov",
+        "expectedOutput": "Hello\nAlexandra Abramov",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-1-2",
-        "input": "Alexandra Abramov",
-        "expectedOutput": "Hello Alexandra Abramov",
+        "input": "Rahul Sharma",
+        "expectedOutput": "Hello\nRahul Sharma",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-1-3",
+        "input": "John Doe",
+        "expectedOutput": "Hello\nJohn Doe",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -89,7 +96,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #2: Sum of Two Numbers\n// Problem: Sum of Two Numbers\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #2: Sum of Two Numbers\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 2. Sum of Two Numbers\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #2: Sum of Two Numbers\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #2: Sum of Two Numbers\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #2: Sum of Two Numbers\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -98,17 +105,24 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
     "testCases": [
       {
         "id": "tc-basic-2-1",
-        "input": "74 + 36",
+        "input": "74 36",
         "expectedOutput": "110",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-2-2",
-        "input": "74 + 36",
-        "expectedOutput": "110",
+        "input": "25 45",
+        "expectedOutput": "70",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-2-3",
+        "input": "100 250",
+        "expectedOutput": "350",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -151,7 +165,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #3: Division of Two Numbers\n// Problem: Division of Two Numbers\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #3: Division of Two Numbers\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 3. Division of Two Numbers\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #3: Division of Two Numbers\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #3: Division of Two Numbers\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #3: Division of Two Numbers\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -160,17 +174,24 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
     "testCases": [
       {
         "id": "tc-basic-3-1",
-        "input": "50/3",
+        "input": "50 3",
         "expectedOutput": "16",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-3-2",
-        "input": "50/3",
-        "expectedOutput": "16",
+        "input": "100 4",
+        "expectedOutput": "25",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-3-3",
+        "input": "27 5",
+        "expectedOutput": "5",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -213,7 +234,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #4: Arithmetic Operations\n// Problem: Arithmetic Operations\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #4: Arithmetic Operations\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 4. Arithmetic Operations\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #4: Arithmetic Operations\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #4: Arithmetic Operations\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #4: Arithmetic Operations\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -222,17 +243,24 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
     "testCases": [
       {
         "id": "tc-basic-4-1",
-        "input": "a. -5 + 8 * 6, b. (55+9) % 9, c. 20 + -3*5 / 8, d. 5 + 15 / 3 * 2 - 8 % 3",
-        "expectedOutput": "43 1 19 13",
+        "input": "",
+        "expectedOutput": "43\n1\n19\n13",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-4-2",
-        "input": "a. -5 + 8 * 6, b. (55+9) % 9, c. 20 + -3*5 / 8, d. 5 + 15 / 3 * 2 - 8 % 3",
-        "expectedOutput": "43 1 19 13",
+        "input": "",
+        "expectedOutput": "43\n1\n19\n13",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-4-3",
+        "input": "",
+        "expectedOutput": "43\n1\n19\n13",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -275,7 +303,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #5: Product of Two Numbers\n// Problem: Product of Two Numbers\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #5: Product of Two Numbers\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 5. Product of Two Numbers\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #5: Product of Two Numbers\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #5: Product of Two Numbers\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #5: Product of Two Numbers\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -284,17 +312,24 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
     "testCases": [
       {
         "id": "tc-basic-5-1",
-        "input": "and displays the product of two numbers., Test Data:, Input first number: 25, Input second number: 5",
-        "expectedOutput": "25 x 5 = 125",
+        "input": "25 5",
+        "expectedOutput": "125",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-5-2",
-        "input": "and displays the product of two numbers., Test Data:, Input first number: 25, Input second number: 5",
-        "expectedOutput": "25 x 5 = 125",
+        "input": "12 4",
+        "expectedOutput": "48",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-5-3",
+        "input": "7 9",
+        "expectedOutput": "63",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -337,7 +372,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #6: Basic Arithmetic Operations\n// Problem: Basic Arithmetic Operations\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #6: Basic Arithmetic Operations\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 6. Basic Arithmetic Operations\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #6: Basic Arithmetic Operations\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #6: Basic Arithmetic Operations\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #6: Basic Arithmetic Operations\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -346,17 +381,24 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
     "testCases": [
       {
         "id": "tc-basic-6-1",
-        "input": "Input first number: 125, Input second number: 24",
-        "expectedOutput": "125 + 24 = 149 125 - 24 = 101 125 x 24 = 3000 125 / 24 = 5 125 mod 24 = 5",
+        "input": "125 24",
+        "expectedOutput": "149\n101\n3000\n5\n5",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-6-2",
-        "input": "Input first number: 125, Input second number: 24",
-        "expectedOutput": "125 + 24 = 149 125 - 24 = 101 125 x 24 = 3000 125 / 24 = 5 125 mod 24 = 5",
+        "input": "20 4",
+        "expectedOutput": "24\n16\n80\n5\n0",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-6-3",
+        "input": "50 10",
+        "expectedOutput": "60\n40\n500\n5\n0",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -399,7 +441,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #7: Multiplication Table\n// Problem: Multiplication Table\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #7: Multiplication Table\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 7. Multiplication Table\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #7: Multiplication Table\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #7: Multiplication Table\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #7: Multiplication Table\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -408,17 +450,24 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
     "testCases": [
       {
         "id": "tc-basic-7-1",
-        "input": "and prints its multiplication table up to 10., Test Data:, Input a number: 8",
-        "expectedOutput": "8 x 1 = 8 8 x 2 = 16 8 x 3 = 24 ... 8 x 10 = 80",
+        "input": "8",
+        "expectedOutput": "8 x 1 = 8\n8 x 2 = 16\n8 x 3 = 24\n8 x 4 = 32\n8 x 5 = 40\n8 x 6 = 48\n8 x 7 = 56\n8 x 8 = 64\n8 x 9 = 72\n8 x 10 = 80",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-7-2",
-        "input": "and prints its multiplication table up to 10., Test Data:, Input a number: 8",
-        "expectedOutput": "8 x 1 = 8 8 x 2 = 16 8 x 3 = 24 ... 8 x 10 = 80",
+        "input": "5",
+        "expectedOutput": "5 x 1 = 5\n5 x 2 = 10\n5 x 3 = 15\n5 x 4 = 20\n5 x 5 = 25\n5 x 6 = 30\n5 x 7 = 35\n5 x 8 = 40\n5 x 9 = 45\n5 x 10 = 50",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-7-3",
+        "input": "9",
+        "expectedOutput": "9 x 1 = 9\n9 x 2 = 18\n9 x 3 = 27\n9 x 4 = 36\n9 x 5 = 45\n9 x 6 = 54\n9 x 7 = 63\n9 x 8 = 72\n9 x 9 = 81\n9 x 10 = 90",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -461,7 +510,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #8: Pattern Display: JAVA\n// Problem: Pattern Display: JAVA\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #8: Pattern Display: JAVA\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 8. Pattern Display: JAVA\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #8: Pattern Display: JAVA\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #8: Pattern Display: JAVA\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #8: Pattern Display: JAVA\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -470,17 +519,24 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
     "testCases": [
       {
         "id": "tc-basic-8-1",
-        "input": "Standard input / variables",
-        "expectedOutput": "Target calculation or printed output",
+        "input": "",
+        "expectedOutput": "   J    a   v     v  a   \n   J   a a   v   v  a a  \nJ  J  aaaaa   V V  aaaaa \n JJ  a     a   V  a     a",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-8-2",
-        "input": "Standard input / variables",
-        "expectedOutput": "Target calculation or printed output",
+        "input": "",
+        "expectedOutput": "   J    a   v     v  a   \n   J   a a   v   v  a a  \nJ  J  aaaaa   V V  aaaaa \n JJ  a     a   V  a     a",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-8-3",
+        "input": "",
+        "expectedOutput": "   J    a   v     v  a   \n   J   a a   v   v  a a  \nJ  J  aaaaa   V V  aaaaa \n JJ  a     a   V  a     a",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -524,7 +580,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #9: Expression Evaluation\n// Problem: Expression Evaluation\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #9: Expression Evaluation\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 9. Expression Evaluation\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #9: Expression Evaluation\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #9: Expression Evaluation\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #9: Expression Evaluation\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -533,17 +589,24 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
     "testCases": [
       {
         "id": "tc-basic-9-1",
-        "input": "((25.5 * 3.5 - 3.5 * 3.5) / (40.5 - 4.5))",
+        "input": "",
         "expectedOutput": "2.138888888888889",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-9-2",
-        "input": "((25.5 * 3.5 - 3.5 * 3.5) / (40.5 - 4.5))",
+        "input": "",
+        "expectedOutput": "2.138888888888889",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-9-3",
+        "input": "",
         "expectedOutput": "2.138888888888889",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -586,7 +649,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #10: Formula Computation\n// Problem: Formula Computation\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #10: Formula Computation\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 10. Formula Computation\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #10: Formula Computation\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #10: Formula Computation\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #10: Formula Computation\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -595,17 +658,24 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
     "testCases": [
       {
         "id": "tc-basic-10-1",
-        "input": "Standard input / variables",
+        "input": "",
         "expectedOutput": "2.9760461760461765",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-10-2",
-        "input": "Standard input / variables",
+        "input": "",
+        "expectedOutput": "2.9760461760461765",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-10-3",
+        "input": "",
         "expectedOutput": "2.9760461760461765",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -648,7 +718,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #11: Circle: Area and Perimeter\n// Problem: Circle: Area and Perimeter\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #11: Circle: Area and Perimeter\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 11. Circle: Area and Perimeter\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #11: Circle: Area and Perimeter\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #11: Circle: Area and Perimeter\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #11: Circle: Area and Perimeter\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -657,17 +727,24 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
     "testCases": [
       {
         "id": "tc-basic-11-1",
-        "input": "Radius = 7.5",
-        "expectedOutput": "Perimeter is = 47.12388980384689 Area is = 176.71458676442586",
+        "input": "7.5",
+        "expectedOutput": "Perimeter is = 47.12388980384689\nArea is = 176.71458676442586",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-11-2",
-        "input": "Radius = 7.5",
-        "expectedOutput": "Perimeter is = 47.12388980384689 Area is = 176.71458676442586",
+        "input": "5.0",
+        "expectedOutput": "Perimeter is = 31.41592653589793\nArea is = 78.53981633974483",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-11-3",
+        "input": "10.0",
+        "expectedOutput": "Perimeter is = 62.83185307179586\nArea is = 314.1592653589793",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -709,7 +786,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #12: Average of Three Numbers\n// Problem: Average of Three Numbers\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #12: Average of Three Numbers\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 12. Average of Three Numbers\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #12: Average of Three Numbers\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #12: Average of Three Numbers\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #12: Average of Three Numbers\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -718,17 +795,24 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
     "testCases": [
       {
         "id": "tc-basic-12-1",
-        "input": "Standard input / variables",
-        "expectedOutput": "Target calculation or printed output",
+        "input": "10 20 30",
+        "expectedOutput": "20",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-12-2",
-        "input": "Standard input / variables",
-        "expectedOutput": "Target calculation or printed output",
+        "input": "15 25 35",
+        "expectedOutput": "25",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-12-3",
+        "input": "4 8 12",
+        "expectedOutput": "8",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -771,7 +855,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #13: Rectangle: Area and Perimeter\n// Problem: Rectangle: Area and Perimeter\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #13: Rectangle: Area and Perimeter\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 13. Rectangle: Area and Perimeter\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #13: Rectangle: Area and Perimeter\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #13: Rectangle: Area and Perimeter\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #13: Rectangle: Area and Perimeter\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -780,17 +864,24 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
     "testCases": [
       {
         "id": "tc-basic-13-1",
-        "input": "Width = 5.5,  Height = 8.5",
-        "expectedOutput": "Area is 5.6 * 8.5 = 47.60 Perimeter is 2 * (5.6 + 8.5) = 28.20",
+        "input": "5.5 8.5",
+        "expectedOutput": "Area is 46.75\nPerimeter is 28.0",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-13-2",
-        "input": "Width = 5.5,  Height = 8.5",
-        "expectedOutput": "Area is 5.6 * 8.5 = 47.60 Perimeter is 2 * (5.6 + 8.5) = 28.20",
+        "input": "4.0 6.0",
+        "expectedOutput": "Area is 24.0\nPerimeter is 20.0",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-13-3",
+        "input": "10.0 5.0",
+        "expectedOutput": "Area is 50.0\nPerimeter is 30.0",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -832,7 +923,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #14: American Flag Display\n// Problem: American Flag Display\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #14: American Flag Display\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 14. American Flag Display\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #14: American Flag Display\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #14: American Flag Display\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #14: American Flag Display\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -844,14 +935,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-14-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-14-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -893,7 +991,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #15: Swap Variables\n// Problem: Swap Variables\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #15: Swap Variables\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 15. Swap Variables\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #15: Swap Variables\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #15: Swap Variables\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #15: Swap Variables\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -902,17 +1000,24 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
     "testCases": [
       {
         "id": "tc-basic-15-1",
-        "input": "Standard input / variables",
-        "expectedOutput": "Target calculation or printed output",
+        "input": "15 25",
+        "expectedOutput": "25 15",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-15-2",
-        "input": "Standard input / variables",
-        "expectedOutput": "Target calculation or printed output",
+        "input": "10 20",
+        "expectedOutput": "20 10",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-15-3",
+        "input": "100 500",
+        "expectedOutput": "500 100",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -954,7 +1059,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #16: Face Printer\n// Problem: Face Printer\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #16: Face Printer\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 16. Face Printer\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #16: Face Printer\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #16: Face Printer\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #16: Face Printer\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -966,14 +1071,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-16-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-16-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -1015,7 +1127,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #17: Binary Addition\n// Problem: Binary Addition\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #17: Binary Addition\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 17. Binary Addition\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #17: Binary Addition\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #17: Binary Addition\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #17: Binary Addition\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -1024,17 +1136,24 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
     "testCases": [
       {
         "id": "tc-basic-17-1",
-        "input": "Input first binary number: 10, Input second binary number: 11",
-        "expectedOutput": "Target calculation or printed output",
+        "input": "10 11",
+        "expectedOutput": "101",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-17-2",
-        "input": "Input first binary number: 10, Input second binary number: 11",
-        "expectedOutput": "Target calculation or printed output",
+        "input": "110 101",
+        "expectedOutput": "1011",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-17-3",
+        "input": "111 1",
+        "expectedOutput": "1000",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -1077,7 +1196,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #18: Binary Multiplication\n// Problem: Binary Multiplication\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #18: Binary Multiplication\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 18. Binary Multiplication\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #18: Binary Multiplication\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #18: Binary Multiplication\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #18: Binary Multiplication\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -1086,17 +1205,24 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
     "testCases": [
       {
         "id": "tc-basic-18-1",
-        "input": "Input the first binary number: 10, Input the second binary number: 11",
-        "expectedOutput": "Target calculation or printed output",
+        "input": "10 11",
+        "expectedOutput": "110",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-18-2",
-        "input": "Input the first binary number: 10, Input the second binary number: 11",
-        "expectedOutput": "Target calculation or printed output",
+        "input": "11 11",
+        "expectedOutput": "1001",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-18-3",
+        "input": "101 10",
+        "expectedOutput": "1010",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -1138,7 +1264,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #19: Decimal to Binary Converter\n// Problem: Decimal to Binary Converter\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #19: Decimal to Binary Converter\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 19. Decimal to Binary Converter\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #19: Decimal to Binary Converter\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #19: Decimal to Binary Converter\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #19: Decimal to Binary Converter\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -1147,17 +1273,24 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
     "testCases": [
       {
         "id": "tc-basic-19-1",
-        "input": "Input a Decimal Number : 5",
-        "expectedOutput": "Target calculation or printed output",
+        "input": "5",
+        "expectedOutput": "101",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-19-2",
-        "input": "Input a Decimal Number : 5",
-        "expectedOutput": "Target calculation or printed output",
+        "input": "15",
+        "expectedOutput": "1111",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-19-3",
+        "input": "32",
+        "expectedOutput": "100000",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -1199,7 +1332,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #20: Decimal to Hexadecimal Converter\n// Problem: Decimal to Hexadecimal Converter\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #20: Decimal to Hexadecimal Converter\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 20. Decimal to Hexadecimal Converter\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #20: Decimal to Hexadecimal Converter\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #20: Decimal to Hexadecimal Converter\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #20: Decimal to Hexadecimal Converter\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -1208,17 +1341,24 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
     "testCases": [
       {
         "id": "tc-basic-20-1",
-        "input": "Input a decimal number: 15",
-        "expectedOutput": "Target calculation or printed output",
+        "input": "15",
+        "expectedOutput": "F",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-20-2",
-        "input": "Input a decimal number: 15",
-        "expectedOutput": "Target calculation or printed output",
+        "input": "255",
+        "expectedOutput": "FF",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-20-3",
+        "input": "16",
+        "expectedOutput": "10",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -1260,7 +1400,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #21: Decimal to Octal Converter\n// Problem: Decimal to Octal Converter\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #21: Decimal to Octal Converter\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 21. Decimal to Octal Converter\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #21: Decimal to Octal Converter\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #21: Decimal to Octal Converter\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #21: Decimal to Octal Converter\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -1269,17 +1409,24 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
     "testCases": [
       {
         "id": "tc-basic-21-1",
-        "input": "Input a Decimal Number: 15",
-        "expectedOutput": "Target calculation or printed output",
+        "input": "15",
+        "expectedOutput": "17",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-21-2",
-        "input": "Input a Decimal Number: 15",
-        "expectedOutput": "Target calculation or printed output",
+        "input": "64",
+        "expectedOutput": "100",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-21-3",
+        "input": "100",
+        "expectedOutput": "144",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -1321,7 +1468,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #22: Binary to Decimal Converter\n// Problem: Binary to Decimal Converter\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #22: Binary to Decimal Converter\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 22. Binary to Decimal Converter\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #22: Binary to Decimal Converter\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #22: Binary to Decimal Converter\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #22: Binary to Decimal Converter\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -1330,17 +1477,24 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
     "testCases": [
       {
         "id": "tc-basic-22-1",
-        "input": "Input a binary number: 100",
-        "expectedOutput": "Target calculation or printed output",
+        "input": "100",
+        "expectedOutput": "4",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-22-2",
-        "input": "Input a binary number: 100",
-        "expectedOutput": "Target calculation or printed output",
+        "input": "1111",
+        "expectedOutput": "15",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-22-3",
+        "input": "1010",
+        "expectedOutput": "10",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -1382,7 +1536,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #23: Binary to Hexadecimal Converter\n// Problem: Binary to Hexadecimal Converter\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #23: Binary to Hexadecimal Converter\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 23. Binary to Hexadecimal Converter\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #23: Binary to Hexadecimal Converter\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #23: Binary to Hexadecimal Converter\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #23: Binary to Hexadecimal Converter\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -1394,14 +1548,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Input a Binary Number: 1101",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-23-2",
-        "input": "Input a Binary Number: 1101",
+        "input": "1106",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-23-3",
+        "input": "2202",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -1443,7 +1604,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #24: Binary to Octal Converter\n// Problem: Binary to Octal Converter\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #24: Binary to Octal Converter\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 24. Binary to Octal Converter\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #24: Binary to Octal Converter\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #24: Binary to Octal Converter\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #24: Binary to Octal Converter\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -1455,14 +1616,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Input a Binary Number: 111",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-24-2",
-        "input": "Input a Binary Number: 111",
+        "input": "116",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-24-3",
+        "input": "222",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -1504,7 +1672,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #25: Octal to Decimal Converter\n// Problem: Octal to Decimal Converter\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #25: Octal to Decimal Converter\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 25. Octal to Decimal Converter\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #25: Octal to Decimal Converter\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #25: Octal to Decimal Converter\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #25: Octal to Decimal Converter\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -1516,14 +1684,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Input any octal number: 10",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-25-2",
-        "input": "Input any octal number: 10",
+        "input": "15",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-25-3",
+        "input": "20",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -1565,7 +1740,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #26: Octal to Binary Converter\n// Problem: Octal to Binary Converter\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #26: Octal to Binary Converter\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 26. Octal to Binary Converter\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #26: Octal to Binary Converter\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #26: Octal to Binary Converter\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #26: Octal to Binary Converter\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -1577,14 +1752,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Input any octal number: 7",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-26-2",
-        "input": "Input any octal number: 7",
+        "input": "12",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-26-3",
+        "input": "14",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -1626,7 +1808,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #27: Octal to Hexadecimal Converter\n// Problem: Octal to Hexadecimal Converter\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #27: Octal to Hexadecimal Converter\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 27. Octal to Hexadecimal Converter\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #27: Octal to Hexadecimal Converter\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #27: Octal to Hexadecimal Converter\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #27: Octal to Hexadecimal Converter\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -1638,14 +1820,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Input a octal number : 100",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-27-2",
-        "input": "Input a octal number : 100",
+        "input": "105",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-27-3",
+        "input": "200",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -1687,7 +1876,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #28: Hexadecimal to Decimal Converter\n// Problem: Hexadecimal to Decimal Converter\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #28: Hexadecimal to Decimal Converter\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 28. Hexadecimal to Decimal Converter\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #28: Hexadecimal to Decimal Converter\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #28: Hexadecimal to Decimal Converter\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #28: Hexadecimal to Decimal Converter\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -1699,14 +1888,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Input a hexadecimal number: 25",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-28-2",
-        "input": "Input a hexadecimal number: 25",
+        "input": "30",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-28-3",
+        "input": "50",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -1748,7 +1944,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #29: Hexadecimal to Binary Converter\n// Problem: Hexadecimal to Binary Converter\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #29: Hexadecimal to Binary Converter\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 29. Hexadecimal to Binary Converter\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #29: Hexadecimal to Binary Converter\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #29: Hexadecimal to Binary Converter\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #29: Hexadecimal to Binary Converter\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -1760,14 +1956,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Enter Hexadecimal Number : 37",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-29-2",
-        "input": "Enter Hexadecimal Number : 37",
+        "input": "42",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-29-3",
+        "input": "74",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -1809,7 +2012,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #30: Hexadecimal to Octal Converter\n// Problem: Hexadecimal to Octal Converter\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #30: Hexadecimal to Octal Converter\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 30. Hexadecimal to Octal Converter\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #30: Hexadecimal to Octal Converter\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #30: Hexadecimal to Octal Converter\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #30: Hexadecimal to Octal Converter\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -1821,14 +2024,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Input a hexadecimal number: 40",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-30-2",
-        "input": "Input a hexadecimal number: 40",
+        "input": "45",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-30-3",
+        "input": "80",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -1870,7 +2080,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #31: Check Java Installation\n// Problem: Check Java Installation\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #31: Check Java Installation\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 31. Check Java Installation\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #31: Check Java Installation\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #31: Check Java Installation\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #31: Check Java Installation\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -1882,14 +2092,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-31-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-31-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -1931,7 +2148,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #32: Compare Two Numbers\n// Problem: Compare Two Numbers\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #32: Compare Two Numbers\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 32. Compare Two Numbers\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #32: Compare Two Numbers\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #32: Compare Two Numbers\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #32: Compare Two Numbers\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -1940,17 +2157,24 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
     "testCases": [
       {
         "id": "tc-basic-32-1",
-        "input": "Input first integer: 25, Input second integer: 39",
-        "expectedOutput": "Target calculation or printed output",
+        "input": "25 39",
+        "expectedOutput": "25 != 39\n25 < 39\n25 <= 39",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-32-2",
-        "input": "Input first integer: 25, Input second integer: 39",
-        "expectedOutput": "Target calculation or printed output",
+        "input": "50 50",
+        "expectedOutput": "50 == 50\n50 <= 50\n50 >= 50",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-32-3",
+        "input": "30 10",
+        "expectedOutput": "30 != 10\n30 > 10\n30 >= 10",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -1993,7 +2217,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #33: Sum of Digits\n// Problem: Sum of Digits\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #33: Sum of Digits\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 33. Sum of Digits\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #33: Sum of Digits\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #33: Sum of Digits\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #33: Sum of Digits\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -2002,17 +2226,24 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
     "testCases": [
       {
         "id": "tc-basic-33-1",
-        "input": "Input an integer: 25",
-        "expectedOutput": "Target calculation or printed output",
+        "input": "25",
+        "expectedOutput": "7",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-33-2",
-        "input": "Input an integer: 25",
-        "expectedOutput": "Target calculation or printed output",
+        "input": "12345",
+        "expectedOutput": "15",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-33-3",
+        "input": "999",
+        "expectedOutput": "27",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -2041,7 +2272,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Geometry & Math"
     ],
     "acceptanceRate": "76.4%",
-    "description": "Write a Java program to compute hexagon area.\nArea of a hexagon = (6 * s^2)/(4*tan(\u03c0/6))\nwhere s is the length of a side\nInput Data:\nInput the length of a side of the hexagon: 6\nExpected Output",
+    "description": "Write a Java program to compute hexagon area.\nArea of a hexagon = (6 * s^2)/(4*tan(π/6))\nwhere s is the length of a side\nInput Data:\nInput the length of a side of the hexagon: 6\nExpected Output",
     "examples": [
       {
         "input": "Input the length of a side of the hexagon: 6",
@@ -2055,7 +2286,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #34: Hexagon Area\n// Problem: Hexagon Area\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #34: Hexagon Area\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 34. Hexagon Area\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #34: Hexagon Area\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #34: Hexagon Area\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #34: Hexagon Area\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -2067,14 +2298,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Input the length of a side of the hexagon: 6",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-34-2",
-        "input": "Input the length of a side of the hexagon: 6",
+        "input": "11",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-34-3",
+        "input": "12",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -2102,7 +2340,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Geometry & Math"
     ],
     "acceptanceRate": "75.5%",
-    "description": "Write a Java program to compute the area of a polygon.\nArea of a polygon = (n*s^2)/(4*tan(\u03c0/n))\nwhere n is n-sided polygon and s is the length of a side\nInput Data:\nInput the number of sides on the polygon: 7\nInput the length of one of the sides: 6\nExpected Output",
+    "description": "Write a Java program to compute the area of a polygon.\nArea of a polygon = (n*s^2)/(4*tan(π/n))\nwhere n is n-sided polygon and s is the length of a side\nInput Data:\nInput the number of sides on the polygon: 7\nInput the length of one of the sides: 6\nExpected Output",
     "examples": [
       {
         "input": "Input the number of sides on the polygon: 7, Input the length of one of the sides: 6",
@@ -2116,7 +2354,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #35: Polygon Area\n// Problem: Polygon Area\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #35: Polygon Area\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 35. Polygon Area\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #35: Polygon Area\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #35: Polygon Area\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #35: Polygon Area\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -2128,14 +2366,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Input the number of sides on the polygon: 7, Input the length of one of the sides: 6",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-35-2",
-        "input": "Input the number of sides on the polygon: 7, Input the length of one of the sides: 6",
+        "input": "12 11",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-35-3",
+        "input": "14 12",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -2178,7 +2423,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #36: Distance Between Two Points\n// Problem: Distance Between Two Points\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #36: Distance Between Two Points\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 36. Distance Between Two Points\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #36: Distance Between Two Points\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #36: Distance Between Two Points\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #36: Distance Between Two Points\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -2190,14 +2435,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Input the latitude of coordinate 1: 25, Input the longitude of coordinate 1: 35, Input the latitude of coordinate 2: 35.",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-36-2",
-        "input": "Input the latitude of coordinate 1: 25, Input the longitude of coordinate 1: 35, Input the latitude of coordinate 2: 35.",
+        "input": "6 30 6 40 7 40",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-36-3",
+        "input": "2 50 2 70 4 70",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -2239,7 +2491,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #37: Reverse a String\n// Problem: Reverse a String\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #37: Reverse a String\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 37. Reverse a String\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #37: Reverse a String\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #37: Reverse a String\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #37: Reverse a String\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -2248,17 +2500,24 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
     "testCases": [
       {
         "id": "tc-basic-37-1",
-        "input": "Input a string: The quick brown fox",
-        "expectedOutput": "Target calculation or printed output",
+        "input": "The quick brown fox",
+        "expectedOutput": "xof nworb kciuq ehT",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-37-2",
-        "input": "Input a string: The quick brown fox",
-        "expectedOutput": "Target calculation or printed output",
+        "input": "Hello Java",
+        "expectedOutput": "avaJ olleH",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-37-3",
+        "input": "racecar",
+        "expectedOutput": "racecar",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -2301,7 +2560,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #38: Count Characters in String\n// Problem: Count Characters in String\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #38: Count Characters in String\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 38. Count Characters in String\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #38: Count Characters in String\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #38: Count Characters in String\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #38: Count Characters in String\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -2313,14 +2572,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "string.",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-38-2",
-        "input": "string.",
+        "input": "string. (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-38-3",
+        "input": "string. (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -2363,7 +2629,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #39: Unique Three-Digit Numbers\n// Problem: Unique Three-Digit Numbers\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #39: Unique Three-Digit Numbers\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 39. Unique Three-Digit Numbers\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #39: Unique Three-Digit Numbers\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #39: Unique Three-Digit Numbers\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #39: Unique Three-Digit Numbers\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -2375,14 +2641,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-39-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-39-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -2424,7 +2697,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #40: List Available Charsets\n// Problem: List Available Charsets\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #40: List Available Charsets\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 40. List Available Charsets\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #40: List Available Charsets\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #40: List Available Charsets\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #40: List Available Charsets\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -2436,14 +2709,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-40-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-40-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -2486,7 +2766,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #41: ASCII Value Finder\n// Problem: ASCII Value Finder\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #41: ASCII Value Finder\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 41. ASCII Value Finder\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #41: ASCII Value Finder\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #41: ASCII Value Finder\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #41: ASCII Value Finder\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -2495,17 +2775,24 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
     "testCases": [
       {
         "id": "tc-basic-41-1",
-        "input": "Standard input / variables",
-        "expectedOutput": "Target calculation or printed output",
+        "input": "Z",
+        "expectedOutput": "90",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-41-2",
-        "input": "Standard input / variables",
-        "expectedOutput": "Target calculation or printed output",
+        "input": "A",
+        "expectedOutput": "65",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-41-3",
+        "input": "a",
+        "expectedOutput": "97",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -2548,7 +2835,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #42: Input and Display Password\n// Problem: Input and Display Password\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #42: Input and Display Password\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 42. Input and Display Password\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #42: Input and Display Password\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #42: Input and Display Password\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #42: Input and Display Password\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -2560,14 +2847,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "and display your password.",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-42-2",
-        "input": "and display your password.",
+        "input": "and display your password. (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-42-3",
+        "input": "and display your password. (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -2611,7 +2905,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #43: Twinkle Poem Formatter\n// Problem: Twinkle Poem Formatter\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #43: Twinkle Poem Formatter\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 43. Twinkle Poem Formatter\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #43: Twinkle Poem Formatter\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #43: Twinkle Poem Formatter\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #43: Twinkle Poem Formatter\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -2623,14 +2917,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-43-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-43-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -2672,7 +2973,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #44: Compute n+nn+nnn\n// Problem: Compute n+nn+nnn\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #44: Compute n+nn+nnn\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 44. Compute n+nn+nnn\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #44: Compute n+nn+nnn\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #44: Compute n+nn+nnn\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #44: Compute n+nn+nnn\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -2681,17 +2982,24 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
     "testCases": [
       {
         "id": "tc-basic-44-1",
-        "input": ":",
-        "expectedOutput": ":",
+        "input": "5",
+        "expectedOutput": "615",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-44-2",
-        "input": ":",
-        "expectedOutput": ":",
+        "input": "2",
+        "expectedOutput": "246",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-44-3",
+        "input": "7",
+        "expectedOutput": "861",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -2733,7 +3041,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #45: File Size Finder\n// Problem: File Size Finder\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #45: File Size Finder\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 45. File Size Finder\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #45: File Size Finder\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #45: File Size Finder\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #45: File Size Finder\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -2745,14 +3053,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": ":",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-45-2",
-        "input": ":",
+        "input": ": (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-45-3",
+        "input": ": (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -2794,7 +3109,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #46: Display System Time\n// Problem: Display System Time\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #46: Display System Time\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 46. Display System Time\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #46: Display System Time\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #46: Display System Time\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #46: Display System Time\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -2806,14 +3121,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": ":",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-46-2",
-        "input": ":",
+        "input": ": (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-46-3",
+        "input": ": (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -2856,7 +3178,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #47: Formatted Date and Time\n// Problem: Formatted Date and Time\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #47: Formatted Date and Time\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 47. Formatted Date and Time\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #47: Formatted Date and Time\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #47: Formatted Date and Time\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #47: Formatted Date and Time\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -2868,14 +3190,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": ":",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-47-2",
-        "input": ":",
+        "input": ": (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-47-3",
+        "input": ": (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -2918,7 +3247,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #48: Print Odd Numbers (1-99)\n// Problem: Print Odd Numbers (1-99)\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #48: Print Odd Numbers (1-99)\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 48. Print Odd Numbers (1-99)\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #48: Print Odd Numbers (1-99)\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #48: Print Odd Numbers (1-99)\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #48: Print Odd Numbers (1-99)\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -2930,14 +3259,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": ":",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-48-2",
-        "input": ":",
+        "input": ": (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-48-3",
+        "input": ": (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -2980,7 +3316,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #49: Check Even or Odd\n// Problem: Check Even or Odd\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #49: Check Even or Odd\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 49. Check Even or Odd\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #49: Check Even or Odd\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #49: Check Even or Odd\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #49: Check Even or Odd\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -2989,17 +3325,24 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
     "testCases": [
       {
         "id": "tc-basic-49-1",
-        "input": ":",
-        "expectedOutput": ":",
+        "input": "20",
+        "expectedOutput": "1",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-49-2",
-        "input": ":",
-        "expectedOutput": ":",
+        "input": "35",
+        "expectedOutput": "0",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-49-3",
+        "input": "100",
+        "expectedOutput": "1",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -3042,7 +3385,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #50: Divisible by 3, 5, Both\n// Problem: Divisible by 3, 5, Both\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #50: Divisible by 3, 5, Both\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 50. Divisible by 3, 5, Both\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #50: Divisible by 3, 5, Both\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #50: Divisible by 3, 5, Both\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #50: Divisible by 3, 5, Both\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -3054,14 +3397,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": ":",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-50-2",
-        "input": ":",
+        "input": ": (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-50-3",
+        "input": ": (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -3103,7 +3453,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #51: String to Integer Conversion\n// Problem: String to Integer Conversion\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #51: String to Integer Conversion\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 51. String to Integer Conversion\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #51: String to Integer Conversion\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #51: String to Integer Conversion\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #51: String to Integer Conversion\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -3115,14 +3465,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": ":",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-51-2",
-        "input": ":",
+        "input": ": (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-51-3",
+        "input": ": (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -3165,7 +3522,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #52: Sum Equals Third Integer\n// Problem: Sum Equals Third Integer\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #52: Sum Equals Third Integer\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 52. Sum Equals Third Integer\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #52: Sum Equals Third Integer\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #52: Sum Equals Third Integer\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #52: Sum Equals Third Integer\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -3177,14 +3534,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": ":",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-52-2",
-        "input": ":",
+        "input": ": (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-52-3",
+        "input": ": (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -3226,7 +3590,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #53: Number Comparison Logic\n// Problem: Number Comparison Logic\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #53: Number Comparison Logic\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 53. Number Comparison Logic\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #53: Number Comparison Logic\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #53: Number Comparison Logic\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #53: Number Comparison Logic\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -3238,14 +3602,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": ":",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-53-2",
-        "input": ":",
+        "input": ": (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-53-3",
+        "input": ": (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -3287,7 +3658,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #54: Same Rightmost Digit Check\n// Problem: Same Rightmost Digit Check\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #54: Same Rightmost Digit Check\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 54. Same Rightmost Digit Check\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #54: Same Rightmost Digit Check\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #54: Same Rightmost Digit Check\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #54: Same Rightmost Digit Check\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -3299,14 +3670,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": ":",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-54-2",
-        "input": ":",
+        "input": ": (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-54-3",
+        "input": ": (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -3348,7 +3726,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #55: Seconds to Time Conversion\n// Problem: Seconds to Time Conversion\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #55: Seconds to Time Conversion\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 55. Seconds to Time Conversion\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #55: Seconds to Time Conversion\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #55: Seconds to Time Conversion\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #55: Seconds to Time Conversion\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -3360,14 +3738,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": ":",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-55-2",
-        "input": ":",
+        "input": ": (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-55-3",
+        "input": ": (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -3396,7 +3781,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Loops & Numbers"
     ],
     "acceptanceRate": "74.6%",
-    "description": "Write a Java program to find the number of values in a given range divisible by a given value.\nFor example x = 5, y=20 and p =3, find the number of integers within the range x..y and that are divisible by p i.e. { i :x \u2264 i \u2264 y, i mod p = 0 }\nSample Output:",
+    "description": "Write a Java program to find the number of values in a given range divisible by a given value.\nFor example x = 5, y=20 and p =3, find the number of integers within the range x..y and that are divisible by p i.e. { i :x ≤ i ≤ y, i mod p = 0 }\nSample Output:",
     "examples": [
       {
         "input": ":",
@@ -3410,7 +3795,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #56: Count Divisibles in Range\n// Problem: Count Divisibles in Range\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #56: Count Divisibles in Range\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 56. Count Divisibles in Range\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #56: Count Divisibles in Range\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #56: Count Divisibles in Range\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #56: Count Divisibles in Range\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -3422,14 +3807,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": ":",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-56-2",
-        "input": ":",
+        "input": ": (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-56-3",
+        "input": ": (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -3471,7 +3863,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #57: Count Factors of Integer\n// Problem: Count Factors of Integer\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #57: Count Factors of Integer\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 57. Count Factors of Integer\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #57: Count Factors of Integer\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #57: Count Factors of Integer\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #57: Count Factors of Integer\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -3483,14 +3875,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": ":",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-57-2",
-        "input": ":",
+        "input": ": (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-57-3",
+        "input": ": (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -3532,7 +3931,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #58: Capitalize Each Word\n// Problem: Capitalize Each Word\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #58: Capitalize Each Word\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 58. Capitalize Each Word\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #58: Capitalize Each Word\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #58: Capitalize Each Word\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #58: Capitalize Each Word\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -3544,14 +3943,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": ":",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-58-2",
-        "input": ":",
+        "input": ": (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-58-3",
+        "input": ": (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -3593,7 +3999,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #59: Convert to Lowercase\n// Problem: Convert to Lowercase\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #59: Convert to Lowercase\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 59. Convert to Lowercase\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #59: Convert to Lowercase\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #59: Convert to Lowercase\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #59: Convert to Lowercase\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -3605,14 +4011,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": ":",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-59-2",
-        "input": ":",
+        "input": ": (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-59-3",
+        "input": ": (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -3654,7 +4067,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #60: Find Penultimate Word\n// Problem: Find Penultimate Word\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #60: Find Penultimate Word\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 60. Find Penultimate Word\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #60: Find Penultimate Word\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #60: Find Penultimate Word\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #60: Find Penultimate Word\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -3666,14 +4079,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": ":",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-60-2",
-        "input": ":",
+        "input": ": (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-60-3",
+        "input": ": (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -3715,7 +4135,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #61: Reverse Word\n// Problem: Reverse Word\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #61: Reverse Word\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 61. Reverse Word\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #61: Reverse Word\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #61: Reverse Word\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #61: Reverse Word\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -3727,14 +4147,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": ":",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-61-2",
-        "input": ":",
+        "input": ": (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-61-3",
+        "input": ": (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -3776,7 +4203,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #62: Check Subtraction Difference\n// Problem: Check Subtraction Difference\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #62: Check Subtraction Difference\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 62. Check Subtraction Difference\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #62: Check Subtraction Difference\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #62: Check Subtraction Difference\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #62: Check Subtraction Difference\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -3788,14 +4215,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": ":",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-62-2",
-        "input": ":",
+        "input": ": (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-62-3",
+        "input": ": (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -3838,7 +4272,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #63: Largest or Smallest Value\n// Problem: Largest or Smallest Value\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #63: Largest or Smallest Value\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 63. Largest or Smallest Value\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #63: Largest or Smallest Value\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #63: Largest or Smallest Value\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #63: Largest or Smallest Value\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -3850,14 +4284,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": ":",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-63-2",
-        "input": ":",
+        "input": ": (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-63-3",
+        "input": ": (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -3899,7 +4340,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #64: Common Digit in Numbers\n// Problem: Common Digit in Numbers\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #64: Common Digit in Numbers\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 64. Common Digit in Numbers\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #64: Common Digit in Numbers\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #64: Common Digit in Numbers\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #64: Common Digit in Numbers\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -3911,14 +4352,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": ":",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-64-2",
-        "input": ":",
+        "input": ": (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-64-3",
+        "input": ": (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -3960,7 +4408,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #65: Custom Modulus\n// Problem: Custom Modulus\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #65: Custom Modulus\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 65. Custom Modulus\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #65: Custom Modulus\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #65: Custom Modulus\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #65: Custom Modulus\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -3972,14 +4420,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": ":",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-65-2",
-        "input": ":",
+        "input": ": (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-65-3",
+        "input": ": (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -4022,7 +4477,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #66: Sum of 100 Primes\n// Problem: Sum of 100 Primes\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #66: Sum of 100 Primes\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 66. Sum of 100 Primes\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #66: Sum of 100 Primes\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #66: Sum of 100 Primes\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #66: Sum of 100 Primes\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -4034,14 +4489,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": ":",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-66-2",
-        "input": ":",
+        "input": ": (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-66-3",
+        "input": ": (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -4083,7 +4545,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #67: Insert Word in Middle\n// Problem: Insert Word in Middle\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #67: Insert Word in Middle\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 67. Insert Word in Middle\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #67: Insert Word in Middle\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #67: Insert Word in Middle\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #67: Insert Word in Middle\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -4095,14 +4557,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": ":",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-67-2",
-        "input": ":",
+        "input": ": (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-67-3",
+        "input": ": (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -4144,7 +4613,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #68: Repeat Last 3 Characters\n// Problem: Repeat Last 3 Characters\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #68: Repeat Last 3 Characters\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 68. Repeat Last 3 Characters\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #68: Repeat Last 3 Characters\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #68: Repeat Last 3 Characters\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #68: Repeat Last 3 Characters\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -4156,14 +4625,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": ":",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-68-2",
-        "input": ":",
+        "input": ": (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-68-3",
+        "input": ": (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -4205,7 +4681,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #69: Extract First Half\n// Problem: Extract First Half\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #69: Extract First Half\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 69. Extract First Half\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #69: Extract First Half\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #69: Extract First Half\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #69: Extract First Half\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -4217,14 +4693,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-69-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-69-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -4266,7 +4749,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #70: Short + Long + Short String\n// Problem: Short + Long + Short String\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #70: Short + Long + Short String\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 70. Short + Long + Short String\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #70: Short + Long + Short String\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #70: Short + Long + Short String\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #70: Short + Long + Short String\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -4278,14 +4761,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Str1 = Python, Str2 = Tutorial",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-70-2",
-        "input": "Str1 = Python, Str2 = Tutorial",
+        "input": "6 7",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-70-3",
+        "input": "2 4",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -4327,7 +4817,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #71: Remove First Char and Concatenate\n// Problem: Remove First Char and Concatenate\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #71: Remove First Char and Concatenate\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 71. Remove First Char and Concatenate\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #71: Remove First Char and Concatenate\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #71: Remove First Char and Concatenate\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #71: Remove First Char and Concatenate\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -4339,14 +4829,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Str1 = Python, Str2 = Tutorial",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-71-2",
-        "input": "Str1 = Python, Str2 = Tutorial",
+        "input": "6 7",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-71-3",
+        "input": "2 4",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -4389,7 +4886,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #72: First 3 Chars or #\n// Problem: First 3 Chars or #\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #72: First 3 Chars or #\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 72. First 3 Chars or #\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #72: First 3 Chars or #\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #72: First 3 Chars or #\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #72: First 3 Chars or #\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -4401,14 +4898,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Str1 = \" \"",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-72-2",
-        "input": "Str1 = \" \"",
+        "input": "6",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-72-3",
+        "input": "2",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -4451,7 +4955,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #73: First and Last Char Combo\n// Problem: First and Last Char Combo\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #73: First and Last Char Combo\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 73. First and Last Char Combo\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #73: First and Last Char Combo\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #73: First and Last Char Combo\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #73: First and Last Char Combo\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -4463,14 +4967,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "str1 = \"Python\", str2 = \" \"",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-73-2",
-        "input": "str1 = \"Python\", str2 = \" \"",
+        "input": "6 7",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-73-3",
+        "input": "2 4",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -4513,7 +5024,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #74: 10 as First or Last in Array\n// Problem: 10 as First or Last in Array\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #74: 10 as First or Last in Array\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 74. 10 as First or Last in Array\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #74: 10 as First or Last in Array\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #74: 10 as First or Last in Array\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #74: 10 as First or Last in Array\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -4525,14 +5036,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Test Data: array = 10, -20, 0, 30, 40, 60, 10",
         "expectedOutput": "Test Data: array = 10, -20, 0, 30, 40, 60, 10",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-74-2",
-        "input": "Test Data: array = 10, -20, 0, 30, 40, 60, 10",
+        "input": "15 -15 5 35 45 65 15",
+        "expectedOutput": "Test Data: array = 10, -20, 0, 30, 40, 60, 10",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-74-3",
+        "input": "20 -40 0 60 80 120 20",
         "expectedOutput": "Test Data: array = 10, -20, 0, 30, 40, 60, 10",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -4575,7 +5093,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #75: First and Last Element Same\n// Problem: First and Last Element Same\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #75: First and Last Element Same\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 75. First and Last Element Same\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #75: First and Last Element Same\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #75: First and Last Element Same\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #75: First and Last Element Same\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -4587,14 +5105,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "array = 50, -20, 0, 30, 40, 60, 10",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-75-2",
-        "input": "array = 50, -20, 0, 30, 40, 60, 10",
+        "input": "55 -15 5 35 45 65 15",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-75-3",
+        "input": "100 -40 0 60 80 120 20",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -4637,7 +5162,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #76: First and Last of Two Arrays\n// Problem: First and Last of Two Arrays\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #76: First and Last of Two Arrays\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 76. First and Last of Two Arrays\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #76: First and Last of Two Arrays\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #76: First and Last of Two Arrays\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #76: First and Last of Two Arrays\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -4649,14 +5174,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "array1 = 50, -20, 0, 30, 40, 60, 12, array2 = 45, 20, 10, 20, 30, 50, 11",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-76-2",
-        "input": "array1 = 50, -20, 0, 30, 40, 60, 12, array2 = 45, 20, 10, 20, 30, 50, 11",
+        "input": "6 55 -15 5 35 45 65 17 7 50 25 15 25 35 55 16",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-76-3",
+        "input": "2 100 -40 0 60 80 120 24 4 90 40 20 40 60 100 22",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -4698,7 +5230,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #77: New Array with Ends of Two Arrays\n// Problem: New Array with Ends of Two Arrays\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #77: New Array with Ends of Two Arrays\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 77. New Array with Ends of Two Arrays\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #77: New Array with Ends of Two Arrays\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #77: New Array with Ends of Two Arrays\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #77: New Array with Ends of Two Arrays\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -4710,14 +5242,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "array1 = 50, -20, 0, array2 = 5, -50, 10",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-77-2",
-        "input": "array1 = 50, -20, 0, array2 = 5, -50, 10",
+        "input": "6 55 -15 5 7 10 -45 15",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-77-3",
+        "input": "2 100 -40 0 4 10 -100 20",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -4759,7 +5298,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #78: Contains 4 or 7\n// Problem: Contains 4 or 7\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #78: Contains 4 or 7\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 78. Contains 4 or 7\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #78: Contains 4 or 7\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #78: Contains 4 or 7\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #78: Contains 4 or 7\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -4771,14 +5310,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": ":",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-78-2",
-        "input": ":",
+        "input": ": (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-78-3",
+        "input": ": (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -4820,7 +5366,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #79: Rotate Array Left\n// Problem: Rotate Array Left\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #79: Rotate Array Left\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 79. Rotate Array Left\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #79: Rotate Array Left\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #79: Rotate Array Left\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #79: Rotate Array Left\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -4832,14 +5378,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": ":",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-79-2",
-        "input": ":",
+        "input": ": (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-79-3",
+        "input": ": (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -4881,7 +5434,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #80: Largest of First or Last Element\n// Problem: Largest of First or Last Element\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #80: Largest of First or Last Element\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 80. Largest of First or Last Element\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #80: Largest of First or Last Element\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #80: Largest of First or Last Element\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #80: Largest of First or Last Element\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -4893,14 +5446,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": ":",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-80-2",
-        "input": ":",
+        "input": ": (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-80-3",
+        "input": ": (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -4942,7 +5502,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #81: Swap First and Last Elements\n// Problem: Swap First and Last Elements\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #81: Swap First and Last Elements\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 81. Swap First and Last Elements\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #81: Swap First and Last Elements\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #81: Swap First and Last Elements\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #81: Swap First and Last Elements\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -4954,14 +5514,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": ":",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-81-2",
-        "input": ":",
+        "input": ": (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-81-3",
+        "input": ": (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -5004,7 +5571,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #82: Largest of First, Last, Middle\n// Problem: Largest of First, Last, Middle\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #82: Largest of First, Last, Middle\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 82. Largest of First, Last, Middle\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #82: Largest of First, Last, Middle\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #82: Largest of First, Last, Middle\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #82: Largest of First, Last, Middle\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -5016,14 +5583,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": ":",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-82-2",
-        "input": ":",
+        "input": ": (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-82-3",
+        "input": ": (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -5066,7 +5640,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #83: Multiply Array Elements\n// Problem: Multiply Array Elements\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #83: Multiply Array Elements\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 83. Multiply Array Elements\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #83: Multiply Array Elements\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #83: Multiply Array Elements\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #83: Multiply Array Elements\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -5078,14 +5652,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": ":",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-83-2",
-        "input": ":",
+        "input": ": (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-83-3",
+        "input": ": (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -5127,7 +5708,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #84: Add Last 3 Chars to Both Ends\n// Problem: Add Last 3 Chars to Both Ends\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #84: Add Last 3 Chars to Both Ends\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 84. Add Last 3 Chars to Both Ends\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #84: Add Last 3 Chars to Both Ends\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #84: Add Last 3 Chars to Both Ends\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #84: Add Last 3 Chars to Both Ends\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -5139,14 +5720,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "\"Python\" will be \"honPythonhon\"",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-84-2",
-        "input": "\"Python\" will be \"honPythonhon\"",
+        "input": "\"Python\" will be \"honPythonhon\" (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-84-3",
+        "input": "\"Python\" will be \"honPythonhon\" (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -5190,7 +5778,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #85: String Starts with Word\n// Problem: String Starts with Word\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #85: String Starts with Word\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 85. String Starts with Word\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #85: String Starts with Word\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #85: String Starts with Word\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #85: String Starts with Word\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -5202,14 +5790,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": ":",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-85-2",
-        "input": ":",
+        "input": ": (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-85-3",
+        "input": ": (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -5251,7 +5846,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #86: Collatz Conjecture Simulation\n// Problem: Collatz Conjecture Simulation\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #86: Collatz Conjecture Simulation\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 86. Collatz Conjecture Simulation\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #86: Collatz Conjecture Simulation\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #86: Collatz Conjecture Simulation\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #86: Collatz Conjecture Simulation\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -5263,14 +5858,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-86-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-86-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -5313,7 +5915,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #87: Digit Sum in Words\n// Problem: Digit Sum in Words\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #87: Digit Sum in Words\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 87. Digit Sum in Words\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #87: Digit Sum in Words\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #87: Digit Sum in Words\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #87: Digit Sum in Words\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -5325,14 +5927,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-87-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-87-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -5374,7 +5983,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #88: System Environment and Properties\n// Problem: System Environment and Properties\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #88: System Environment and Properties\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 88. System Environment and Properties\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #88: System Environment and Properties\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #88: System Environment and Properties\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #88: System Environment and Properties\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -5386,14 +5995,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-88-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-88-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -5435,7 +6051,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #89: Check Security Manager\n// Problem: Check Security Manager\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #89: Check Security Manager\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 89. Check Security Manager\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #89: Check Security Manager\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #89: Check Security Manager\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #89: Check Security Manager\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -5447,14 +6063,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-89-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-89-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -5496,7 +6119,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #90: Environment Variables\n// Problem: Environment Variables\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #90: Environment Variables\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 90. Environment Variables\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #90: Environment Variables\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #90: Environment Variables\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #90: Environment Variables\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -5508,14 +6131,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-90-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-90-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -5557,7 +6187,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #91: Code Execution Time in Nanoseconds\n// Problem: Code Execution Time in Nanoseconds\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #91: Code Execution Time in Nanoseconds\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 91. Code Execution Time in Nanoseconds\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #91: Code Execution Time in Nanoseconds\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #91: Code Execution Time in Nanoseconds\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #91: Code Execution Time in Nanoseconds\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -5569,14 +6199,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-91-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-91-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -5620,7 +6257,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #92: Count Even and Odd in Array\n// Problem: Count Even and Odd in Array\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #92: Count Even and Odd in Array\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 92. Count Even and Odd in Array\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #92: Count Even and Odd in Array\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #92: Count Even and Odd in Array\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #92: Count Even and Odd in Array\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -5632,14 +6269,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-92-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-92-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -5681,7 +6325,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #93: Check Adjacent 10s or 20s\n// Problem: Check Adjacent 10s or 20s\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #93: Check Adjacent 10s or 20s\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 93. Check Adjacent 10s or 20s\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #93: Check Adjacent 10s or 20s\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #93: Check Adjacent 10s or 20s\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #93: Check Adjacent 10s or 20s\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -5693,14 +6337,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-93-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-93-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -5742,7 +6393,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #94: Rearrange Odd and Even Numbers\n// Problem: Rearrange Odd and Even Numbers\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #94: Rearrange Odd and Even Numbers\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 94. Rearrange Odd and Even Numbers\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #94: Rearrange Odd and Even Numbers\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #94: Rearrange Odd and Even Numbers\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #94: Rearrange Odd and Even Numbers\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -5754,14 +6405,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-94-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-94-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -5804,7 +6462,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #95: Create String Array 0 to N-1\n// Problem: Create String Array 0 to N-1\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #95: Create String Array 0 to N-1\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 95. Create String Array 0 to N-1\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #95: Create String Array 0 to N-1\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #95: Create String Array 0 to N-1\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #95: Create String Array 0 to N-1\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -5816,14 +6474,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-95-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-95-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -5865,7 +6530,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #96: 10 Before 20 Check\n// Problem: 10 Before 20 Check\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #96: 10 Before 20 Check\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 96. 10 Before 20 Check\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #96: 10 Before 20 Check\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #96: 10 Before 20 Check\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #96: 10 Before 20 Check\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -5877,14 +6542,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-96-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-96-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -5926,7 +6598,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #97: Number Adjacent or Separated by One\n// Problem: Number Adjacent or Separated by One\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #97: Number Adjacent or Separated by One\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 97. Number Adjacent or Separated by One\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #97: Number Adjacent or Separated by One\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #97: Number Adjacent or Separated by One\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #97: Number Adjacent or Separated by One\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -5938,14 +6610,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-97-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-97-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -5987,7 +6666,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #98: 20 Appears Thrice Non-Consecutively\n// Problem: 20 Appears Thrice Non-Consecutively\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #98: 20 Appears Thrice Non-Consecutively\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 98. 20 Appears Thrice Non-Consecutively\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #98: 20 Appears Thrice Non-Consecutively\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #98: 20 Appears Thrice Non-Consecutively\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #98: 20 Appears Thrice Non-Consecutively\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -5999,14 +6678,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-98-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-98-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -6048,7 +6734,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #99: Specified Number in Adjacent Pairs\n// Problem: Specified Number in Adjacent Pairs\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #99: Specified Number in Adjacent Pairs\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 99. Specified Number in Adjacent Pairs\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #99: Specified Number in Adjacent Pairs\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #99: Specified Number in Adjacent Pairs\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #99: Specified Number in Adjacent Pairs\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -6060,14 +6746,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-99-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-99-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -6111,7 +6804,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #100: Count Elements Differ by 1\n// Problem: Count Elements Differ by 1\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #100: Count Elements Differ by 1\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 100. Count Elements Differ by 1\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #100: Count Elements Differ by 1\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #100: Count Elements Differ by 1\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #100: Count Elements Differ by 1\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -6123,14 +6816,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-100-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-100-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -6172,7 +6872,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #101: Check 10 Exceeds 20 in Array\n// Problem: Check 10 Exceeds 20 in Array\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #101: Check 10 Exceeds 20 in Array\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 101. Check 10 Exceeds 20 in Array\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #101: Check 10 Exceeds 20 in Array\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #101: Check 10 Exceeds 20 in Array\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #101: Check 10 Exceeds 20 in Array\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -6184,14 +6884,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-101-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-101-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -6233,7 +6940,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #102: Contains 10 or 30\n// Problem: Contains 10 or 30\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #102: Contains 10 or 30\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 102. Contains 10 or 30\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #102: Contains 10 or 30\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #102: Contains 10 or 30\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #102: Contains 10 or 30\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -6245,14 +6952,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-102-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-102-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -6294,7 +7008,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #103: Array After Last 10\n// Problem: Array After Last 10\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #103: Array After Last 10\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 103. Array After Last 10\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #103: Array After Last 10\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #103: Array After Last 10\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #103: Array After Last 10\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -6306,14 +7020,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-103-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-103-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -6355,7 +7076,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #104: Array Before Last 10\n// Problem: Array Before Last 10\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #104: Array Before Last 10\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 104. Array Before Last 10\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #104: Array Before Last 10\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #104: Array Before Last 10\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #104: Array Before Last 10\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -6367,14 +7088,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-104-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-104-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -6416,7 +7144,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #105: Group Match Start and End\n// Problem: Group Match Start and End\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #105: Group Match Start and End\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 105. Group Match Start and End\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #105: Group Match Start and End\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #105: Group Match Start and End\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #105: Group Match Start and End\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -6428,14 +7156,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-105-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-105-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -6479,7 +7214,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #106: Left Shift Array\n// Problem: Left Shift Array\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #106: Left Shift Array\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 106. Left Shift Array\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #106: Left Shift Array\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #106: Left Shift Array\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #106: Left Shift Array\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -6491,14 +7226,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-106-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-106-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -6540,7 +7282,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #107: Three Increasing Adjacent Numbers\n// Problem: Three Increasing Adjacent Numbers\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #107: Three Increasing Adjacent Numbers\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 107. Three Increasing Adjacent Numbers\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #107: Three Increasing Adjacent Numbers\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #107: Three Increasing Adjacent Numbers\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #107: Three Increasing Adjacent Numbers\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -6552,14 +7294,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-107-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-107-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -6602,7 +7351,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #108: Sum Digits to Single Digit\n// Problem: Sum Digits to Single Digit\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #108: Sum Digits to Single Digit\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 108. Sum Digits to Single Digit\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #108: Sum Digits to Single Digit\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #108: Sum Digits to Single Digit\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #108: Sum Digits to Single Digit\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -6614,14 +7363,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-108-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-108-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -6663,7 +7419,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #109: Staircase Coins\n// Problem: Staircase Coins\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #109: Staircase Coins\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 109. Staircase Coins\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #109: Staircase Coins\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #109: Staircase Coins\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #109: Staircase Coins\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -6675,14 +7431,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-109-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-109-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -6724,7 +7487,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #110: Check Power of 4\n// Problem: Check Power of 4\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #110: Check Power of 4\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 110. Check Power of 4\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #110: Check Power of 4\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #110: Check Power of 4\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #110: Check Power of 4\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -6736,14 +7499,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-110-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-110-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -6785,7 +7555,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #111: Add Without Operators\n// Problem: Add Without Operators\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #111: Add Without Operators\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 111. Add Without Operators\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #111: Add Without Operators\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #111: Add Without Operators\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #111: Add Without Operators\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -6797,14 +7567,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-111-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-111-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -6846,7 +7623,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #112: Trailing Zeros in Factorial\n// Problem: Trailing Zeros in Factorial\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #112: Trailing Zeros in Factorial\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 112. Trailing Zeros in Factorial\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #112: Trailing Zeros in Factorial\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #112: Trailing Zeros in Factorial\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #112: Trailing Zeros in Factorial\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -6858,14 +7635,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-112-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-112-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -6907,7 +7691,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #113: Merge Two Sorted Arrays\n// Problem: Merge Two Sorted Arrays\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #113: Merge Two Sorted Arrays\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 113. Merge Two Sorted Arrays\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #113: Merge Two Sorted Arrays\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #113: Merge Two Sorted Arrays\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #113: Merge Two Sorted Arrays\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -6919,14 +7703,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-113-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-113-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -6968,7 +7759,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #114: Rotate String by Offset\n// Problem: Rotate String by Offset\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #114: Rotate String by Offset\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 114. Rotate String by Offset\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #114: Rotate String by Offset\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #114: Rotate String by Offset\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #114: Rotate String by Offset\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -6980,14 +7771,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-114-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-114-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -7029,7 +7827,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #115: Check Palindrome Number\n// Problem: Check Palindrome Number\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #115: Check Palindrome Number\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 115. Check Palindrome Number\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #115: Check Palindrome Number\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #115: Check Palindrome Number\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #115: Check Palindrome Number\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -7041,14 +7839,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-115-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-115-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -7090,7 +7895,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #116: FizzBuzz 1 to 100\n// Problem: FizzBuzz 1 to 100\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #116: FizzBuzz 1 to 100\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 116. FizzBuzz 1 to 100\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #116: FizzBuzz 1 to 100\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #116: FizzBuzz 1 to 100\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #116: FizzBuzz 1 to 100\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -7102,14 +7907,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-116-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-116-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -7151,7 +7963,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #117: Square Root Calculation\n// Problem: Square Root Calculation\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #117: Square Root Calculation\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 117. Square Root Calculation\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #117: Square Root Calculation\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #117: Square Root Calculation\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #117: Square Root Calculation\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -7163,14 +7975,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-117-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-117-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -7212,7 +8031,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #118: First Occurrence in String\n// Problem: First Occurrence in String\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #118: First Occurrence in String\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 118. First Occurrence in String\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #118: First Occurrence in String\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #118: First Occurrence in String\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #118: First Occurrence in String\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -7224,14 +8043,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-118-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-118-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -7273,7 +8099,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #119: First Occurrence in Array\n// Problem: First Occurrence in Array\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #119: First Occurrence in Array\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 119. First Occurrence in Array\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #119: First Occurrence in Array\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #119: First Occurrence in Array\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #119: First Occurrence in Array\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -7285,14 +8111,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-119-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-119-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -7334,7 +8167,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #120: Search Value in Matrix\n// Problem: Search Value in Matrix\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #120: Search Value in Matrix\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 120. Search Value in Matrix\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #120: Search Value in Matrix\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #120: Search Value in Matrix\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #120: Search Value in Matrix\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -7346,14 +8179,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-120-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-120-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -7395,7 +8235,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #121: Reverse Linked List\n// Problem: Reverse Linked List\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #121: Reverse Linked List\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 121. Reverse Linked List\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #121: Reverse Linked List\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #121: Reverse Linked List\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #121: Reverse Linked List\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -7407,14 +8247,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-121-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-121-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -7457,7 +8304,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #122: Max Subarray Sum\n// Problem: Max Subarray Sum\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #122: Max Subarray Sum\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 122. Max Subarray Sum\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #122: Max Subarray Sum\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #122: Max Subarray Sum\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #122: Max Subarray Sum\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -7469,14 +8316,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-122-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-122-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -7519,7 +8373,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #123: Min Subarray Sum\n// Problem: Min Subarray Sum\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #123: Min Subarray Sum\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 123. Min Subarray Sum\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #123: Min Subarray Sum\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #123: Min Subarray Sum\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #123: Min Subarray Sum\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -7531,14 +8385,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-123-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-123-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -7580,7 +8441,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #124: Insert Index in Sorted Array\n// Problem: Insert Index in Sorted Array\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #124: Insert Index in Sorted Array\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 124. Insert Index in Sorted Array\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #124: Insert Index in Sorted Array\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #124: Insert Index in Sorted Array\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #124: Insert Index in Sorted Array\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -7592,14 +8453,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-124-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-124-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -7641,7 +8509,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #125: Preorder Binary Tree Traversal\n// Problem: Preorder Binary Tree Traversal\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #125: Preorder Binary Tree Traversal\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 125. Preorder Binary Tree Traversal\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #125: Preorder Binary Tree Traversal\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #125: Preorder Binary Tree Traversal\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #125: Preorder Binary Tree Traversal\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -7653,14 +8521,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-125-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-125-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -7702,7 +8577,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #126: Inorder Binary Tree Traversal\n// Problem: Inorder Binary Tree Traversal\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #126: Inorder Binary Tree Traversal\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 126. Inorder Binary Tree Traversal\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #126: Inorder Binary Tree Traversal\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #126: Inorder Binary Tree Traversal\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #126: Inorder Binary Tree Traversal\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -7714,14 +8589,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-126-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-126-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -7763,7 +8645,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #127: Postorder Binary Tree Traversal\n// Problem: Postorder Binary Tree Traversal\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #127: Postorder Binary Tree Traversal\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 127. Postorder Binary Tree Traversal\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #127: Postorder Binary Tree Traversal\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #127: Postorder Binary Tree Traversal\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #127: Postorder Binary Tree Traversal\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -7775,14 +8657,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-127-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-127-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -7824,7 +8713,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #128: Median of Array\n// Problem: Median of Array\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #128: Median of Array\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 128. Median of Array\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #128: Median of Array\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #128: Median of Array\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #128: Median of Array\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -7836,14 +8725,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-128-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-128-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -7885,7 +8781,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #129: Single Occurrence Number\n// Problem: Single Occurrence Number\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #129: Single Occurrence Number\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 129. Single Occurrence Number\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #129: Single Occurrence Number\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #129: Single Occurrence Number\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #129: Single Occurrence Number\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -7897,14 +8793,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-129-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-129-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -7946,7 +8849,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #130: Max Depth of Binary Tree\n// Problem: Max Depth of Binary Tree\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #130: Max Depth of Binary Tree\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 130. Max Depth of Binary Tree\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #130: Max Depth of Binary Tree\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #130: Max Depth of Binary Tree\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #130: Max Depth of Binary Tree\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -7958,14 +8861,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-130-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-130-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -8007,7 +8917,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #131: Remove Duplicates in Sorted Array\n// Problem: Remove Duplicates in Sorted Array\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #131: Remove Duplicates in Sorted Array\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 131. Remove Duplicates in Sorted Array\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #131: Remove Duplicates in Sorted Array\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #131: Remove Duplicates in Sorted Array\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #131: Remove Duplicates in Sorted Array\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -8019,14 +8929,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-131-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-131-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -8068,7 +8985,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #132: Remove Duplicates (At Most Twice)\n// Problem: Remove Duplicates (At Most Twice)\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #132: Remove Duplicates (At Most Twice)\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 132. Remove Duplicates (At Most Twice)\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #132: Remove Duplicates (At Most Twice)\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #132: Remove Duplicates (At Most Twice)\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #132: Remove Duplicates (At Most Twice)\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -8080,14 +8997,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-132-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-132-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -8129,7 +9053,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #133: Min Path Sum in Grid\n// Problem: Min Path Sum in Grid\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #133: Min Path Sum in Grid\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 133. Min Path Sum in Grid\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #133: Min Path Sum in Grid\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #133: Min Path Sum in Grid\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #133: Min Path Sum in Grid\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -8141,14 +9065,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-133-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-133-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -8190,7 +9121,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #134: Distinct Ways to Climb Stairs\n// Problem: Distinct Ways to Climb Stairs\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #134: Distinct Ways to Climb Stairs\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 134. Distinct Ways to Climb Stairs\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #134: Distinct Ways to Climb Stairs\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #134: Distinct Ways to Climb Stairs\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #134: Distinct Ways to Climb Stairs\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -8202,14 +9133,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-134-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-134-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -8251,7 +9189,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #135: Remove Duplicates in Linked List\n// Problem: Remove Duplicates in Linked List\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #135: Remove Duplicates in Linked List\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 135. Remove Duplicates in Linked List\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #135: Remove Duplicates in Linked List\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #135: Remove Duplicates in Linked List\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #135: Remove Duplicates in Linked List\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -8263,14 +9201,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-135-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-135-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -8312,7 +9257,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #136: Unique Paths in Grid\n// Problem: Unique Paths in Grid\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #136: Unique Paths in Grid\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 136. Unique Paths in Grid\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #136: Unique Paths in Grid\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #136: Unique Paths in Grid\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #136: Unique Paths in Grid\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -8324,14 +9269,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-136-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-136-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -8373,7 +9325,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #137: Unique Paths with Obstacles\n// Problem: Unique Paths with Obstacles\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #137: Unique Paths with Obstacles\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 137. Unique Paths with Obstacles\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #137: Unique Paths with Obstacles\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #137: Unique Paths with Obstacles\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #137: Unique Paths with Obstacles\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -8385,14 +9337,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-137-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-137-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -8434,7 +9393,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #138: Longest Word in Dictionary\n// Problem: Longest Word in Dictionary\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #138: Longest Word in Dictionary\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 138. Longest Word in Dictionary\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #138: Longest Word in Dictionary\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #138: Longest Word in Dictionary\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #138: Longest Word in Dictionary\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -8446,14 +9405,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-138-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-138-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -8496,7 +9462,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #139: Subarray with Zero Sum\n// Problem: Subarray with Zero Sum\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #139: Subarray with Zero Sum\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 139. Subarray with Zero Sum\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #139: Subarray with Zero Sum\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #139: Subarray with Zero Sum\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #139: Subarray with Zero Sum\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -8508,14 +9474,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-139-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-139-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -8557,7 +9530,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #140: Merge Overlapping Intervals\n// Problem: Merge Overlapping Intervals\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #140: Merge Overlapping Intervals\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 140. Merge Overlapping Intervals\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #140: Merge Overlapping Intervals\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #140: Merge Overlapping Intervals\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #140: Merge Overlapping Intervals\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -8569,14 +9542,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-140-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-140-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -8618,7 +9598,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #141: Check Distinct Characters\n// Problem: Check Distinct Characters\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #141: Check Distinct Characters\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 141. Check Distinct Characters\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #141: Check Distinct Characters\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #141: Check Distinct Characters\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #141: Check Distinct Characters\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -8630,14 +9610,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-141-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-141-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -8679,7 +9666,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #142: Check Anagrams\n// Problem: Check Anagrams\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #142: Check Anagrams\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 142. Check Anagrams\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #142: Check Anagrams\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #142: Check Anagrams\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #142: Check Anagrams\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -8691,14 +9678,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-142-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-142-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -8740,7 +9734,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #143: Merge Two Sorted Linked Lists\n// Problem: Merge Two Sorted Linked Lists\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #143: Merge Two Sorted Linked Lists\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 143. Merge Two Sorted Linked Lists\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #143: Merge Two Sorted Linked Lists\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #143: Merge Two Sorted Linked Lists\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #143: Merge Two Sorted Linked Lists\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -8752,14 +9746,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-143-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-143-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -8801,7 +9802,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #144: Remove Element in Array\n// Problem: Remove Element in Array\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #144: Remove Element in Array\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 144. Remove Element in Array\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #144: Remove Element in Array\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #144: Remove Element in Array\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #144: Remove Element in Array\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -8813,14 +9814,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-144-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-144-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -8862,7 +9870,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #145: Remove Nth Element from End\n// Problem: Remove Nth Element from End\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #145: Remove Nth Element from End\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 145. Remove Nth Element from End\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #145: Remove Nth Element from End\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #145: Remove Nth Element from End\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #145: Remove Nth Element from End\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -8874,14 +9882,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-145-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-145-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -8923,7 +9938,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #146: Array to Minimal Height BST\n// Problem: Array to Minimal Height BST\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #146: Array to Minimal Height BST\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 146. Array to Minimal Height BST\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #146: Array to Minimal Height BST\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #146: Array to Minimal Height BST\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #146: Array to Minimal Height BST\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -8935,14 +9950,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-146-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-146-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -8984,7 +10006,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #147: Bits to Flip Between Integers\n// Problem: Bits to Flip Between Integers\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #147: Bits to Flip Between Integers\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 147. Bits to Flip Between Integers\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #147: Bits to Flip Between Integers\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #147: Bits to Flip Between Integers\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #147: Bits to Flip Between Integers\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -8996,14 +10018,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-147-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-147-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -9045,7 +10074,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #148: First Unique Character Index\n// Problem: First Unique Character Index\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #148: First Unique Character Index\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 148. First Unique Character Index\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #148: First Unique Character Index\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #148: First Unique Character Index\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #148: First Unique Character Index\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -9057,14 +10086,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-148-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-148-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -9106,7 +10142,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #149: Check String Permutation\n// Problem: Check String Permutation\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #149: Check String Permutation\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 149. Check String Permutation\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #149: Check String Permutation\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #149: Check String Permutation\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #149: Check String Permutation\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -9118,14 +10154,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-149-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-149-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -9168,7 +10211,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #150: Check Subtree in Binary Tree\n// Problem: Check Subtree in Binary Tree\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #150: Check Subtree in Binary Tree\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 150. Check Subtree in Binary Tree\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #150: Check Subtree in Binary Tree\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #150: Check Subtree in Binary Tree\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #150: Check Subtree in Binary Tree\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -9180,14 +10223,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-150-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-150-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -9230,7 +10280,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #151: Evaluate Expressions\n// Problem: Evaluate Expressions\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #151: Evaluate Expressions\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 151. Evaluate Expressions\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #151: Evaluate Expressions\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #151: Evaluate Expressions\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #151: Evaluate Expressions\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -9242,14 +10292,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "(101 + 0) / 3)-> 33 (3.0e-6 * 10000000.1)-> 30.0000003 (true && true)-> true (false && true)-> false ((false && false) |",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-151-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "(101 + 0) / 3)-> 33 (3.0e-6 * 10000000.1)-> 30.0000003 (true && true)-> true (false && true)-> false ((false && false) |",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-151-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "(101 + 0) / 3)-> 33 (3.0e-6 * 10000000.1)-> 30.0000003 (true && true)-> true (false && true)-> false ((false && false) |",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -9292,7 +10349,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #152: Check Four Numbers Equal\n// Problem: Check Four Numbers Equal\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #152: Check Four Numbers Equal\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 152. Check Four Numbers Equal\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #152: Check Four Numbers Equal\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #152: Check Four Numbers Equal\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #152: Check Four Numbers Equal\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -9304,14 +10361,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Input first number: 25, Input second number: 37, Input third number: 45, Input fourth number: 23, Numbers are not equal!",
         "expectedOutput": "Input first number: 25 Input second number: 37 Input third number: 45 Input fourth number: 23 Numbers are not equal!",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-152-2",
-        "input": "Input first number: 25, Input second number: 37, Input third number: 45, Input fourth number: 23, Numbers are not equal!",
+        "input": "30 42 50 28",
+        "expectedOutput": "Input first number: 25 Input second number: 37 Input third number: 45 Input fourth number: 23 Numbers are not equal!",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-152-3",
+        "input": "50 74 90 46",
         "expectedOutput": "Input first number: 25 Input second number: 37 Input third number: 45 Input fourth number: 23 Numbers are not equal!",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -9353,7 +10417,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #153: Test Doubles Between 0 and 1\n// Problem: Test Doubles Between 0 and 1\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #153: Test Doubles Between 0 and 1\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 153. Test Doubles Between 0 and 1\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #153: Test Doubles Between 0 and 1\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #153: Test Doubles Between 0 and 1\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #153: Test Doubles Between 0 and 1\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -9365,14 +10429,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Input first number: 5, Input second number: 1, false",
         "expectedOutput": "Input first number: 5 Input second number: 1 false",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-153-2",
-        "input": "Input first number: 5, Input second number: 1, false",
+        "input": "10 6",
+        "expectedOutput": "Input first number: 5 Input second number: 1 false",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-153-3",
+        "input": "10 2",
         "expectedOutput": "Input first number: 5 Input second number: 1 false",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -9416,7 +10487,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #154: Print Boolean Matrix\n// Problem: Print Boolean Matrix\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #154: Print Boolean Matrix\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 154. Print Boolean Matrix\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #154: Print Boolean Matrix\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #154: Print Boolean Matrix\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #154: Print Boolean Matrix\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -9428,14 +10499,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "t f t f t f",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-154-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "t f t f t f",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-154-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "t f t f t f",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -9478,7 +10556,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #155: Transpose 2D Array\n// Problem: Transpose 2D Array\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #155: Transpose 2D Array\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 155. Transpose 2D Array\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #155: Transpose 2D Array\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #155: Transpose 2D Array\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #155: Transpose 2D Array\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -9490,14 +10568,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-155-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-155-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -9539,7 +10624,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #156: Largest Integer Base-2 Logarithm\n// Problem: Largest Integer Base-2 Logarithm\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #156: Largest Integer Base-2 Logarithm\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 156. Largest Integer Base-2 Logarithm\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #156: Largest Integer Base-2 Logarithm\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #156: Largest Integer Base-2 Logarithm\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #156: Largest Integer Base-2 Logarithm\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -9551,14 +10636,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-156-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-156-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -9588,7 +10680,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Loops & Numbers"
     ],
     "acceptanceRate": "53.7%",
-    "description": "Write a Java program to prove that Euclid\u2019s algorithm computes the greatest common divisor of two integers that have positive values.\n\nAccording to Wikipedia \"The Euclidean algorithm is based on the principle that the greatest common divisor of two numbers does not change if the larger number is replaced by its difference with the smaller number. For example, 21 is the GCD of 252 and 105 (as 252 = 21 \u00d7 12 and 105 = 21 \u00d7 5), and the same number 21 is also the GCD of 105 and 252 \u2212 105 = 147. Since this replacement reduces the larger of the two numbers, repeating this process gives successively smaller pairs of numbers until the two numbers become equal. When that occurs, they are the GCD of the original two numbers. By reversing the steps, the GCD can be expressed as a sum of the two original numbers each multiplied by a positive or negative integer, e.g., 21 = 5 \u00d7 105 + (\u22122) \u00d7 252. The fact that the GCD can always be expressed in this way is known as B\u00e9zout's identity.\"\n\nExpected Output:\nresult: 24\nresult: 1",
+    "description": "Write a Java program to prove that Euclid’s algorithm computes the greatest common divisor of two integers that have positive values.\n\nAccording to Wikipedia \"The Euclidean algorithm is based on the principle that the greatest common divisor of two numbers does not change if the larger number is replaced by its difference with the smaller number. For example, 21 is the GCD of 252 and 105 (as 252 = 21 × 12 and 105 = 21 × 5), and the same number 21 is also the GCD of 105 and 252 − 105 = 147. Since this replacement reduces the larger of the two numbers, repeating this process gives successively smaller pairs of numbers until the two numbers become equal. When that occurs, they are the GCD of the original two numbers. By reversing the steps, the GCD can be expressed as a sum of the two original numbers each multiplied by a positive or negative integer, e.g., 21 = 5 × 105 + (−2) × 252. The fact that the GCD can always be expressed in this way is known as Bézout's identity.\"\n\nExpected Output:\nresult: 24\nresult: 1",
     "examples": [
       {
         "input": "Standard input / variables",
@@ -9602,7 +10694,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #157: GCD Using Euclid's Algorithm\n// Problem: GCD Using Euclid's Algorithm\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #157: GCD Using Euclid's Algorithm\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 157. GCD Using Euclid's Algorithm\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #157: GCD Using Euclid's Algorithm\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #157: GCD Using Euclid's Algorithm\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #157: GCD Using Euclid's Algorithm\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -9614,14 +10706,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "result: 24 result: 1",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-157-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "result: 24 result: 1",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-157-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "result: 24 result: 1",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -9665,7 +10764,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #158: 2D Prime Matrix\n// Problem: 2D Prime Matrix\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #158: 2D Prime Matrix\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 158. 2D Prime Matrix\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #158: 2D Prime Matrix\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #158: 2D Prime Matrix\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #158: 2D Prime Matrix\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -9677,14 +10776,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "true true true, true true true, true true false",
         "expectedOutput": "true true true true true true true true false",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-158-2",
-        "input": "true true true, true true true, true true false",
+        "input": "true true true, true true true, true true false (test case 2)",
+        "expectedOutput": "true true true true true true true true false",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-158-3",
+        "input": "true true true, true true true, true true false (test case 3)",
         "expectedOutput": "true true true true true true true true false",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -9726,7 +10832,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #159: Find K Largest Elements\n// Problem: Find K Largest Elements\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #159: Find K Largest Elements\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 159. Find K Largest Elements\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #159: Find K Largest Elements\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #159: Find K Largest Elements\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #159: Find K Largest Elements\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -9738,14 +10844,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Original Array: [1, 4, 17, 7, 25, 3, 100] 3 largest elements of the said array are: 100 25 17",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-159-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Original Array: [1, 4, 17, 7, 25, 3, 100] 3 largest elements of the said array are: 100 25 17",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-159-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Original Array: [1, 4, 17, 7, 25, 3, 100] 3 largest elements of the said array are: 100 25 17",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -9787,7 +10900,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #160: Find K Smallest Elements\n// Problem: Find K Smallest Elements\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #160: Find K Smallest Elements\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 160. Find K Smallest Elements\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #160: Find K Smallest Elements\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #160: Find K Smallest Elements\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #160: Find K Smallest Elements\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -9799,14 +10912,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Original Array: [1, 4, 17, 7, 25, 3, 100] 3 largest elements of the said array are: 100 25 17",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-160-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Original Array: [1, 4, 17, 7, 25, 3, 100] 3 largest elements of the said array are: 100 25 17",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-160-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Original Array: [1, 4, 17, 7, 25, 3, 100] 3 largest elements of the said array are: 100 25 17",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -9848,7 +10968,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #161: Kth Smallest and Largest\n// Problem: Kth Smallest and Largest\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #161: Kth Smallest and Largest\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 161. Kth Smallest and Largest\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #161: Kth Smallest and Largest\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #161: Kth Smallest and Largest\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #161: Kth Smallest and Largest\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -9860,14 +10980,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Original Array: [1, 4, 17, 7, 25, 3, 100] K'th smallest element of the said array: 3 K'th largest element of the said ar",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-161-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Original Array: [1, 4, 17, 7, 25, 3, 100] K'th smallest element of the said array: 3 K'th largest element of the said ar",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-161-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Original Array: [1, 4, 17, 7, 25, 3, 100] K'th smallest element of the said array: 3 K'th largest element of the said ar",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -9910,7 +11037,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #162: Numbers Greater Than Average\n// Problem: Numbers Greater Than Average\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #162: Numbers Greater Than Average\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 162. Numbers Greater Than Average\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #162: Numbers Greater Than Average\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #162: Numbers Greater Than Average\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #162: Numbers Greater Than Average\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -9922,14 +11049,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Original Array: [1, 4, 17, 7, 25, 3, 100] The average of the said array is: 22.0 The numbers in the said array that are ",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-162-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Original Array: [1, 4, 17, 7, 25, 3, 100] The average of the said array is: 22.0 The numbers in the said array that are ",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-162-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Original Array: [1, 4, 17, 7, 25, 3, 100] The average of the said array is: 22.0 The numbers in the said array that are ",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -9973,7 +11107,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #163: Binary Zeros Count\n// Problem: Binary Zeros Count\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #163: Binary Zeros Count\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 163. Binary Zeros Count\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #163: Binary Zeros Count\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #163: Binary Zeros Count\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #163: Binary Zeros Count\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -9985,14 +11119,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "first number: 25, Binary representation of 25 is: 11001, Number of zero bits: 2",
         "expectedOutput": "Input first number: 25 Binary representation of 25 is: 11001 Number of zero bits: 2",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-163-2",
-        "input": "first number: 25, Binary representation of 25 is: 11001, Number of zero bits: 2",
+        "input": "30 30 11006 7",
+        "expectedOutput": "Input first number: 25 Binary representation of 25 is: 11001 Number of zero bits: 2",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-163-3",
+        "input": "50 50 22002 4",
         "expectedOutput": "Input first number: 25 Binary representation of 25 is: 11001 Number of zero bits: 2",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -10034,7 +11175,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #164: Divide Using Subtraction\n// Problem: Divide Using Subtraction\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #164: Divide Using Subtraction\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 164. Divide Using Subtraction\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #164: Divide Using Subtraction\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #164: Divide Using Subtraction\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #164: Divide Using Subtraction\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -10046,14 +11187,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "the dividend: 625, Input the divider: 25, Result: 25.0",
         "expectedOutput": "Input the dividend: 625 Input the divider: 25 Result: 25.0",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-164-2",
-        "input": "the dividend: 625, Input the divider: 25, Result: 25.0",
+        "input": "630 30 30",
+        "expectedOutput": "Input the dividend: 625 Input the divider: 25 Result: 25.0",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-164-3",
+        "input": "1250 50 50",
         "expectedOutput": "Input the dividend: 625 Input the divider: 25 Result: 25.0",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -10096,7 +11244,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #165: Move Positives Right\n// Problem: Move Positives Right\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #165: Move Positives Right\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 165. Move Positives Right\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #165: Move Positives Right\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #165: Move Positives Right\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #165: Move Positives Right\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -10108,14 +11256,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Original array: [-2, 3, 4, -1, -3, 1, 2, -4, 0] Result: [-4, -3, -2, -1, 0, 1, 2, 3, 4]",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-165-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Original array: [-2, 3, 4, -1, -3, 1, 2, -4, 0] Result: [-4, -3, -2, -1, 0, 1, 2, 3, 4]",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-165-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Original array: [-2, 3, 4, -1, -3, 1, 2, -4, 0] Result: [-4, -3, -2, -1, 0, 1, 2, 3, 4]",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -10157,7 +11312,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #166: Integer to String Format\n// Problem: Integer to String Format\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #166: Integer to String Format\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 166. Integer to String Format\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #166: Integer to String Format\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #166: Integer to String Format\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #166: Integer to String Format\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -10169,14 +11324,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "an integer: 35, String format of the said integer: 35",
         "expectedOutput": "Input an integer: 35 String format of the said integer: 35",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-166-2",
-        "input": "an integer: 35, String format of the said integer: 35",
+        "input": "40 40",
+        "expectedOutput": "Input an integer: 35 String format of the said integer: 35",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-166-3",
+        "input": "70 70",
         "expectedOutput": "Input an integer: 35 String format of the said integer: 35",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -10218,7 +11380,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #167: Move Zeros to Right\n// Problem: Move Zeros to Right\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #167: Move Zeros to Right\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 167. Move Zeros to Right\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #167: Move Zeros to Right\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #167: Move Zeros to Right\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #167: Move Zeros to Right\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -10230,14 +11392,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-167-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-167-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -10279,7 +11448,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #168: Multiply Without Operator\n// Problem: Multiply Without Operator\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #168: Multiply Without Operator\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 168. Multiply Without Operator\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #168: Multiply Without Operator\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #168: Multiply Without Operator\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #168: Multiply Without Operator\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -10291,14 +11460,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "the first number: 25, Input the second number: 5, Result: 125",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-168-2",
-        "input": "the first number: 25, Input the second number: 5, Result: 125",
+        "input": "30 10 130",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-168-3",
+        "input": "50 10 250",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -10341,7 +11517,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #169: Reverse Sentence Without Words\n// Problem: Reverse Sentence Without Words\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #169: Reverse Sentence Without Words\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 169. Reverse Sentence Without Words\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #169: Reverse Sentence Without Words\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #169: Reverse Sentence Without Words\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #169: Reverse Sentence Without Words\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -10353,14 +11529,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "a string: The quick brown fox jumps over the lazy dog, Result: dog lazy the over jumps fox brown quick The",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-169-2",
-        "input": "a string: The quick brown fox jumps over the lazy dog, Result: dog lazy the over jumps fox brown quick The",
+        "input": "a string: The quick brown fox jumps over the lazy dog, Result: dog lazy the over jumps fox brown quick The (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-169-3",
+        "input": "a string: The quick brown fox jumps over the lazy dog, Result: dog lazy the over jumps fox brown quick The (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -10402,7 +11585,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #170: Longest Consecutive Sequence\n// Problem: Longest Consecutive Sequence\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #170: Longest Consecutive Sequence\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 170. Longest Consecutive Sequence\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #170: Longest Consecutive Sequence\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #170: Longest Consecutive Sequence\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #170: Longest Consecutive Sequence\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -10414,14 +11597,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-170-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-170-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -10464,7 +11654,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #171: Test Substring in String\n// Problem: Test Substring in String\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #171: Test Substring in String\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 171. Test Substring in String\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #171: Test Substring in String\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #171: Test Substring in String\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #171: Test Substring in String\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -10476,14 +11666,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "first string: Once in a blue moon, Input second string: See eye to eye, If the second string contains the first one? fal",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-171-2",
-        "input": "first string: Once in a blue moon, Input second string: See eye to eye, If the second string contains the first one? fal",
+        "input": "first string: Once in a blue moon, Input second string: See eye to eye, If the second string contains the first one? fal (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-171-3",
+        "input": "first string: Once in a blue moon, Input second string: See eye to eye, If the second string contains the first one? fal (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -10525,7 +11722,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #172: Elements Smaller Than Another Array\n// Problem: Elements Smaller Than Another Array\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #172: Elements Smaller Than Another Array\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 172. Elements Smaller Than Another Array\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #172: Elements Smaller Than Another Array\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #172: Elements Smaller Than Another Array\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #172: Elements Smaller Than Another Array\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -10537,14 +11734,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "0 3 7",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-172-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "0 3 7",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-172-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "0 3 7",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -10586,7 +11790,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #173: Median in Sliding Window\n// Problem: Median in Sliding Window\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #173: Median in Sliding Window\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 173. Median in Sliding Window\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #173: Median in Sliding Window\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #173: Median in Sliding Window\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #173: Median in Sliding Window\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -10598,14 +11802,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "{|1, 2, 3|, 4, 5, 6, 7, 8, 8} -> Return median 2, {1, |2, 3, 4|, 5, 6, 7, 8, 8} -> Return median 3, {1, 2, |3, 4, 5|, 6,",
         "expectedOutput": "{|1, 2, 3|, 4, 5, 6, 7, 8, 8} -> Return median 2 {1, |2, 3, 4|, 5, 6, 7, 8, 8} -> Return median 3 {1, 2, |3, 4, 5|, 6, 7",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-173-2",
-        "input": "{|1, 2, 3|, 4, 5, 6, 7, 8, 8} -> Return median 2, {1, |2, 3, 4|, 5, 6, 7, 8, 8} -> Return median 3, {1, 2, |3, 4, 5|, 6,",
+        "input": "6 7 8 9 10 11 12 13 13 7 6 7 8 9 10 11 12 13 13 8 6 7 8 9 10 11",
+        "expectedOutput": "{|1, 2, 3|, 4, 5, 6, 7, 8, 8} -> Return median 2 {1, |2, 3, 4|, 5, 6, 7, 8, 8} -> Return median 3 {1, 2, |3, 4, 5|, 6, 7",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-173-3",
+        "input": "2 4 6 8 10 12 14 16 16 4 2 4 6 8 10 12 14 16 16 6 2 4 6 8 10 12",
         "expectedOutput": "{|1, 2, 3|, 4, 5, 6, 7, 8, 8} -> Return median 2 {1, |2, 3, 4|, 5, 6, 7, 8, 8} -> Return median 3 {1, 2, |3, 4, 5|, 6, 7",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -10647,7 +11858,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #174: Max in Sliding Window\n// Problem: Max in Sliding Window\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #174: Max in Sliding Window\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 174. Max in Sliding Window\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #174: Max in Sliding Window\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #174: Max in Sliding Window\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #174: Max in Sliding Window\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -10659,14 +11870,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "{|1, 2, 3|, 4, 5, 6, 7, 8, 8} -> Return maximum 3, {1, |2, 3, 4|, 5, 6, 7, 8, 8} -> Return maximum 4, {1, 2, |3, 4, 5|, ",
         "expectedOutput": "{|1, 2, 3|, 4, 5, 6, 7, 8, 8} -> Return maximum 3 {1, |2, 3, 4|, 5, 6, 7, 8, 8} -> Return maximum 4 {1, 2, |3, 4, 5|, 6,",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-174-2",
-        "input": "{|1, 2, 3|, 4, 5, 6, 7, 8, 8} -> Return maximum 3, {1, |2, 3, 4|, 5, 6, 7, 8, 8} -> Return maximum 4, {1, 2, |3, 4, 5|, ",
+        "input": "6 7 8 9 10 11 12 13 13 8 6 7 8 9 10 11 12 13 13 9 6 7 8 9 10",
+        "expectedOutput": "{|1, 2, 3|, 4, 5, 6, 7, 8, 8} -> Return maximum 3 {1, |2, 3, 4|, 5, 6, 7, 8, 8} -> Return maximum 4 {1, 2, |3, 4, 5|, 6,",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-174-3",
+        "input": "2 4 6 8 10 12 14 16 16 6 2 4 6 8 10 12 14 16 16 8 2 4 6 8 10",
         "expectedOutput": "{|1, 2, 3|, 4, 5, 6, 7, 8, 8} -> Return maximum 3 {1, |2, 3, 4|, 5, 6, 7, 8, 8} -> Return maximum 4 {1, 2, |3, 4, 5|, 6,",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -10708,7 +11926,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #175: Delete Middle Node in Linked List\n// Problem: Delete Middle Node in Linked List\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #175: Delete Middle Node in Linked List\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 175. Delete Middle Node in Linked List\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #175: Delete Middle Node in Linked List\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #175: Delete Middle Node in Linked List\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #175: Delete Middle Node in Linked List\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -10720,14 +11938,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-175-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-175-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -10770,7 +11995,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #176: Partition Even and Odd\n// Problem: Partition Even and Odd\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #176: Partition Even and Odd\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 176. Partition Even and Odd\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #176: Partition Even and Odd\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #176: Partition Even and Odd\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #176: Partition Even and Odd\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -10782,14 +12007,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-176-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-176-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -10831,7 +12063,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #177: Clone Binary Tree\n// Problem: Clone Binary Tree\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #177: Clone Binary Tree\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 177. Clone Binary Tree\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #177: Clone Binary Tree\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #177: Clone Binary Tree\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #177: Clone Binary Tree\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -10843,14 +12075,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-177-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-177-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -10892,7 +12131,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #178: Longest Increasing Subsequence\n// Problem: Longest Increasing Subsequence\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #178: Longest Increasing Subsequence\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 178. Longest Increasing Subsequence\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #178: Longest Increasing Subsequence\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #178: Longest Increasing Subsequence\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #178: Longest Increasing Subsequence\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -10904,14 +12143,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-178-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-178-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -10955,7 +12201,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #179: Add One to Array Number\n// Problem: Add One to Array Number\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #179: Add One to Array Number\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 179. Add One to Array Number\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #179: Add One to Array Number\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #179: Add One to Array Number\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #179: Add One to Array Number\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -10967,14 +12213,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-179-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-179-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -11016,7 +12269,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #180: Swap Adjacent Nodes in List\n// Problem: Swap Adjacent Nodes in List\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #180: Swap Adjacent Nodes in List\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 180. Swap Adjacent Nodes in List\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #180: Swap Adjacent Nodes in List\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #180: Swap Adjacent Nodes in List\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #180: Swap Adjacent Nodes in List\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -11028,14 +12281,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-180-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-180-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -11077,7 +12337,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #181: Length of Last Word\n// Problem: Length of Last Word\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #181: Length of Last Word\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 181. Length of Last Word\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #181: Length of Last Word\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #181: Length of Last Word\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #181: Length of Last Word\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -11089,14 +12349,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": ":",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-181-2",
-        "input": ":",
+        "input": ": (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-181-3",
+        "input": ": (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -11140,7 +12407,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #182: Check Identical Binary Trees\n// Problem: Check Identical Binary Trees\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #182: Check Identical Binary Trees\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 182. Check Identical Binary Trees\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #182: Check Identical Binary Trees\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #182: Check Identical Binary Trees\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #182: Check Identical Binary Trees\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -11152,14 +12419,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": ":",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-182-2",
-        "input": ":",
+        "input": ": (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-182-3",
+        "input": ": (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -11203,7 +12477,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #183: Sum Digits to Single Digit\n// Problem: Sum Digits to Single Digit\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #183: Sum Digits to Single Digit\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 183. Sum Digits to Single Digit\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #183: Sum Digits to Single Digit\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #183: Sum Digits to Single Digit\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #183: Sum Digits to Single Digit\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -11215,14 +12489,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-183-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-183-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -11264,7 +12545,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #184: Longest Consecutive Path in Tree\n// Problem: Longest Consecutive Path in Tree\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #184: Longest Consecutive Path in Tree\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 184. Longest Consecutive Path in Tree\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #184: Longest Consecutive Path in Tree\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #184: Longest Consecutive Path in Tree\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #184: Longest Consecutive Path in Tree\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -11276,14 +12557,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-184-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-184-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -11325,7 +12613,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #185: Check Isomorphic Strings\n// Problem: Check Isomorphic Strings\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #185: Check Isomorphic Strings\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 185. Check Isomorphic Strings\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #185: Check Isomorphic Strings\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #185: Check Isomorphic Strings\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #185: Check Isomorphic Strings\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -11337,14 +12625,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-185-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-185-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -11388,7 +12683,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #186: Check Strobogrammatic Number\n// Problem: Check Strobogrammatic Number\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #186: Check Strobogrammatic Number\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 186. Check Strobogrammatic Number\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #186: Check Strobogrammatic Number\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #186: Check Strobogrammatic Number\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #186: Check Strobogrammatic Number\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -11400,14 +12695,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-186-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-186-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -11449,7 +12751,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #187: First Non-Repeating Character\n// Problem: First Non-Repeating Character\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #187: First Non-Repeating Character\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 187. First Non-Repeating Character\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #187: First Non-Repeating Character\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #187: First Non-Repeating Character\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #187: First Non-Repeating Character\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -11461,14 +12763,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-187-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-187-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -11510,7 +12819,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #188: Find Anagram Start Indices\n// Problem: Find Anagram Start Indices\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #188: Find Anagram Start Indices\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 188. Find Anagram Start Indices\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #188: Find Anagram Start Indices\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #188: Find Anagram Start Indices\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #188: Find Anagram Start Indices\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -11522,14 +12831,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-188-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-188-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -11573,7 +12889,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #189: Sum Two Numbers as Strings\n// Problem: Sum Two Numbers as Strings\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #189: Sum Two Numbers as Strings\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 189. Sum Two Numbers as Strings\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #189: Sum Two Numbers as Strings\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #189: Sum Two Numbers as Strings\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #189: Sum Two Numbers as Strings\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -11585,14 +12901,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-189-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-189-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -11634,7 +12957,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #190: Find Missing String\n// Problem: Find Missing String\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #190: Find Missing String\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 190. Find Missing String\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #190: Find Missing String\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #190: Find Missing String\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #190: Find Missing String\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -11646,14 +12969,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-190-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-190-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -11696,7 +13026,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #191: Sum of Two Squares\n// Problem: Sum of Two Squares\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #191: Sum of Two Squares\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 191. Sum of Two Squares\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #191: Sum of Two Squares\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #191: Sum of Two Squares\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #191: Sum of Two Squares\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -11708,14 +13038,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-191-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-191-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -11759,7 +13096,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #192: Rearrange Letters and Sum Digits\n// Problem: Rearrange Letters and Sum Digits\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #192: Rearrange Letters and Sum Digits\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 192. Rearrange Letters and Sum Digits\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #192: Rearrange Letters and Sum Digits\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #192: Rearrange Letters and Sum Digits\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #192: Rearrange Letters and Sum Digits\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -11771,14 +13108,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-192-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-192-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -11821,7 +13165,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #193: Subset Sums of Natural Numbers\n// Problem: Subset Sums of Natural Numbers\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #193: Subset Sums of Natural Numbers\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 193. Subset Sums of Natural Numbers\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #193: Subset Sums of Natural Numbers\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #193: Subset Sums of Natural Numbers\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #193: Subset Sums of Natural Numbers\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -11833,14 +13177,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-193-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-193-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -11884,7 +13235,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #194: Find Positions in Matrix\n// Problem: Find Positions in Matrix\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #194: Find Positions in Matrix\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 194. Find Positions in Matrix\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #194: Find Positions in Matrix\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #194: Find Positions in Matrix\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #194: Find Positions in Matrix\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -11896,14 +13247,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-194-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-194-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -11946,7 +13304,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #195: Check Triangle Validity\n// Problem: Check Triangle Validity\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #195: Check Triangle Validity\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 195. Check Triangle Validity\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #195: Check Triangle Validity\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #195: Check Triangle Validity\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #195: Check Triangle Validity\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -11958,14 +13316,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-195-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-195-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -11993,7 +13358,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Arrays & Matrices"
     ],
     "acceptanceRate": "54.6%",
-    "description": "rite a Java program\u00a0to create a spiral array of n * n sizes from a given\u00a0integer n.\n\nExpected Output:",
+    "description": "rite a Java program to create a spiral array of n * n sizes from a given integer n.\n\nExpected Output:",
     "examples": [
       {
         "input": "Standard input / variables",
@@ -12007,7 +13372,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #196: Generate Spiral Matrix\n// Problem: Generate Spiral Matrix\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #196: Generate Spiral Matrix\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 196. Generate Spiral Matrix\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #196: Generate Spiral Matrix\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #196: Generate Spiral Matrix\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #196: Generate Spiral Matrix\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -12019,14 +13384,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-196-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-196-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -12068,7 +13440,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #197: Check Perfect Square\n// Problem: Check Perfect Square\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #197: Check Perfect Square\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 197. Check Perfect Square\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #197: Check Perfect Square\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #197: Check Perfect Square\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #197: Check Perfect Square\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -12080,14 +13452,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-197-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-197-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -12129,7 +13508,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #198: Prime Number Position\n// Problem: Prime Number Position\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #198: Prime Number Position\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 198. Prime Number Position\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #198: Prime Number Position\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #198: Prime Number Position\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #198: Prime Number Position\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -12141,14 +13520,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-198-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-198-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -12192,7 +13578,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #199: String Follows Pattern\n// Problem: String Follows Pattern\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #199: String Follows Pattern\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 199. String Follows Pattern\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #199: String Follows Pattern\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #199: String Follows Pattern\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #199: String Follows Pattern\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -12204,14 +13590,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-199-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-199-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -12254,7 +13647,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #200: Remove Duplicate Letters\n// Problem: Remove Duplicate Letters\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #200: Remove Duplicate Letters\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 200. Remove Duplicate Letters\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #200: Remove Duplicate Letters\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #200: Remove Duplicate Letters\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #200: Remove Duplicate Letters\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -12266,14 +13659,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-200-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-200-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -12317,7 +13717,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #201: Divide Array into Equal Sum Subsets\n// Problem: Divide Array into Equal Sum Subsets\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #201: Divide Array into Equal Sum Subsets\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 201. Divide Array into Equal Sum Subsets\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #201: Divide Array into Equal Sum Subsets\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #201: Divide Array into Equal Sum Subsets\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #201: Divide Array into Equal Sum Subsets\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -12329,14 +13729,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-201-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-201-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -12380,7 +13787,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #202: Continuous Subarrays with Target Sum\n// Problem: Continuous Subarrays with Target Sum\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #202: Continuous Subarrays with Target Sum\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 202. Continuous Subarrays with Target Sum\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #202: Continuous Subarrays with Target Sum\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #202: Continuous Subarrays with Target Sum\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #202: Continuous Subarrays with Target Sum\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -12392,14 +13799,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-202-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-202-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -12443,7 +13857,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #203: Max Average of Subarray\n// Problem: Max Average of Subarray\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #203: Max Average of Subarray\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 203. Max Average of Subarray\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #203: Max Average of Subarray\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #203: Max Average of Subarray\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #203: Max Average of Subarray\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -12455,14 +13869,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-203-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-203-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -12504,7 +13925,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #204: Compute Modular Exponentiation\n// Problem: Compute Modular Exponentiation\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #204: Compute Modular Exponentiation\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 204. Compute Modular Exponentiation\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #204: Compute Modular Exponentiation\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #204: Compute Modular Exponentiation\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #204: Compute Modular Exponentiation\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -12516,14 +13937,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-204-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-204-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -12565,7 +13993,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #205: Check If Power of Two in O(1)\n// Problem: Check If Power of Two in O(1)\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #205: Check If Power of Two in O(1)\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 205. Check If Power of Two in O(1)\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #205: Check If Power of Two in O(1)\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #205: Check If Power of Two in O(1)\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #205: Check If Power of Two in O(1)\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -12577,14 +14005,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-205-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-205-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -12629,7 +14064,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #206: Generate CRC32 Checksum\n// Problem: Generate CRC32 Checksum\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #206: Generate CRC32 Checksum\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 206. Generate CRC32 Checksum\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #206: Generate CRC32 Checksum\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #206: Generate CRC32 Checksum\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #206: Generate CRC32 Checksum\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -12641,14 +14076,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": ":",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-206-2",
-        "input": ":",
+        "input": ": (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-206-3",
+        "input": ": (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -12690,7 +14132,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #207: Merge Two Sorted Linked Lists\n// Problem: Merge Two Sorted Linked Lists\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #207: Merge Two Sorted Linked Lists\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 207. Merge Two Sorted Linked Lists\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #207: Merge Two Sorted Linked Lists\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #207: Merge Two Sorted Linked Lists\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #207: Merge Two Sorted Linked Lists\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -12702,14 +14144,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-207-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-207-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -12752,7 +14201,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #208: String Compression with Repeated Counts\n// Problem: String Compression with Repeated Counts\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #208: String Compression with Repeated Counts\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 208. String Compression with Repeated Counts\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #208: String Compression with Repeated Counts\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #208: String Compression with Repeated Counts\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #208: String Compression with Repeated Counts\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -12764,14 +14213,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "string: aaaabbbbcccccddddeeee",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-208-2",
-        "input": "string: aaaabbbbcccccddddeeee",
+        "input": "string: aaaabbbbcccccddddeeee (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-208-3",
+        "input": "string: aaaabbbbcccccddddeeee (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -12815,7 +14271,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #209: Unique Combinations for Target Sum\n// Problem: Unique Combinations for Target Sum\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #209: Unique Combinations for Target Sum\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 209. Unique Combinations for Target Sum\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #209: Unique Combinations for Target Sum\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #209: Unique Combinations for Target Sum\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #209: Unique Combinations for Target Sum\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -12827,14 +14283,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "number of elements of the array:, 3, Input number format: 2 3 4 5:",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-209-2",
-        "input": "number of elements of the array:, 3, Input number format: 2 3 4 5:",
+        "input": "8 7 8 9 10",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-209-3",
+        "input": "6 4 6 8 10",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -12876,7 +14339,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #210: String Matching with Wildcards\n// Problem: String Matching with Wildcards\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #210: String Matching with Wildcards\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 210. String Matching with Wildcards\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #210: String Matching with Wildcards\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #210: String Matching with Wildcards\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #210: String Matching with Wildcards\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -12888,14 +14351,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "string.",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-210-2",
-        "input": "string.",
+        "input": "string. (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-210-3",
+        "input": "string. (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -12923,10 +14393,10 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Core Java"
     ],
     "acceptanceRate": "59.1%",
-    "description": "Write a Java program to find the heights of the top three buildings in descending order from eight given buildings.\n\nInput:\n\n0 \u2264 height of building (integer) \u2264 10,000\n\nExpected Output:",
+    "description": "Write a Java program to find the heights of the top three buildings in descending order from eight given buildings.\n\nInput:\n\n0 ≤ height of building (integer) ≤ 10,000\n\nExpected Output:",
     "examples": [
       {
-        "input": "0 \u2264 height of building (integer) \u2264 10,000",
+        "input": "0 ≤ height of building (integer) ≤ 10,000",
         "output": ":",
         "explanation": "Verify standard Java 17 logic and output formatting."
       }
@@ -12937,7 +14407,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #211: Find Top Three Building Heights\n// Problem: Find Top Three Building Heights\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #211: Find Top Three Building Heights\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 211. Find Top Three Building Heights\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #211: Find Top Three Building Heights\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #211: Find Top Three Building Heights\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #211: Find Top Three Building Heights\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -12946,21 +14416,28 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
     "testCases": [
       {
         "id": "tc-basic-211-1",
-        "input": "0 \u2264 height of building (integer) \u2264 10,000",
+        "input": "0 ≤ height of building (integer) ≤ 10,000",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-211-2",
-        "input": "0 \u2264 height of building (integer) \u2264 10,000",
+        "input": "5 15 5",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-211-3",
+        "input": "0 20 0",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
-      "level1": "What is the objective of '211. Find Top Three Building Heights'? For example: with input '0 \u2264 height of building (integer) \u2264 10,000', the expected output is ':'. What variables or data types (int, double, String) do you need to store the input?",
+      "level1": "What is the objective of '211. Find Top Three Building Heights'? For example: with input '0 ≤ height of building (integer) ≤ 10,000', the expected output is ':'. What variables or data types (int, double, String) do you need to store the input?",
       "level2": "Focus on the core concept: this exercise exercises Core Java. Determine whether standard arithmetic, a conditional check, or a string/loop traversal is needed.",
       "level3": "Pattern & Data Structure: Use `java.util.Scanner` to read input tokens from `System.in` (`sc.nextInt()`, `sc.nextLine()`). Keep your logic concise inside `public class Solution`.",
       "level4": "Algorithmic Approach:\n1. Initialize `Scanner sc = new Scanner(System.in);`\n2. Read the required input value(s)\n3. Compute the result using the appropriate Core Java formula or logic\n4. Output the result using `System.out.println(...)` matching the expected format.",
@@ -12986,10 +14463,10 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Loops & Numbers"
     ],
     "acceptanceRate": "58.2%",
-    "description": "Write a Java program to compute the digit number of the sum of two given integers.\n\nInput:\n\nEach test case consists of two non-negative integers a and b which are separated by a space in a line.\n0 \u2264 a, b \u2264 1,000,000\n\nExpected Output:",
+    "description": "Write a Java program to compute the digit number of the sum of two given integers.\n\nInput:\n\nEach test case consists of two non-negative integers a and b which are separated by a space in a line.\n0 ≤ a, b ≤ 1,000,000\n\nExpected Output:",
     "examples": [
       {
-        "input": "Each test case consists of two non-negative integers a and b which are separated by a space in a line., 0 \u2264 a, b \u2264 1,000",
+        "input": "Each test case consists of two non-negative integers a and b which are separated by a space in a line., 0 ≤ a, b ≤ 1,000",
         "output": ":",
         "explanation": "Verify standard Java 17 logic and output formatting."
       }
@@ -13000,7 +14477,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #212: Digit Count of Sum of Two Integers\n// Problem: Digit Count of Sum of Two Integers\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #212: Digit Count of Sum of Two Integers\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 212. Digit Count of Sum of Two Integers\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #212: Digit Count of Sum of Two Integers\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #212: Digit Count of Sum of Two Integers\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #212: Digit Count of Sum of Two Integers\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -13009,21 +14486,28 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
     "testCases": [
       {
         "id": "tc-basic-212-1",
-        "input": "Each test case consists of two non-negative integers a and b which are separated by a space in a line., 0 \u2264 a, b \u2264 1,000",
+        "input": "Each test case consists of two non-negative integers a and b which are separated by a space in a line., 0 ≤ a, b ≤ 1,000",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-212-2",
-        "input": "Each test case consists of two non-negative integers a and b which are separated by a space in a line., 0 \u2264 a, b \u2264 1,000",
+        "input": "5 6 5",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-212-3",
+        "input": "0 2 0",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
-      "level1": "What is the objective of '212. Digit Count of Sum of Two Integers'? For example: with input 'Each test case consists of two non-negative integers a and b which are separated by a space in a line., 0 \u2264 a, b \u2264 1,000', the expected output is ':'. What variables or data types (int, double, String) do you need to store the input?",
+      "level1": "What is the objective of '212. Digit Count of Sum of Two Integers'? For example: with input 'Each test case consists of two non-negative integers a and b which are separated by a space in a line., 0 ≤ a, b ≤ 1,000', the expected output is ':'. What variables or data types (int, double, String) do you need to store the input?",
       "level2": "Focus on the core concept: this exercise exercises Arithmetic & Math, Conditionals & Logic, Loops & Numbers. Determine whether standard arithmetic, a conditional check, or a string/loop traversal is needed.",
       "level3": "Pattern & Data Structure: Use `java.util.Scanner` to read input tokens from `System.in` (`sc.nextInt()`, `sc.nextLine()`). Keep your logic concise inside `public class Solution`.",
       "level4": "Algorithmic Approach:\n1. Initialize `Scanner sc = new Scanner(System.in);`\n2. Read the required input value(s)\n3. Compute the result using the appropriate Arithmetic & Math, Conditionals & Logic, Loops & Numbers formula or logic\n4. Output the result using `System.out.println(...)` matching the expected format.",
@@ -13049,10 +14533,10 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Conditionals & Logic"
     ],
     "acceptanceRate": "57.3%",
-    "description": "Write a Java program to check whether three given lengths (integers) of three sides form a right triangle. Print \"Yes\" if the given sides form a right triangle otherwise print \"No\".\n\nInput:\n\nEach test case consists of two non-negative integers a and b which are separated by a space in a line.\n0 \u2264 a, b \u2264 1,000,000\n\nExpected Output:",
+    "description": "Write a Java program to check whether three given lengths (integers) of three sides form a right triangle. Print \"Yes\" if the given sides form a right triangle otherwise print \"No\".\n\nInput:\n\nEach test case consists of two non-negative integers a and b which are separated by a space in a line.\n0 ≤ a, b ≤ 1,000,000\n\nExpected Output:",
     "examples": [
       {
-        "input": "Each test case consists of two non-negative integers a and b which are separated by a space in a line., 0 \u2264 a, b \u2264 1,000",
+        "input": "Each test case consists of two non-negative integers a and b which are separated by a space in a line., 0 ≤ a, b ≤ 1,000",
         "output": ":",
         "explanation": "Verify standard Java 17 logic and output formatting."
       }
@@ -13063,7 +14547,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #213: Check If Sides Form Right Triangle\n// Problem: Check If Sides Form Right Triangle\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #213: Check If Sides Form Right Triangle\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 213. Check If Sides Form Right Triangle\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #213: Check If Sides Form Right Triangle\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #213: Check If Sides Form Right Triangle\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #213: Check If Sides Form Right Triangle\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -13072,21 +14556,28 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
     "testCases": [
       {
         "id": "tc-basic-213-1",
-        "input": "Each test case consists of two non-negative integers a and b which are separated by a space in a line., 0 \u2264 a, b \u2264 1,000",
+        "input": "Each test case consists of two non-negative integers a and b which are separated by a space in a line., 0 ≤ a, b ≤ 1,000",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-213-2",
-        "input": "Each test case consists of two non-negative integers a and b which are separated by a space in a line., 0 \u2264 a, b \u2264 1,000",
+        "input": "5 6 5",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-213-3",
+        "input": "0 2 0",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
-      "level1": "What is the objective of '213. Check If Sides Form Right Triangle'? For example: with input 'Each test case consists of two non-negative integers a and b which are separated by a space in a line., 0 \u2264 a, b \u2264 1,000', the expected output is ':'. What variables or data types (int, double, String) do you need to store the input?",
+      "level1": "What is the objective of '213. Check If Sides Form Right Triangle'? For example: with input 'Each test case consists of two non-negative integers a and b which are separated by a space in a line., 0 ≤ a, b ≤ 1,000', the expected output is ':'. What variables or data types (int, double, String) do you need to store the input?",
       "level2": "Focus on the core concept: this exercise exercises Input/Output, Geometry & Math, Conditionals & Logic. Determine whether standard arithmetic, a conditional check, or a string/loop traversal is needed.",
       "level3": "Pattern & Data Structure: Use `java.util.Scanner` to read input tokens from `System.in` (`sc.nextInt()`, `sc.nextLine()`). Keep your logic concise inside `public class Solution`.",
       "level4": "Algorithmic Approach:\n1. Initialize `Scanner sc = new Scanner(System.in);`\n2. Read the required input value(s)\n3. Compute the result using the appropriate Input/Output, Geometry & Math, Conditionals & Logic formula or logic\n4. Output the result using `System.out.println(...)` matching the expected format.",
@@ -13110,10 +14601,10 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Input/Output"
     ],
     "acceptanceRate": "56.4%",
-    "description": "Write a Java program which solve the equation:\nax+by=c\ndx+ey=f\nPrint the values of x, y where a, b, c, d, e and f are given.\n\nInput:\n\na,b,c,d,e,f separated by a single space.\n(-1,000 \u2264 a,b,c,d,e,f \u2264 1,000)\n\nExpected Output:",
+    "description": "Write a Java program which solve the equation:\nax+by=c\ndx+ey=f\nPrint the values of x, y where a, b, c, d, e and f are given.\n\nInput:\n\na,b,c,d,e,f separated by a single space.\n(-1,000 ≤ a,b,c,d,e,f ≤ 1,000)\n\nExpected Output:",
     "examples": [
       {
-        "input": "a,b,c,d,e,f separated by a single space., (-1,000 \u2264 a,b,c,d,e,f \u2264 1,000)",
+        "input": "a,b,c,d,e,f separated by a single space., (-1,000 ≤ a,b,c,d,e,f ≤ 1,000)",
         "output": ":",
         "explanation": "Verify standard Java 17 logic and output formatting."
       }
@@ -13124,7 +14615,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #214: Solve Linear Equations\n// Problem: Solve Linear Equations\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #214: Solve Linear Equations\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 214. Solve Linear Equations\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #214: Solve Linear Equations\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #214: Solve Linear Equations\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #214: Solve Linear Equations\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -13133,21 +14624,28 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
     "testCases": [
       {
         "id": "tc-basic-214-1",
-        "input": "a,b,c,d,e,f separated by a single space., (-1,000 \u2264 a,b,c,d,e,f \u2264 1,000)",
+        "input": "a,b,c,d,e,f separated by a single space., (-1,000 ≤ a,b,c,d,e,f ≤ 1,000)",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-214-2",
-        "input": "a,b,c,d,e,f separated by a single space., (-1,000 \u2264 a,b,c,d,e,f \u2264 1,000)",
+        "input": "4 5 6 5",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-214-3",
+        "input": "-2 0 2 0",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
-      "level1": "What is the objective of '214. Solve Linear Equations'? For example: with input 'a,b,c,d,e,f separated by a single space., (-1,000 \u2264 a,b,c,d,e,f \u2264 1,000)', the expected output is ':'. What variables or data types (int, double, String) do you need to store the input?",
+      "level1": "What is the objective of '214. Solve Linear Equations'? For example: with input 'a,b,c,d,e,f separated by a single space., (-1,000 ≤ a,b,c,d,e,f ≤ 1,000)', the expected output is ':'. What variables or data types (int, double, String) do you need to store the input?",
       "level2": "Focus on the core concept: this exercise exercises Input/Output. Determine whether standard arithmetic, a conditional check, or a string/loop traversal is needed.",
       "level3": "Pattern & Data Structure: Use `java.util.Scanner` to read input tokens from `System.in` (`sc.nextInt()`, `sc.nextLine()`). Keep your logic concise inside `public class Solution`.",
       "level4": "Algorithmic Approach:\n1. Initialize `Scanner sc = new Scanner(System.in);`\n2. Read the required input value(s)\n3. Compute the result using the appropriate Input/Output formula or logic\n4. Output the result using `System.out.println(...)` matching the expected format.",
@@ -13171,10 +14669,10 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Core Java"
     ],
     "acceptanceRate": "55.5%",
-    "description": "Write a Java program to compute the debt amount in n months. Monthly, the loan adds 4% interest to the $100,000 borrowed and rounds it to the nearest 1,000.\n\nInput:\n\nAn integer n (0 \u2264 n \u2264 100)\n\nExpected Output:",
+    "description": "Write a Java program to compute the debt amount in n months. Monthly, the loan adds 4% interest to the $100,000 borrowed and rounds it to the nearest 1,000.\n\nInput:\n\nAn integer n (0 ≤ n ≤ 100)\n\nExpected Output:",
     "examples": [
       {
-        "input": "An integer n (0 \u2264 n \u2264 100)",
+        "input": "An integer n (0 ≤ n ≤ 100)",
         "output": ":",
         "explanation": "Verify standard Java 17 logic and output formatting."
       }
@@ -13185,7 +14683,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #215: Compute Loan Debt After N Months\n// Problem: Compute Loan Debt After N Months\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #215: Compute Loan Debt After N Months\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 215. Compute Loan Debt After N Months\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #215: Compute Loan Debt After N Months\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #215: Compute Loan Debt After N Months\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #215: Compute Loan Debt After N Months\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -13194,21 +14692,28 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
     "testCases": [
       {
         "id": "tc-basic-215-1",
-        "input": "An integer n (0 \u2264 n \u2264 100)",
+        "input": "An integer n (0 ≤ n ≤ 100)",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-215-2",
-        "input": "An integer n (0 \u2264 n \u2264 100)",
+        "input": "5 105",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-215-3",
+        "input": "0 200",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
-      "level1": "What is the objective of '215. Compute Loan Debt After N Months'? For example: with input 'An integer n (0 \u2264 n \u2264 100)', the expected output is ':'. What variables or data types (int, double, String) do you need to store the input?",
+      "level1": "What is the objective of '215. Compute Loan Debt After N Months'? For example: with input 'An integer n (0 ≤ n ≤ 100)', the expected output is ':'. What variables or data types (int, double, String) do you need to store the input?",
       "level2": "Focus on the core concept: this exercise exercises Core Java. Determine whether standard arithmetic, a conditional check, or a string/loop traversal is needed.",
       "level3": "Pattern & Data Structure: Use `java.util.Scanner` to read input tokens from `System.in` (`sc.nextInt()`, `sc.nextLine()`). Keep your logic concise inside `public class Solution`.",
       "level4": "Algorithmic Approach:\n1. Initialize `Scanner sc = new Scanner(System.in);`\n2. Read the required input value(s)\n3. Compute the result using the appropriate Core Java formula or logic\n4. Output the result using `System.out.println(...)` matching the expected format.",
@@ -13234,10 +14739,10 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Loops & Numbers"
     ],
     "acceptanceRate": "54.6%",
-    "description": "Write a Java program which reads an integer n and finds the number of combinations of a,b,c and d (0 \u2264 a,b,c,d \u2264 9) where (a + b + c + d) equals n.\n\nInput:\n\na,b,c,d,e,f separated by a single space.\n(-1,000 \u2264 a,b,c,d,e,f \u2264 1,000)\n\nExpected Output:",
+    "description": "Write a Java program which reads an integer n and finds the number of combinations of a,b,c and d (0 ≤ a,b,c,d ≤ 9) where (a + b + c + d) equals n.\n\nInput:\n\na,b,c,d,e,f separated by a single space.\n(-1,000 ≤ a,b,c,d,e,f ≤ 1,000)\n\nExpected Output:",
     "examples": [
       {
-        "input": "a,b,c,d,e,f separated by a single space., (-1,000 \u2264 a,b,c,d,e,f \u2264 1,000)",
+        "input": "a,b,c,d,e,f separated by a single space., (-1,000 ≤ a,b,c,d,e,f ≤ 1,000)",
         "output": ":",
         "explanation": "Verify standard Java 17 logic and output formatting."
       }
@@ -13248,7 +14753,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #216: Count Combinations for Sum N\n// Problem: Count Combinations for Sum N\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #216: Count Combinations for Sum N\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 216. Count Combinations for Sum N\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #216: Count Combinations for Sum N\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #216: Count Combinations for Sum N\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #216: Count Combinations for Sum N\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -13257,21 +14762,28 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
     "testCases": [
       {
         "id": "tc-basic-216-1",
-        "input": "a,b,c,d,e,f separated by a single space., (-1,000 \u2264 a,b,c,d,e,f \u2264 1,000)",
+        "input": "a,b,c,d,e,f separated by a single space., (-1,000 ≤ a,b,c,d,e,f ≤ 1,000)",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-216-2",
-        "input": "a,b,c,d,e,f separated by a single space., (-1,000 \u2264 a,b,c,d,e,f \u2264 1,000)",
+        "input": "4 5 6 5",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-216-3",
+        "input": "-2 0 2 0",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
-      "level1": "What is the objective of '216. Count Combinations for Sum N'? For example: with input 'a,b,c,d,e,f separated by a single space., (-1,000 \u2264 a,b,c,d,e,f \u2264 1,000)', the expected output is ':'. What variables or data types (int, double, String) do you need to store the input?",
+      "level1": "What is the objective of '216. Count Combinations for Sum N'? For example: with input 'a,b,c,d,e,f separated by a single space., (-1,000 ≤ a,b,c,d,e,f ≤ 1,000)', the expected output is ':'. What variables or data types (int, double, String) do you need to store the input?",
       "level2": "Focus on the core concept: this exercise exercises Arithmetic & Math, Conditionals & Logic, Loops & Numbers. Determine whether standard arithmetic, a conditional check, or a string/loop traversal is needed.",
       "level3": "Pattern & Data Structure: Use `java.util.Scanner` to read input tokens from `System.in` (`sc.nextInt()`, `sc.nextLine()`). Keep your logic concise inside `public class Solution`.",
       "level4": "Algorithmic Approach:\n1. Initialize `Scanner sc = new Scanner(System.in);`\n2. Read the required input value(s)\n3. Compute the result using the appropriate Arithmetic & Math, Conditionals & Logic, Loops & Numbers formula or logic\n4. Output the result using `System.out.println(...)` matching the expected format.",
@@ -13286,7 +14798,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
   {
     "id": "basic-prob-217",
     "slug": "java-basic-exercise-217",
-    "title": "217. Count Prime Numbers \u2264 N",
+    "title": "217. Count Prime Numbers ≤ N",
     "difficulty": "Medium",
     "category": "Basic Practice",
     "part": 2,
@@ -13297,10 +14809,10 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Loops & Numbers"
     ],
     "acceptanceRate": "53.7%",
-    "description": "Write a Java program to print the number of prime numbers less than or equal to a given integer.\n\nInput:\n\nn (1 \u2264 n \u2264 999,999)\n\nExpected Output:",
+    "description": "Write a Java program to print the number of prime numbers less than or equal to a given integer.\n\nInput:\n\nn (1 ≤ n ≤ 999,999)\n\nExpected Output:",
     "examples": [
       {
-        "input": "n (1 \u2264 n \u2264 999,999)",
+        "input": "n (1 ≤ n ≤ 999,999)",
         "output": ":",
         "explanation": "Verify standard Java 17 logic and output formatting."
       }
@@ -13311,30 +14823,37 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #217: Count Prime Numbers \u2264 N\n// Problem: Count Prime Numbers \u2264 N\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #217: Count Prime Numbers \u2264 N\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
-      "python": "# Exercise #217: Count Prime Numbers \u2264 N\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
-      "javascript": "// Exercise #217: Count Prime Numbers \u2264 N\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
-      "typescript": "// Exercise #217: Count Prime Numbers \u2264 N\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
-      "cpp": "// Exercise #217: Count Prime Numbers \u2264 N\n#include <iostream>\nusing namespace std;\n\nint main() {\n    // Write your solution here\n    return 0;\n}"
+      "java": "// Java 17 Solution for: 217. Count Prime Numbers ≤ N\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
+      "python": "# Exercise #217: Count Prime Numbers ≤ N\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
+      "javascript": "// Exercise #217: Count Prime Numbers ≤ N\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
+      "typescript": "// Exercise #217: Count Prime Numbers ≤ N\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
+      "cpp": "// Exercise #217: Count Prime Numbers ≤ N\n#include <iostream>\nusing namespace std;\n\nint main() {\n    // Write your solution here\n    return 0;\n}"
     },
     "testCases": [
       {
         "id": "tc-basic-217-1",
-        "input": "n (1 \u2264 n \u2264 999,999)",
+        "input": "n (1 ≤ n ≤ 999,999)",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-217-2",
-        "input": "n (1 \u2264 n \u2264 999,999)",
+        "input": "6 1004 1004",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-217-3",
+        "input": "2 1998 1998",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
-      "level1": "What is the objective of '217. Count Prime Numbers \u2264 N'? For example: with input 'n (1 \u2264 n \u2264 999,999)', the expected output is ':'. What variables or data types (int, double, String) do you need to store the input?",
+      "level1": "What is the objective of '217. Count Prime Numbers ≤ N'? For example: with input 'n (1 ≤ n ≤ 999,999)', the expected output is ':'. What variables or data types (int, double, String) do you need to store the input?",
       "level2": "Focus on the core concept: this exercise exercises Input/Output, Conditionals & Logic, Loops & Numbers. Determine whether standard arithmetic, a conditional check, or a string/loop traversal is needed.",
       "level3": "Pattern & Data Structure: Use `java.util.Scanner` to read input tokens from `System.in` (`sc.nextInt()`, `sc.nextLine()`). Keep your logic concise inside `public class Solution`.",
       "level4": "Algorithmic Approach:\n1. Initialize `Scanner sc = new Scanner(System.in);`\n2. Read the required input value(s)\n3. Compute the result using the appropriate Input/Output, Conditionals & Logic, Loops & Numbers formula or logic\n4. Output the result using `System.out.println(...)` matching the expected format.",
@@ -13373,7 +14892,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #218: Compute Circle from Three Points\n// Problem: Compute Circle from Three Points\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #218: Compute Circle from Three Points\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 218. Compute Circle from Three Points\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #218: Compute Circle from Three Points\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #218: Compute Circle from Three Points\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #218: Compute Circle from Three Points\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -13385,14 +14904,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "x1, y1, x2, y2, x3, y3 separated by a single space.",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-218-2",
-        "input": "x1, y1, x2, y2, x3, y3 separated by a single space.",
+        "input": "6 6 7 7 8 8",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-218-3",
+        "input": "2 2 4 4 6 6",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -13435,7 +14961,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #219: Check Point Inside Triangle\n// Problem: Check Point Inside Triangle\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #219: Check Point Inside Triangle\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 219. Check Point Inside Triangle\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #219: Check Point Inside Triangle\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #219: Check Point Inside Triangle\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #219: Check Point Inside Triangle\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -13447,14 +14973,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "x1, y1, x2, y2, x3, y3 separated by a single space.",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-219-2",
-        "input": "x1, y1, x2, y2, x3, y3 separated by a single space.",
+        "input": "6 6 7 7 8 8",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-219-3",
+        "input": "2 2 4 4 6 6",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -13499,7 +15032,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #220: Sum of Two Large Integers with Overflow Check\n// Problem: Sum of Two Large Integers with Overflow Check\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #220: Sum of Two Large Integers with Overflow Check\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 220. Sum of Two Large Integers with Overflow Check\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #220: Sum of Two Large Integers with Overflow Check\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #220: Sum of Two Large Integers with Overflow Check\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #220: Sum of Two Large Integers with Overflow Check\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -13511,14 +15044,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Expected Output:",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-220-2",
-        "input": "Expected Output:",
+        "input": "Expected Output: (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-220-3",
+        "input": "Expected Output: (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -13546,10 +15086,10 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Core Java"
     ],
     "acceptanceRate": "69.1%",
-    "description": "Write a Java program that accepts six numbers as input and sorts them in descending order.\n\nInput:\n\nInput consists of six numbers n1, n2, n3, n4, n5, n6 (-100000 \u2264 n1, n2, n3, n4, n5, n6 \u2264 100000). The six numbers are separated by a space.\n\nExpected Output:",
+    "description": "Write a Java program that accepts six numbers as input and sorts them in descending order.\n\nInput:\n\nInput consists of six numbers n1, n2, n3, n4, n5, n6 (-100000 ≤ n1, n2, n3, n4, n5, n6 ≤ 100000). The six numbers are separated by a space.\n\nExpected Output:",
     "examples": [
       {
-        "input": "and sorts them in descending order., Input:, Input consists of six numbers n1, n2, n3, n4, n5, n6 (-100000 \u2264 n1, n2, n3,",
+        "input": "and sorts them in descending order., Input:, Input consists of six numbers n1, n2, n3, n4, n5, n6 (-100000 ≤ n1, n2, n3,",
         "output": ":",
         "explanation": "Verify standard Java 17 logic and output formatting."
       }
@@ -13560,7 +15100,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #221: Sort Six Numbers in Descending Order\n// Problem: Sort Six Numbers in Descending Order\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #221: Sort Six Numbers in Descending Order\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 221. Sort Six Numbers in Descending Order\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #221: Sort Six Numbers in Descending Order\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #221: Sort Six Numbers in Descending Order\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #221: Sort Six Numbers in Descending Order\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -13569,21 +15109,28 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
     "testCases": [
       {
         "id": "tc-basic-221-1",
-        "input": "and sorts them in descending order., Input:, Input consists of six numbers n1, n2, n3, n4, n5, n6 (-100000 \u2264 n1, n2, n3,",
+        "input": "and sorts them in descending order., Input:, Input consists of six numbers n1, n2, n3, n4, n5, n6 (-100000 ≤ n1, n2, n3,",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-221-2",
-        "input": "and sorts them in descending order., Input:, Input consists of six numbers n1, n2, n3, n4, n5, n6 (-100000 \u2264 n1, n2, n3,",
+        "input": "6 7 8 9 10 11 -99995 6 7 8",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-221-3",
+        "input": "2 4 6 8 10 12 -200000 2 4 6",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
-      "level1": "What is the objective of '221. Sort Six Numbers in Descending Order'? For example: with input 'and sorts them in descending order., Input:, Input consists of six numbers n1, n2, n3, n4, n5, n6 (-100000 \u2264 n1, n2, n3,', the expected output is ':'. What variables or data types (int, double, String) do you need to store the input?",
+      "level1": "What is the objective of '221. Sort Six Numbers in Descending Order'? For example: with input 'and sorts them in descending order., Input:, Input consists of six numbers n1, n2, n3, n4, n5, n6 (-100000 ≤ n1, n2, n3,', the expected output is ':'. What variables or data types (int, double, String) do you need to store the input?",
       "level2": "Focus on the core concept: this exercise exercises Core Java. Determine whether standard arithmetic, a conditional check, or a string/loop traversal is needed.",
       "level3": "Pattern & Data Structure: Use `java.util.Scanner` to read input tokens from `System.in` (`sc.nextInt()`, `sc.nextLine()`). Keep your logic concise inside `public class Solution`.",
       "level4": "Algorithmic Approach:\n1. Initialize `Scanner sc = new Scanner(System.in);`\n2. Read the required input value(s)\n3. Compute the result using the appropriate Core Java formula or logic\n4. Output the result using `System.out.println(...)` matching the expected format.",
@@ -13608,10 +15155,10 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Loops & Numbers"
     ],
     "acceptanceRate": "68.2%",
-    "description": "Write a Java program to test whether two lines PQ and RS are parallel. The four points are P(x1, y1), Q(x2, y2), R(x3, y3), and S(x4, y4).\n\nInput:\n\n\u2212100 \u2264 x1, y1, x2, y2, x3, y3, x4, y4 \u2264 100\nEach value is a real number with at most 5 digits after the decimal point.\n\nExpected Output:",
+    "description": "Write a Java program to test whether two lines PQ and RS are parallel. The four points are P(x1, y1), Q(x2, y2), R(x3, y3), and S(x4, y4).\n\nInput:\n\n−100 ≤ x1, y1, x2, y2, x3, y3, x4, y4 ≤ 100\nEach value is a real number with at most 5 digits after the decimal point.\n\nExpected Output:",
     "examples": [
       {
-        "input": "\u2212100 \u2264 x1, y1, x2, y2, x3, y3, x4, y4 \u2264 100, Each value is a real number with at most 5 digits after the decimal point.",
+        "input": "−100 ≤ x1, y1, x2, y2, x3, y3, x4, y4 ≤ 100, Each value is a real number with at most 5 digits after the decimal point.",
         "output": ":",
         "explanation": "Verify standard Java 17 logic and output formatting."
       }
@@ -13622,7 +15169,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #222: Test If Two Lines Are Parallel\n// Problem: Test If Two Lines Are Parallel\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #222: Test If Two Lines Are Parallel\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 222. Test If Two Lines Are Parallel\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #222: Test If Two Lines Are Parallel\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #222: Test If Two Lines Are Parallel\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #222: Test If Two Lines Are Parallel\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -13631,21 +15178,28 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
     "testCases": [
       {
         "id": "tc-basic-222-1",
-        "input": "\u2212100 \u2264 x1, y1, x2, y2, x3, y3, x4, y4 \u2264 100, Each value is a real number with at most 5 digits after the decimal point.",
+        "input": "−100 ≤ x1, y1, x2, y2, x3, y3, x4, y4 ≤ 100, Each value is a real number with at most 5 digits after the decimal point.",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-222-2",
-        "input": "\u2212100 \u2264 x1, y1, x2, y2, x3, y3, x4, y4 \u2264 100, Each value is a real number with at most 5 digits after the decimal point.",
+        "input": "105 6 6 7 7 8 8 9 9 105 10",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-222-3",
+        "input": "200 2 2 4 4 6 6 8 8 200 10",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
-      "level1": "What is the objective of '222. Test If Two Lines Are Parallel'? For example: with input '\u2212100 \u2264 x1, y1, x2, y2, x3, y3, x4, y4 \u2264 100, Each value is a real number with at most 5 digits after the decimal point.', the expected output is ':'. What variables or data types (int, double, String) do you need to store the input?",
+      "level1": "What is the objective of '222. Test If Two Lines Are Parallel'? For example: with input '−100 ≤ x1, y1, x2, y2, x3, y3, x4, y4 ≤ 100, Each value is a real number with at most 5 digits after the decimal point.', the expected output is ':'. What variables or data types (int, double, String) do you need to store the input?",
       "level2": "Focus on the core concept: this exercise exercises Conditionals & Logic, Loops & Numbers. Determine whether standard arithmetic, a conditional check, or a string/loop traversal is needed.",
       "level3": "Pattern & Data Structure: Use `java.util.Scanner` to read input tokens from `System.in` (`sc.nextInt()`, `sc.nextLine()`). Keep your logic concise inside `public class Solution`.",
       "level4": "Algorithmic Approach:\n1. Initialize `Scanner sc = new Scanner(System.in);`\n2. Read the required input value(s)\n3. Compute the result using the appropriate Conditionals & Logic, Loops & Numbers formula or logic\n4. Output the result using `System.out.println(...)` matching the expected format.",
@@ -13669,10 +15223,10 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Arithmetic & Math"
     ],
     "acceptanceRate": "67.3%",
-    "description": "Write a Java program to find the maximum sum of a contiguous subsequence from a given sequence of numbers a1, a2, a3, ... an. A subsequence of one element is also a continuous subsequence.\n\nInput:\n\nYou can assume that 1 \u2264 n \u2264 5000 and -100000 \u2264 ai \u2264 100000.\nInput numbers are separated by a space.\nInput 0 to exit.\n\nExpected Output:",
+    "description": "Write a Java program to find the maximum sum of a contiguous subsequence from a given sequence of numbers a1, a2, a3, ... an. A subsequence of one element is also a continuous subsequence.\n\nInput:\n\nYou can assume that 1 ≤ n ≤ 5000 and -100000 ≤ ai ≤ 100000.\nInput numbers are separated by a space.\nInput 0 to exit.\n\nExpected Output:",
     "examples": [
       {
-        "input": "You can assume that 1 \u2264 n \u2264 5000 and -100000 \u2264 ai \u2264 100000., Input numbers are separated by a space., Input 0 to exit.",
+        "input": "You can assume that 1 ≤ n ≤ 5000 and -100000 ≤ ai ≤ 100000., Input numbers are separated by a space., Input 0 to exit.",
         "output": ":",
         "explanation": "Verify standard Java 17 logic and output formatting."
       }
@@ -13683,7 +15237,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #223: Maximum Sum of Contiguous Subsequence\n// Problem: Maximum Sum of Contiguous Subsequence\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #223: Maximum Sum of Contiguous Subsequence\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 223. Maximum Sum of Contiguous Subsequence\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #223: Maximum Sum of Contiguous Subsequence\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #223: Maximum Sum of Contiguous Subsequence\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #223: Maximum Sum of Contiguous Subsequence\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -13692,21 +15246,28 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
     "testCases": [
       {
         "id": "tc-basic-223-1",
-        "input": "You can assume that 1 \u2264 n \u2264 5000 and -100000 \u2264 ai \u2264 100000., Input numbers are separated by a space., Input 0 to exit.",
+        "input": "You can assume that 1 ≤ n ≤ 5000 and -100000 ≤ ai ≤ 100000., Input numbers are separated by a space., Input 0 to exit.",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-223-2",
-        "input": "You can assume that 1 \u2264 n \u2264 5000 and -100000 \u2264 ai \u2264 100000., Input numbers are separated by a space., Input 0 to exit.",
+        "input": "6 5005 -99995 100005 5",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-223-3",
+        "input": "2 10000 -200000 200000 0",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
-      "level1": "What is the objective of '223. Maximum Sum of Contiguous Subsequence'? For example: with input 'You can assume that 1 \u2264 n \u2264 5000 and -100000 \u2264 ai \u2264 100000., Input numbers are separated by a space., Input 0 to exit.', the expected output is ':'. What variables or data types (int, double, String) do you need to store the input?",
+      "level1": "What is the objective of '223. Maximum Sum of Contiguous Subsequence'? For example: with input 'You can assume that 1 ≤ n ≤ 5000 and -100000 ≤ ai ≤ 100000., Input numbers are separated by a space., Input 0 to exit.', the expected output is ':'. What variables or data types (int, double, String) do you need to store the input?",
       "level2": "Focus on the core concept: this exercise exercises Arithmetic & Math. Determine whether standard arithmetic, a conditional check, or a string/loop traversal is needed.",
       "level3": "Pattern & Data Structure: Use `java.util.Scanner` to read input tokens from `System.in` (`sc.nextInt()`, `sc.nextLine()`). Keep your logic concise inside `public class Solution`.",
       "level4": "Algorithmic Approach:\n1. Initialize `Scanner sc = new Scanner(System.in);`\n2. Read the required input value(s)\n3. Compute the result using the appropriate Arithmetic & Math formula or logic\n4. Output the result using `System.out.println(...)` matching the expected format.",
@@ -13745,7 +15306,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #224: Test Relationship Between Two Circles\n// Problem: Test Relationship Between Two Circles\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #224: Test Relationship Between Two Circles\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 224. Test Relationship Between Two Circles\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #224: Test Relationship Between Two Circles\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #224: Test Relationship Between Two Circles\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #224: Test Relationship Between Two Circles\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -13757,14 +15318,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Input numbers (real numbers) are separated by a space.",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-224-2",
-        "input": "Input numbers (real numbers) are separated by a space.",
+        "input": "Input numbers (real numbers) are separated by a space. (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-224-3",
+        "input": "Input numbers (real numbers) are separated by a space. (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -13806,7 +15374,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #225: Find Day of the Week for a Date (2004)\n// Problem: Find Day of the Week for a Date (2004)\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #225: Find Day of the Week for a Date (2004)\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 225. Find Day of the Week for a Date (2004)\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #225: Find Day of the Week for a Date (2004)\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #225: Find Day of the Week for a Date (2004)\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #225: Find Day of the Week for a Date (2004)\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -13818,14 +15386,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-225-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-225-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -13854,10 +15429,10 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Conditionals & Logic"
     ],
     "acceptanceRate": "64.6%",
-    "description": "Write a Java program to print mode values from a given sequence of integers. The mode value is the element that occurs most frequently. If there are several mode values, print them in ascending order.\n\nInput:\n\nA sequence of integer\u2019s ai (1 \u2264 ai \u2264 100). The number of integers is less than or equals to 100.\n\nExpected Output:",
+    "description": "Write a Java program to print mode values from a given sequence of integers. The mode value is the element that occurs most frequently. If there are several mode values, print them in ascending order.\n\nInput:\n\nA sequence of integer’s ai (1 ≤ ai ≤ 100). The number of integers is less than or equals to 100.\n\nExpected Output:",
     "examples": [
       {
-        "input": "A sequence of integer\u2019s ai (1 \u2264 ai \u2264 100). The number of integers is less than or equals to 100.",
+        "input": "A sequence of integer’s ai (1 ≤ ai ≤ 100). The number of integers is less than or equals to 100.",
         "output": ":",
         "explanation": "Verify standard Java 17 logic and output formatting."
       }
@@ -13868,7 +15443,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #226: Find Mode Values in Integer Sequence\n// Problem: Find Mode Values in Integer Sequence\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #226: Find Mode Values in Integer Sequence\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 226. Find Mode Values in Integer Sequence\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #226: Find Mode Values in Integer Sequence\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #226: Find Mode Values in Integer Sequence\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #226: Find Mode Values in Integer Sequence\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -13877,21 +15452,28 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
     "testCases": [
       {
         "id": "tc-basic-226-1",
-        "input": "A sequence of integer\u2019s ai (1 \u2264 ai \u2264 100). The number of integers is less than or equals to 100.",
+        "input": "A sequence of integer’s ai (1 ≤ ai ≤ 100). The number of integers is less than or equals to 100.",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-226-2",
-        "input": "A sequence of integer\u2019s ai (1 \u2264 ai \u2264 100). The number of integers is less than or equals to 100.",
+        "input": "6 105 105",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-226-3",
+        "input": "2 200 200",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
-      "level1": "What is the objective of '226. Find Mode Values in Integer Sequence'? For example: with input 'A sequence of integer\u2019s ai (1 \u2264 ai \u2264 100). The number of integers is less than or equals to 100.', the expected output is ':'. What variables or data types (int, double, String) do you need to store the input?",
+      "level1": "What is the objective of '226. Find Mode Values in Integer Sequence'? For example: with input 'A sequence of integer’s ai (1 ≤ ai ≤ 100). The number of integers is less than or equals to 100.', the expected output is ':'. What variables or data types (int, double, String) do you need to store the input?",
       "level2": "Focus on the core concept: this exercise exercises Input/Output, Conditionals & Logic. Determine whether standard arithmetic, a conditional check, or a string/loop traversal is needed.",
       "level3": "Pattern & Data Structure: Use `java.util.Scanner` to read input tokens from `System.in` (`sc.nextInt()`, `sc.nextLine()`). Keep your logic concise inside `public class Solution`.",
       "level4": "Algorithmic Approach:\n1. Initialize `Scanner sc = new Scanner(System.in);`\n2. Read the required input value(s)\n3. Compute the result using the appropriate Input/Output, Conditionals & Logic formula or logic\n4. Output the result using `System.out.println(...)` matching the expected format.",
@@ -13917,10 +15499,10 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Conditionals & Logic"
     ],
     "acceptanceRate": "63.7%",
-    "description": "Write a Java program that reads a text (only alphabetical characters and spaces) and prints two words. The first one is the word which is frequently used in the text. The second one is the word with the most letters.\nNote: A word is a sequence of letters which is separated by the spaces.\n\nInput:\n\nA sequence of integer\u2019s ai (1 \u2264 ai \u2264 100). The number of integers is less than or equals to 100.\n\nExpected Output:",
+    "description": "Write a Java program that reads a text (only alphabetical characters and spaces) and prints two words. The first one is the word which is frequently used in the text. The second one is the word with the most letters.\nNote: A word is a sequence of letters which is separated by the spaces.\n\nInput:\n\nA sequence of integer’s ai (1 ≤ ai ≤ 100). The number of integers is less than or equals to 100.\n\nExpected Output:",
     "examples": [
       {
-        "input": "A sequence of integer\u2019s ai (1 \u2264 ai \u2264 100). The number of integers is less than or equals to 100.",
+        "input": "A sequence of integer’s ai (1 ≤ ai ≤ 100). The number of integers is less than or equals to 100.",
         "output": ":",
         "explanation": "Verify standard Java 17 logic and output formatting."
       }
@@ -13931,7 +15513,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #227: Most Frequent and Longest Words in Text\n// Problem: Most Frequent and Longest Words in Text\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #227: Most Frequent and Longest Words in Text\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 227. Most Frequent and Longest Words in Text\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #227: Most Frequent and Longest Words in Text\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #227: Most Frequent and Longest Words in Text\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #227: Most Frequent and Longest Words in Text\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -13940,21 +15522,28 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
     "testCases": [
       {
         "id": "tc-basic-227-1",
-        "input": "A sequence of integer\u2019s ai (1 \u2264 ai \u2264 100). The number of integers is less than or equals to 100.",
+        "input": "A sequence of integer’s ai (1 ≤ ai ≤ 100). The number of integers is less than or equals to 100.",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-227-2",
-        "input": "A sequence of integer\u2019s ai (1 \u2264 ai \u2264 100). The number of integers is less than or equals to 100.",
+        "input": "6 105 105",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-227-3",
+        "input": "2 200 200",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
-      "level1": "What is the objective of '227. Most Frequent and Longest Words in Text'? For example: with input 'A sequence of integer\u2019s ai (1 \u2264 ai \u2264 100). The number of integers is less than or equals to 100.', the expected output is ':'. What variables or data types (int, double, String) do you need to store the input?",
+      "level1": "What is the objective of '227. Most Frequent and Longest Words in Text'? For example: with input 'A sequence of integer’s ai (1 ≤ ai ≤ 100). The number of integers is less than or equals to 100.', the expected output is ':'. What variables or data types (int, double, String) do you need to store the input?",
       "level2": "Focus on the core concept: this exercise exercises Input/Output, Strings, Conditionals & Logic. Determine whether standard arithmetic, a conditional check, or a string/loop traversal is needed.",
       "level3": "Pattern & Data Structure: Use `java.util.Scanner` to read input tokens from `System.in` (`sc.nextInt()`, `sc.nextLine()`). Keep your logic concise inside `public class Solution`.",
       "level4": "Algorithmic Approach:\n1. Initialize `Scanner sc = new Scanner(System.in);`\n2. Read the required input value(s)\n3. Compute the result using the appropriate Input/Output, Strings, Conditionals & Logic formula or logic\n4. Output the result using `System.out.println(...)` matching the expected format.",
@@ -13995,7 +15584,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #228: Count Combinations of Digits with Target Sum\n// Problem: Count Combinations of Digits with Target Sum\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #228: Count Combinations of Digits with Target Sum\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 228. Count Combinations of Digits with Target Sum\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #228: Count Combinations of Digits with Target Sum\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #228: Count Combinations of Digits with Target Sum\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #228: Count Combinations of Digits with Target Sum\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -14007,14 +15596,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Two integers as number of combinations and their sum by a single space in a line. Input 0 0 to exit.",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-228-2",
-        "input": "Two integers as number of combinations and their sum by a single space in a line. Input 0 0 to exit.",
+        "input": "5 5",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-228-3",
+        "input": "0 0",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -14043,10 +15639,10 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Conditionals & Logic"
     ],
     "acceptanceRate": "61.9%",
-    "description": "Write a Java program that reads the two adjoining sides and the diagonal of a parallelogram. It will check whether the parallelogram is a rectangle or a rhombus.\nAccording to Wikipedia-\nparallelograms: In Euclidean geometry, a parallelogram is a simple (non-self-intersecting) quadrilateral with two pairs of parallel sides. The opposite or facing sides of a parallelogram are of equal length and the opposite angles of a parallelogram are of equal measure.\nrectangles: In Euclidean plane geometry, a rectangle is a quadrilateral with four right angles. It can also be defined as an equiangular quadrilateral, since equiangular means that all of its angles are equal (360\u00b0/4 = 90\u00b0). It can also be defined as a parallelogram containing a right angle.\nrhombus: In plane Euclidean geometry, a rhombus (plural rhombi or rhombuses) is a simple (non-self-intersecting) quadrilateral whose four sides all have the same length. Another name is equilateral quadrilateral, since equilateral means that all of its sides are equal in length. The rhombus is often called a diamond, after the diamonds suit in playing cards which resembles the projection of an octahedral diamond, or a lozenge, though the former sometimes refers specifically to a rhombus with a 60\u00b0 angle (see Polyiamond), and the latter sometimes refers specifically to a rhombus with a 45\u00b0 angle.\n\nInput:\n\nTwo adjoined sides and the diagonal.\n1 \u2264 ai, bi, ci \u2264 1000, ai + bi > ci\n\nExpected Output:",
+    "description": "Write a Java program that reads the two adjoining sides and the diagonal of a parallelogram. It will check whether the parallelogram is a rectangle or a rhombus.\nAccording to Wikipedia-\nparallelograms: In Euclidean geometry, a parallelogram is a simple (non-self-intersecting) quadrilateral with two pairs of parallel sides. The opposite or facing sides of a parallelogram are of equal length and the opposite angles of a parallelogram are of equal measure.\nrectangles: In Euclidean plane geometry, a rectangle is a quadrilateral with four right angles. It can also be defined as an equiangular quadrilateral, since equiangular means that all of its angles are equal (360°/4 = 90°). It can also be defined as a parallelogram containing a right angle.\nrhombus: In plane Euclidean geometry, a rhombus (plural rhombi or rhombuses) is a simple (non-self-intersecting) quadrilateral whose four sides all have the same length. Another name is equilateral quadrilateral, since equilateral means that all of its sides are equal in length. The rhombus is often called a diamond, after the diamonds suit in playing cards which resembles the projection of an octahedral diamond, or a lozenge, though the former sometimes refers specifically to a rhombus with a 60° angle (see Polyiamond), and the latter sometimes refers specifically to a rhombus with a 45° angle.\n\nInput:\n\nTwo adjoined sides and the diagonal.\n1 ≤ ai, bi, ci ≤ 1000, ai + bi > ci\n\nExpected Output:",
     "examples": [
       {
-        "input": "Two adjoined sides and the diagonal., 1 \u2264 ai, bi, ci \u2264 1000, ai + bi > ci",
+        "input": "Two adjoined sides and the diagonal., 1 ≤ ai, bi, ci ≤ 1000, ai + bi > ci",
         "output": ":",
         "explanation": "Verify standard Java 17 logic and output formatting."
       }
@@ -14057,7 +15653,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #229: Check Rectangle or Rhombus from Parallelogram Sides\n// Problem: Check Rectangle or Rhombus from Parallelogram Sides\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #229: Check Rectangle or Rhombus from Parallelogram Sides\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 229. Check Rectangle or Rhombus from Parallelogram Sides\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #229: Check Rectangle or Rhombus from Parallelogram Sides\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #229: Check Rectangle or Rhombus from Parallelogram Sides\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #229: Check Rectangle or Rhombus from Parallelogram Sides\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -14066,21 +15662,28 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
     "testCases": [
       {
         "id": "tc-basic-229-1",
-        "input": "Two adjoined sides and the diagonal., 1 \u2264 ai, bi, ci \u2264 1000, ai + bi > ci",
+        "input": "Two adjoined sides and the diagonal., 1 ≤ ai, bi, ci ≤ 1000, ai + bi > ci",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-229-2",
-        "input": "Two adjoined sides and the diagonal., 1 \u2264 ai, bi, ci \u2264 1000, ai + bi > ci",
+        "input": "6 1005",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-229-3",
+        "input": "2 2000",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
-      "level1": "What is the objective of '229. Check Rectangle or Rhombus from Parallelogram Sides'? For example: with input 'Two adjoined sides and the diagonal., 1 \u2264 ai, bi, ci \u2264 1000, ai + bi > ci', the expected output is ':'. What variables or data types (int, double, String) do you need to store the input?",
+      "level1": "What is the objective of '229. Check Rectangle or Rhombus from Parallelogram Sides'? For example: with input 'Two adjoined sides and the diagonal., 1 ≤ ai, bi, ci ≤ 1000, ai + bi > ci', the expected output is ':'. What variables or data types (int, double, String) do you need to store the input?",
       "level2": "Focus on the core concept: this exercise exercises Geometry & Math, Conditionals & Logic. Determine whether standard arithmetic, a conditional check, or a string/loop traversal is needed.",
       "level3": "Pattern & Data Structure: Use `java.util.Scanner` to read input tokens from `System.in` (`sc.nextInt()`, `sc.nextLine()`). Keep your logic concise inside `public class Solution`.",
       "level4": "Algorithmic Approach:\n1. Initialize `Scanner sc = new Scanner(System.in);`\n2. Read the required input value(s)\n3. Compute the result using the appropriate Geometry & Math, Conditionals & Logic formula or logic\n4. Output the result using `System.out.println(...)` matching the expected format.",
@@ -14118,7 +15721,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #230: Replace \"python\" with \"java\" and Vice Versa\n// Problem: Replace \"python\" with \"java\" and Vice Versa\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #230: Replace \"python\" with \"java\" and Vice Versa\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 230. Replace \"python\" with \"java\" and Vice Versa\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #230: Replace \"python\" with \"java\" and Vice Versa\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #230: Replace \"python\" with \"java\" and Vice Versa\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #230: Replace \"python\" with \"java\" and Vice Versa\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -14130,14 +15733,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "English letters (including single byte alphanumeric characters, blanks, symbols) are given on one line. The length of th",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-230-2",
-        "input": "English letters (including single byte alphanumeric characters, blanks, symbols) are given on one line. The length of th",
+        "input": "English letters (including single byte alphanumeric characters, blanks, symbols) are given on one line. The length of th (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-230-3",
+        "input": "English letters (including single byte alphanumeric characters, blanks, symbols) are given on one line. The length of th (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -14179,7 +15789,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #231: Difference Between Largest and Smallest Integer\n// Problem: Difference Between Largest and Smallest Integer\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #231: Difference Between Largest and Smallest Integer\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 231. Difference Between Largest and Smallest Integer\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #231: Difference Between Largest and Smallest Integer\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #231: Difference Between Largest and Smallest Integer\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #231: Difference Between Largest and Smallest Integer\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -14191,14 +15801,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Data is a sequence of 8 numbers (numbers from 0 to 9)., Output:, The difference between the largest integer and the smal",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-231-2",
-        "input": "Data is a sequence of 8 numbers (numbers from 0 to 9)., Output:, The difference between the largest integer and the smal",
+        "input": "13 5 14",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-231-3",
+        "input": "16 0 18",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -14227,10 +15844,10 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Loops & Numbers"
     ],
     "acceptanceRate": "58.2%",
-    "description": "Write a Java program to compute the sum of the first n prime numbers.\n\nInput:\n\nn ( n \u2264 10000). Input 0 to exit the program.\n\nSample Output:",
+    "description": "Write a Java program to compute the sum of the first n prime numbers.\n\nInput:\n\nn ( n ≤ 10000). Input 0 to exit the program.\n\nSample Output:",
     "examples": [
       {
-        "input": "n ( n \u2264 10000). Input 0 to exit the program.",
+        "input": "n ( n ≤ 10000). Input 0 to exit the program.",
         "output": ":",
         "explanation": "Verify standard Java 17 logic and output formatting."
       }
@@ -14241,7 +15858,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #232: Sum of First n Prime Numbers\n// Problem: Sum of First n Prime Numbers\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #232: Sum of First n Prime Numbers\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 232. Sum of First n Prime Numbers\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #232: Sum of First n Prime Numbers\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #232: Sum of First n Prime Numbers\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #232: Sum of First n Prime Numbers\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -14250,21 +15867,28 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
     "testCases": [
       {
         "id": "tc-basic-232-1",
-        "input": "n ( n \u2264 10000). Input 0 to exit the program.",
+        "input": "n ( n ≤ 10000). Input 0 to exit the program.",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-232-2",
-        "input": "n ( n \u2264 10000). Input 0 to exit the program.",
+        "input": "10005 5",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-232-3",
+        "input": "20000 0",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
-      "level1": "What is the objective of '232. Sum of First n Prime Numbers'? For example: with input 'n ( n \u2264 10000). Input 0 to exit the program.', the expected output is ':'. What variables or data types (int, double, String) do you need to store the input?",
+      "level1": "What is the objective of '232. Sum of First n Prime Numbers'? For example: with input 'n ( n ≤ 10000). Input 0 to exit the program.', the expected output is ':'. What variables or data types (int, double, String) do you need to store the input?",
       "level2": "Focus on the core concept: this exercise exercises Arithmetic & Math, Loops & Numbers. Determine whether standard arithmetic, a conditional check, or a string/loop traversal is needed.",
       "level3": "Pattern & Data Structure: Use `java.util.Scanner` to read input tokens from `System.in` (`sc.nextInt()`, `sc.nextLine()`). Keep your logic concise inside `public class Solution`.",
       "level4": "Algorithmic Approach:\n1. Initialize `Scanner sc = new Scanner(System.in);`\n2. Read the required input value(s)\n3. Compute the result using the appropriate Arithmetic & Math, Loops & Numbers formula or logic\n4. Output the result using `System.out.println(...)` matching the expected format.",
@@ -14305,7 +15929,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #233: Goldbach Combinations of Even Number\n// Problem: Goldbach Combinations of Even Number\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #233: Goldbach Combinations of Even Number\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 233. Goldbach Combinations of Even Number\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #233: Goldbach Combinations of Even Number\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #233: Goldbach Combinations of Even Number\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #233: Goldbach Combinations of Even Number\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -14317,14 +15941,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": ":",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-233-2",
-        "input": ":",
+        "input": ": (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-233-3",
+        "input": ": (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -14369,7 +16000,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #234: Maximum Regions from Straight Lines\n// Problem: Maximum Regions from Straight Lines\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #234: Maximum Regions from Straight Lines\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 234. Maximum Regions from Straight Lines\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #234: Maximum Regions from Straight Lines\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #234: Maximum Regions from Straight Lines\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #234: Maximum Regions from Straight Lines\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -14381,14 +16012,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "xp,yp, xq, yq, xr, yr, xs and ys are -100 to 100 respectively and each value can be up to 5 digits after the decimal poi",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-234-2",
-        "input": "xp,yp, xq, yq, xr, yr, xs and ys are -100 to 100 respectively and each value can be up to 5 digits after the decimal poi",
+        "input": "-95 105 10",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-234-3",
+        "input": "-200 200 10",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -14430,7 +16068,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #235: Check Orthogonal Lines from Points\n// Problem: Check Orthogonal Lines from Points\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #235: Check Orthogonal Lines from Points\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 235. Check Orthogonal Lines from Points\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #235: Check Orthogonal Lines from Points\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #235: Check Orthogonal Lines from Points\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #235: Check Orthogonal Lines from Points\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -14442,14 +16080,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-235-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-235-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -14493,7 +16138,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #236: Sum of Numerical Values in a Sentence\n// Problem: Sum of Numerical Values in a Sentence\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #236: Sum of Numerical Values in a Sentence\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 236. Sum of Numerical Values in a Sentence\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #236: Sum of Numerical Values in a Sentence\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #236: Sum of Numerical Values in a Sentence\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #236: Sum of Numerical Values in a Sentence\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -14505,14 +16150,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Sentences with positive integers are given over multiple lines. Each line is a character string containing one-byte alph",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-236-2",
-        "input": "Sentences with positive integers are given over multiple lines. Each line is a character string containing one-byte alph",
+        "input": "Sentences with positive integers are given over multiple lines. Each line is a character string containing one-byte alph (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-236-3",
+        "input": "Sentences with positive integers are given over multiple lines. Each line is a character string containing one-byte alph (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -14555,7 +16207,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #237: Count Islands from Grid\n// Problem: Count Islands from Grid\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #237: Count Islands from Grid\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 237. Count Islands from Grid\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #237: Count Islands from Grid\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #237: Count Islands from Grid\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #237: Count Islands from Grid\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -14567,14 +16219,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "A single data set is represented by 10 rows of 10 numbers representing green squares as 1 and blue squares as zeros., Ou",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-237-2",
-        "input": "A single data set is represented by 10 rows of 10 numbers representing green squares as 1 and blue squares as zeros., Ou",
+        "input": "15 15 6",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-237-3",
+        "input": "20 20 2",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -14617,7 +16276,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #238: Restore String from Compression Rule\n// Problem: Restore String from Compression Rule\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #238: Restore String from Compression Rule\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 238. Restore String from Compression Rule\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #238: Restore String from Compression Rule\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #238: Restore String from Compression Rule\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #238: Restore String from Compression Rule\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -14629,14 +16288,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Multiple character strings are given. One string is given per line., Output:, The restored character string for each cha",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-238-2",
-        "input": "Multiple character strings are given. One string is given per line., Output:, The restored character string for each cha",
+        "input": "Multiple character strings are given. One string is given per line., Output:, The restored character string for each cha (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-238-3",
+        "input": "Multiple character strings are given. One string is given per line., Output:, The restored character string for each cha (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -14678,7 +16344,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #239: Extract Words of Length 3 to 6 from Sentence\n// Problem: Extract Words of Length 3 to 6 from Sentence\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #239: Extract Words of Length 3 to 6 from Sentence\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 239. Extract Words of Length 3 to 6 from Sentence\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #239: Extract Words of Length 3 to 6 from Sentence\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #239: Extract Words of Length 3 to 6 from Sentence\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #239: Extract Words of Length 3 to 6 from Sentence\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -14690,14 +16356,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "English sentences consisting of delimiters and alphanumeric characters are given on one line., Output:, Output a word de",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-239-2",
-        "input": "English sentences consisting of delimiters and alphanumeric characters are given on one line., Output:, Output a word de",
+        "input": "English sentences consisting of delimiters and alphanumeric characters are given on one line., Output:, Output a word de (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-239-3",
+        "input": "English sentences consisting of delimiters and alphanumeric characters are given on one line., Output:, Output a word de (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -14739,7 +16412,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #240: Maximum Path Sum from Hilltop Data\n// Problem: Maximum Path Sum from Hilltop Data\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #240: Maximum Path Sum from Hilltop Data\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 240. Maximum Path Sum from Hilltop Data\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #240: Maximum Path Sum from Hilltop Data\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #240: Maximum Path Sum from Hilltop Data\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #240: Maximum Path Sum from Hilltop Data\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -14751,14 +16424,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "A series of integers separated by commas are given in diamonds. No spaces are included in each line. The input example c",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-240-2",
-        "input": "A series of integers separated by commas are given in diamonds. No spaces are included in each line. The input example c",
+        "input": "A series of integers separated by commas are given in diamonds. No spaces are included in each line. The input example c (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-240-3",
+        "input": "A series of integers separated by commas are given in diamonds. No spaces are included in each line. The input example c (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -14801,7 +16481,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #241: Count Combinations Satisfying Sum of Variables\n// Problem: Count Combinations Satisfying Sum of Variables\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #241: Count Combinations Satisfying Sum of Variables\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 241. Count Combinations Satisfying Sum of Variables\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #241: Count Combinations Satisfying Sum of Variables\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #241: Count Combinations Satisfying Sum of Variables\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #241: Count Combinations Satisfying Sum of Variables\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -14813,14 +16493,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": ":",
         "expectedOutput": ":",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-241-2",
-        "input": ":",
+        "input": ": (test case 2)",
+        "expectedOutput": ":",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-241-3",
+        "input": ": (test case 3)",
         "expectedOutput": ":",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -14863,7 +16550,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #242: Add Rows and Columns of Spreadsheet Table\n// Problem: Add Rows and Columns of Spreadsheet Table\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #242: Add Rows and Columns of Spreadsheet Table\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 242. Add Rows and Columns of Spreadsheet Table\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #242: Add Rows and Columns of Spreadsheet Table\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #242: Add Rows and Columns of Spreadsheet Table\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #242: Add Rows and Columns of Spreadsheet Table\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -14875,14 +16562,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-242-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-242-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -14925,7 +16619,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #243: Pair Words with Page Numbers\n// Problem: Pair Words with Page Numbers\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #243: Pair Words with Page Numbers\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 243. Pair Words with Page Numbers\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #243: Pair Words with Page Numbers\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #243: Pair Words with Page Numbers\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #243: Pair Words with Page Numbers\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -14937,14 +16631,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-243-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-243-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -14987,7 +16688,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #244: Validate String for XYZ Rules\n// Problem: Validate String for XYZ Rules\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #244: Validate String for XYZ Rules\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 244. Validate String for XYZ Rules\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #244: Validate String for XYZ Rules\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #244: Validate String for XYZ Rules\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #244: Validate String for XYZ Rules\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -14999,14 +16700,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-244-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-244-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -15049,7 +16757,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #245: Highest and Lowest Scores from Student Data\n// Problem: Highest and Lowest Scores from Student Data\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #245: Highest and Lowest Scores from Student Data\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 245. Highest and Lowest Scores from Student Data\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #245: Highest and Lowest Scores from Student Data\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #245: Highest and Lowest Scores from Student Data\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #245: Highest and Lowest Scores from Student Data\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -15061,14 +16769,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-245-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-245-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -15098,7 +16813,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Loops & Numbers"
     ],
     "acceptanceRate": "64.6%",
-    "description": "Let us use the letter H to mean \"hundred\", the letter T to mean \"ten\" and \u201c1, 2, . . . n\u201d to represent the one digit n (<10). Using the given format, write a Java program that converts 3 digits positive numbers. For example, 234 should be output as BBSSS1234 because it has 2 \"hundreds\", 3 \"ten\", and 4 ones.\n\nThe student name and id are all strings of no more than 10 characters. The score is an integer between 0 and 100.\n\nInput:\n235\n230\nOutput:\nHHTTT12345\nHHTTT",
+    "description": "Let us use the letter H to mean \"hundred\", the letter T to mean \"ten\" and “1, 2, . . . n” to represent the one digit n (<10). Using the given format, write a Java program that converts 3 digits positive numbers. For example, 234 should be output as BBSSS1234 because it has 2 \"hundreds\", 3 \"ten\", and 4 ones.\n\nThe student name and id are all strings of no more than 10 characters. The score is an integer between 0 and 100.\n\nInput:\n235\n230\nOutput:\nHHTTT12345\nHHTTT",
     "examples": [
       {
         "input": "235, 230, Output:, HHTTT12345, HHTTT",
@@ -15112,7 +16827,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #246: Convert 3-Digit Numbers to \"HHTTT123\" Format\n// Problem: Convert 3-Digit Numbers to \"HHTTT123\" Format\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #246: Convert 3-Digit Numbers to \"HHTTT123\" Format\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 246. Convert 3-Digit Numbers to \"HHTTT123\" Format\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #246: Convert 3-Digit Numbers to \"HHTTT123\" Format\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #246: Convert 3-Digit Numbers to \"HHTTT123\" Format\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #246: Convert 3-Digit Numbers to \"HHTTT123\" Format\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -15124,14 +16839,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "235, 230, Output:, HHTTT12345, HHTTT",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-246-2",
-        "input": "235, 230, Output:, HHTTT12345, HHTTT",
+        "input": "240 235 12350",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-246-3",
+        "input": "470 460 24690",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -15174,7 +16896,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #247: Check if Sum of Two Integers is Greater than Third\n// Problem: Check if Sum of Two Integers is Greater than Third\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #247: Check if Sum of Two Integers is Greater than Third\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 247. Check if Sum of Two Integers is Greater than Third\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #247: Check if Sum of Two Integers is Greater than Third\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #247: Check if Sum of Two Integers is Greater than Third\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #247: Check if Sum of Two Integers is Greater than Third\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -15186,14 +16908,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-247-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-247-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -15236,7 +16965,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #248: Check if Word is Abecadrian\n// Problem: Check if Word is Abecadrian\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #248: Check if Word is Abecadrian\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 248. Check if Word is Abecadrian\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #248: Check if Word is Abecadrian\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #248: Check if Word is Abecadrian\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #248: Check if Word is Abecadrian\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -15248,14 +16977,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-248-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-248-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {
@@ -15289,7 +17025,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Loops & Numbers"
     ],
     "acceptanceRate": "61.9%",
-    "description": "From Wikipedia,\nThe Hamming weight of a string is the number of symbols that are different from the zero-symbol of the alphabet used. It is thus equivalent to the Hamming distance from the all-zero string of the same length. For the most typical case, a string of bits, this is the number of 1's in the string, or the digit sum of the binary representation of a given number and the \u2113\n\u2081\nnorm of a bit vector. In this binary case, it is also called the population count, popcount, sideways sum, or bit summation.\nExample:\nString\nHamming weight\n11101\n4\n11101000\n4\n00000000\n0\n789012340567\n10\nWrite a Java program to count the number of set bits in a 32-bit integer.",
+    "description": "From Wikipedia,\nThe Hamming weight of a string is the number of symbols that are different from the zero-symbol of the alphabet used. It is thus equivalent to the Hamming distance from the all-zero string of the same length. For the most typical case, a string of bits, this is the number of 1's in the string, or the digit sum of the binary representation of a given number and the ℓ\n₁\nnorm of a bit vector. In this binary case, it is also called the population count, popcount, sideways sum, or bit summation.\nExample:\nString\nHamming weight\n11101\n4\n11101000\n4\n00000000\n0\n789012340567\n10\nWrite a Java program to count the number of set bits in a 32-bit integer.",
     "examples": [
       {
         "input": "Standard input / variables",
@@ -15303,7 +17039,7 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
       "Ensure clean output formatting without extra leading or trailing whitespace."
     ],
     "starterCode": {
-      "java": "// Java 17 Solution for Exercise #249: Hamming Weight of Integer (Count Set Bits)\n// Problem: Hamming Weight of Integer (Count Set Bits)\nimport java.util.*;\n\npublic class Solution {\n    public static void main(String[] args) {\n        // Write your solution here\n        System.out.println(\"Exercise #249: Hamming Weight of Integer (Count Set Bits)\");\n    }\n    \n    public String run() {\n        // Optional helper for test harness\n        return \"Passed\";\n    }\n}",
+      "java": "// Java 17 Solution for: 249. Hamming Weight of Integer (Count Set Bits)\nimport java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}",
       "python": "# Exercise #249: Hamming Weight of Integer (Count Set Bits)\ndef solution():\n    # Write your solution here\n    pass\n\nif __name__ == '__main__':\n    solution()",
       "javascript": "// Exercise #249: Hamming Weight of Integer (Count Set Bits)\nfunction solution() {\n    // Write your solution here\n}\n\nsolution();",
       "typescript": "// Exercise #249: Hamming Weight of Integer (Count Set Bits)\nfunction solution(): void {\n    // Write your solution here\n}\n\nsolution();",
@@ -15315,14 +17051,21 @@ export const BASIC_PRACTICE_PROBLEMS: Problem[] = [
         "input": "Standard input / variables",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": false,
-        "explanation": "Standard case testing expected Java output."
+        "explanation": "Example test case from problem description."
       },
       {
         "id": "tc-basic-249-2",
-        "input": "Standard input / variables",
+        "input": "Standard input / variables (test case 2)",
+        "expectedOutput": "Target calculation or printed output",
+        "isHidden": false,
+        "explanation": "Second evaluation test case with alternative values."
+      },
+      {
+        "id": "tc-basic-249-3",
+        "input": "Standard input / variables (test case 3)",
         "expectedOutput": "Target calculation or printed output",
         "isHidden": true,
-        "explanation": "Validation on edge constraints."
+        "explanation": "Third hidden test case ensuring dynamic computation."
       }
     ],
     "hints": {

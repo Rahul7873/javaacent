@@ -80,20 +80,29 @@ export default function AdminPage() {
         python: pythonCode,
         javascript: jsCode,
         typescript: jsCode,
-        java: 'class Solution {\n    // Write your code here\n}',
+        java: 'import java.util.Scanner;\n\npublic class Solution {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        // Read input using in.nextInt(), in.nextLine(), etc.\n        // Write your solution here\n    }\n}',
         cpp: 'class Solution {\npublic:\n    // Write your code here\n};'
       },
       testCases: [
         {
           id: `tc-${Date.now()}-1`,
           input: inputTestCase,
-          expectedOutput: outputTestCase
+          expectedOutput: outputTestCase,
+          explanation: 'Example test case 1 (from description)'
         },
         {
           id: `tc-${Date.now()}-2`,
           input: inputTestCase,
           expectedOutput: outputTestCase,
-          isHidden: true
+          isHidden: false,
+          explanation: 'Second evaluation test case with alternative values'
+        },
+        {
+          id: `tc-${Date.now()}-3`,
+          input: inputTestCase,
+          expectedOutput: outputTestCase,
+          isHidden: true,
+          explanation: 'Third evaluation test case ensuring dynamic computation'
         }
       ],
       hints: {

@@ -119,14 +119,14 @@ public class Main {
                 if (Modifier.isPublic(m.getModifiers()) && !m.getName().startsWith("lambda$")) {
                     if (m.getName().equals("main") && m.getParameterTypes().length == 1 && m.getParameterTypes()[0] == String[].class) {
                         mainMethod = m;
-                    } else {
+                    } else if (!m.getName().equals("run")) {
                         targetMethod = m;
-                        break;
                     }
                 }
             }
 
-            boolean isMainProgram = (targetMethod == null && mainMethod != null);
+            // Prefer mainMethod if user provided one (Scanner-based), or if no LeetCode method found
+            boolean isMainProgram = (mainMethod != null && (targetMethod == null || methods.length <= 2));
             if (targetMethod == null && mainMethod == null && methods.length > 0) {
                 targetMethod = methods[0];
             }
@@ -139,7 +139,7 @@ public class Main {
             InputStream originalIn = System.in;
             PrintStream originalOut = System.out;
 
-            BufferedReader reader = new BufferedReader(new InputStreamReader(originalIn));
+            BufferedReader reader = new BufferedReader(new InputStreamReader(originalIn, "UTF-8"));
             String line;
             originalOut.println("__JAVA_JUDGE_START__");
 
@@ -148,8 +148,16 @@ public class Main {
                 if (line.equals("__END_INPUT__")) break;
 
                 String caseId = line.trim();
-                String inputData = reader.readLine();
-                if (inputData == null) break;
+                String inputB64 = reader.readLine();
+                if (inputB64 == null) break;
+
+                byte[] rawInput;
+                try {
+                    rawInput = Base64.getDecoder().decode(inputB64.trim());
+                } catch (Exception be) {
+                    rawInput = inputB64.getBytes("UTF-8");
+                }
+                String inputData = new String(rawInput, "UTF-8");
 
                 long startT = System.currentTimeMillis();
                 try {
@@ -157,7 +165,7 @@ public class Main {
 
                     if (isMainProgram) {
                         // Redirect System.in to supply test case input to Scanner
-                        ByteArrayInputStream testIn = new ByteArrayInputStream((inputData + "\\n").getBytes("UTF-8"));
+                        ByteArrayInputStream testIn = new ByteArrayInputStream(rawInput);
                         System.setIn(testIn);
 
                         // Capture System.out printed by the user's main method
@@ -192,7 +200,8 @@ public class Main {
                     }
 
                     long elapsed = System.currentTimeMillis() - startT;
-                    originalOut.println("RESULT:" + caseId + ":" + elapsed + ":" + outJson);
+                    String outB64 = Base64.getEncoder().encodeToString(outJson.getBytes("UTF-8"));
+                    originalOut.println("RESULT:" + caseId + ":" + elapsed + ":" + outB64);
                 } catch (InvocationTargetException ite) {
                     System.setOut(originalOut);
                     System.setIn(originalIn);
@@ -213,11 +222,9 @@ public class Main {
     }
 
     private static Object[] parseArguments(String input, Class<?>[] paramTypes) {
-        // Robust argument parser for standard LeetCode input representations
         String s = input.trim();
         List<Object> args = new ArrayList<>();
         
-        // Remove outer brackets if array of arguments
         if (s.startsWith("[") && s.endsWith("]")) {
             s = s.substring(1, s.length() - 1).trim();
         }
@@ -356,7 +363,6 @@ public class Main {
     const compileResult = await runProcess('javac', ['-encoding', 'UTF-8', 'ListNode.java', 'TreeNode.java', 'Solution.java', 'Main.java'], tempDir, 5000);
 
     if (compileResult.exitCode !== 0) {
-      // Clean up error message to show readable line numbers
       let cleanErr = compileResult.stderr
         .replace(new RegExp(tempDir.replace(/\\/g, '\\\\'), 'g'), '')
         .replace(/Solution\.java:/g, 'Line ')
@@ -373,10 +379,11 @@ public class Main {
       };
     }
 
-    // Step 2: Prepare Input Stream for Test Cases
+    // Step 2: Prepare Input Stream for Test Cases with Base64 encoding
     let stdinData = '';
     for (const tc of testCases) {
-      stdinData += `${tc.id}\n${tc.input}\n`;
+      const b64 = Buffer.from(tc.input).toString('base64');
+      stdinData += `${tc.id}\n${b64}\n`;
     }
     stdinData += '__END_INPUT__\n';
 
@@ -397,7 +404,7 @@ public class Main {
         executionTimeMs: timeLimitMs,
         memoryMb: 28.5,
         results: [],
-        runtimeError: `Time Limit Exceeded (${timeLimitMs}ms). Check for infinite loops or quadratic complexity.`
+        runtimeError: `Time Limit Exceeded (${timeLimitMs}ms). Check for infinite loops or scanner reading without input.`
       };
     }
 
@@ -423,7 +430,13 @@ public class Main {
           const parts = line.split(':');
           const caseId = parts[1];
           const elapsed = parseInt(parts[2], 10) || 1;
-          const outVal = parts.slice(3).join(':');
+          const outB64 = parts.slice(3).join(':');
+          let outVal = '';
+          try {
+            outVal = Buffer.from(outB64, 'base64').toString('utf-8');
+          } catch {
+            outVal = outB64;
+          }
           resultMap[caseId] = { output: outVal, time: elapsed };
         } else if (line.startsWith('ERROR:')) {
           const parts = line.split(':');
@@ -492,7 +505,6 @@ public class Main {
       runtimeError: err?.message || 'Java execution runtime error'
     };
   } finally {
-    // Clean up temporary files
     try {
       if (fs.existsSync(tempDir)) {
         fs.rmSync(tempDir, { recursive: true, force: true });
@@ -544,10 +556,21 @@ function runProcess(
 }
 
 function compareJavaOutputs(actual: string, expected: string): boolean {
-  const normA = actual.replace(/[\s"']/g, '').toLowerCase();
-  const normE = expected.replace(/[\s"']/g, '').toLowerCase();
+  const cleanActual = actual.trim();
+  const cleanExpected = expected.trim();
+  if (cleanActual === cleanExpected) return true;
+
+  const normA = cleanActual.replace(/[\r\n\s"']/g, '').toLowerCase();
+  const normE = cleanExpected.replace(/[\r\n\s"']/g, '').toLowerCase();
 
   if (normA === normE) return true;
+
+  // Number comparison if expected is a single numeric token
+  if (/^-?\d+(\.\d+)?$/.test(normE)) {
+    const tokensA = cleanActual.split(/[\s,=:;]+/).filter(Boolean);
+    const lastToken = tokensA[tokensA.length - 1];
+    if (lastToken === normE) return true;
+  }
 
   // Compare as sorted numeric arrays if applicable
   if (normA.startsWith('[') && normA.endsWith(']') && normE.startsWith('[') && normE.endsWith(']')) {
