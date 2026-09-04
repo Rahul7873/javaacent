@@ -364,12 +364,12 @@ public class JudgeHarness {
     fs.writeFileSync(path.join(tempDir, 'Solution.java'), solutionSource, 'utf-8');
     fs.writeFileSync(path.join(tempDir, 'JudgeHarness.java'), mainHarness, 'utf-8');
 
-    // Step 1: Compile with javac (15s timeout for cold start)
+    // Step 1: Compile with javac (-g:none and -nowarn for rapid compilation on cloud instances)
     const compileResult = await runProcess(
       'javac',
-      ['-encoding', 'UTF-8', 'ListNode.java', 'TreeNode.java', 'Solution.java', 'JudgeHarness.java'],
+      ['-g:none', '-nowarn', '-encoding', 'UTF-8', 'ListNode.java', 'TreeNode.java', 'Solution.java', 'JudgeHarness.java'],
       tempDir,
-      15000
+      25000
     );
 
     if (compileResult.exitCode !== 0) {
@@ -380,7 +380,7 @@ public class JudgeHarness {
         .trim();
 
       if (compileResult.timedOut) {
-        cleanErr = 'Java compilation timed out (exceeded 15s). Please check your code and try running again.';
+        cleanErr = 'Java compilation timed out (exceeded 25s). Please check your code and try running again.';
       } else if (!cleanErr && compileResult.stdout) {
         cleanErr = compileResult.stdout.trim();
       }
