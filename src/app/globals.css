@@ -52,13 +52,16 @@ html.light .bg-\[\#0b0f1a\],
 html.light .bg-\[\#0b0f1d\],
 html.light .bg-\[\#0c0e14\],
 html.light .bg-\[\#0c101c\],
+html.light .bg-\[\#0c101c\]\/90,
 html.light .bg-\[\#0c101d\],
 html.light .bg-\[\#0d1220\],
 html.light .bg-\[\#0d1222\],
 html.light .bg-\[\#0e131f\],
-html.light .bg-\[\#060810\] {
+html.light .bg-\[\#060810\],
+html.light .bg-white {
   background-color: #ffffff !important;
 }
+
 
 /* Subtle secondary surfaces, pill containers, and toolbars */
 html.light .bg-slate-950,
