@@ -62,7 +62,7 @@ export function Navbar() {
     : 'Guest Learner';
 
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-800/80 bg-[#0b0f19]/90 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-slate-200 dark:border-slate-800/80 bg-white/95 dark:bg-[#0b0f19]/90 backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         {/* Brand */}
         <div className="flex items-center space-x-8">
@@ -154,9 +154,9 @@ export function Navbar() {
             <div className="relative" ref={dropdownRef}>
               <button
                 onClick={() => setDropdownOpen(!dropdownOpen)}
-                className="flex items-center space-x-2 pl-2.5 pr-2 py-1 rounded-full border border-slate-700 bg-slate-800/80 hover:border-indigo-500/50 transition-colors"
+                className="flex items-center space-x-2 pl-2.5 pr-2 py-1 rounded-full border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/80 hover:border-indigo-500/50 transition-colors"
               >
-                <span className="text-xs font-medium text-slate-200 hidden lg:inline max-w-[120px] truncate">
+                <span className="text-xs font-medium text-slate-800 dark:text-slate-200 hidden lg:inline max-w-[120px] truncate">
                   {displayName}
                 </span>
                 <div className="w-7 h-7 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-600 flex items-center justify-center text-xs font-bold text-white shadow">
@@ -167,14 +167,14 @@ export function Navbar() {
 
               {/* Dropdown Menu */}
               {dropdownOpen && (
-                <div className="absolute right-0 mt-2 w-56 rounded-2xl bg-[#0d1220] border border-slate-800 shadow-2xl py-2 z-50 divide-y divide-slate-800/80">
+                <div className="absolute right-0 mt-2 w-56 rounded-2xl bg-white dark:bg-[#0d1220] border border-slate-200 dark:border-slate-800 shadow-2xl py-2 z-50 divide-y divide-slate-100 dark:divide-slate-800/80">
                   <div className="px-4 py-2.5">
-                    <p className="text-xs font-semibold text-white truncate">{displayName}</p>
-                    <p className="text-[11px] text-slate-400 truncate">{user.email}</p>
-                    <div className="mt-2 flex items-center space-x-2 text-[10px] font-mono text-emerald-400">
+                    <p className="text-xs font-semibold text-slate-900 dark:text-white truncate">{displayName}</p>
+                    <p className="text-[11px] text-slate-500 dark:text-slate-400 truncate">{user.email}</p>
+                    <div className="mt-2 flex items-center space-x-2 text-[10px] font-mono text-emerald-600 dark:text-emerald-400">
                       <span>✓ {solvedCount} Solved</span>
                       <span>•</span>
-                      <span className="text-orange-400">🔥 {streakCount}d Streak</span>
+                      <span className="text-orange-600 dark:text-orange-400">🔥 {streakCount}d Streak</span>
                     </div>
                   </div>
 
@@ -182,25 +182,25 @@ export function Navbar() {
                     <Link
                       href="/profile"
                       onClick={() => setDropdownOpen(false)}
-                      className="flex items-center space-x-2.5 px-4 py-2 text-xs text-slate-300 hover:text-white hover:bg-slate-800/60 transition-colors"
+                      className="flex items-center space-x-2.5 px-4 py-2 text-xs text-slate-700 dark:text-slate-300 hover:text-slate-950 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors"
                     >
-                      <UserIcon className="w-4 h-4 text-indigo-400" />
+                      <UserIcon className="w-4 h-4 text-indigo-500 dark:text-indigo-400" />
                       <span>My Profile</span>
                     </Link>
                     <Link
                       href="/dashboard"
                       onClick={() => setDropdownOpen(false)}
-                      className="flex items-center space-x-2.5 px-4 py-2 text-xs text-slate-300 hover:text-white hover:bg-slate-800/60 transition-colors"
+                      className="flex items-center space-x-2.5 px-4 py-2 text-xs text-slate-700 dark:text-slate-300 hover:text-slate-950 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors"
                     >
-                      <LayoutDashboard className="w-4 h-4 text-indigo-400" />
+                      <LayoutDashboard className="w-4 h-4 text-indigo-500 dark:text-indigo-400" />
                       <span>Progress Dashboard</span>
                     </Link>
                     <Link
                       href="/submissions"
                       onClick={() => setDropdownOpen(false)}
-                      className="flex items-center space-x-2.5 px-4 py-2 text-xs text-slate-300 hover:text-white hover:bg-slate-800/60 transition-colors"
+                      className="flex items-center space-x-2.5 px-4 py-2 text-xs text-slate-700 dark:text-slate-300 hover:text-slate-950 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors"
                     >
-                      <History className="w-4 h-4 text-indigo-400" />
+                      <History className="w-4 h-4 text-indigo-500 dark:text-indigo-400" />
                       <span>My Submissions</span>
                     </Link>
                   </div>
@@ -211,7 +211,7 @@ export function Navbar() {
                         setDropdownOpen(false);
                         logout();
                       }}
-                      className="w-full flex items-center space-x-2.5 px-4 py-2 text-xs text-rose-400 hover:text-rose-300 hover:bg-rose-950/20 transition-colors"
+                      className="w-full flex items-center space-x-2.5 px-4 py-2 text-xs text-rose-600 dark:text-rose-400 hover:text-rose-700 dark:hover:text-rose-300 hover:bg-rose-50 dark:hover:bg-rose-950/20 transition-colors"
                     >
                       <LogOut className="w-4 h-4" />
                       <span>Sign Out</span>
@@ -243,16 +243,16 @@ export function Navbar() {
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle navigation menu"
-            className="md:hidden p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors border border-slate-800 ml-1"
+            className="md:hidden p-2 rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors border border-slate-200 dark:border-slate-800 ml-1"
           >
-            {mobileMenuOpen ? <X className="w-5 h-5 text-amber-400" /> : <Menu className="w-5 h-5" />}
+            {mobileMenuOpen ? <X className="w-5 h-5 text-amber-500 dark:text-amber-400" /> : <Menu className="w-5 h-5" />}
           </button>
         </div>
       </div>
 
       {/* Mobile Navigation Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-t border-slate-800 bg-[#090d16] px-4 py-3 space-y-1.5 shadow-2xl animate-in slide-in-from-top-2 duration-200">
+        <div className="md:hidden border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-[#090d16] px-4 py-3 space-y-1.5 shadow-2xl animate-in slide-in-from-top-2 duration-200">
           {navLinks.map(link => {
             const Icon = link.icon;
             const isActive = pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href));
@@ -263,11 +263,11 @@ export function Navbar() {
                 onClick={() => setMobileMenuOpen(false)}
                 className={`flex items-center space-x-3 px-3.5 py-2.5 rounded-xl text-sm font-medium transition-all ${
                   isActive
-                    ? 'bg-amber-500/15 text-amber-300 border border-amber-500/30 font-semibold'
-                    : 'text-slate-300 hover:text-white hover:bg-slate-800/60'
+                    ? 'bg-amber-500/15 text-amber-600 dark:text-amber-300 border border-amber-500/30 font-semibold'
+                    : 'text-slate-700 dark:text-slate-300 hover:text-slate-950 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800/60'
                 }`}
               >
-                <Icon className={`w-4 h-4 ${isActive ? 'text-amber-400' : 'text-slate-400'}`} />
+                <Icon className={`w-4 h-4 ${isActive ? 'text-amber-500 dark:text-amber-400' : 'text-slate-400'}`} />
                 <span>{link.name}</span>
                 {link.name === 'Basic Practice' && (
                   <span className="ml-auto px-2 py-0.5 rounded-full text-[10px] bg-amber-500/20 text-amber-400 font-mono">
