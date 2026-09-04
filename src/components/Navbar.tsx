@@ -141,10 +141,12 @@ export function Navbar() {
           <button
             onClick={toggleTheme}
             aria-label="Toggle theme"
-            className="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors border border-slate-800"
+            title={theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+            className="p-2 rounded-lg transition-colors border border-slate-300 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800/80 hover:text-amber-500 dark:hover:text-amber-400"
           >
-            {theme === 'dark' ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
+            {theme === 'dark' ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-slate-700" />}
           </button>
+
 
           {/* User Auth Section */}
           {user ? (
@@ -274,8 +276,28 @@ export function Navbar() {
               </Link>
             );
           })}
+          <div className="pt-2 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between px-3.5 py-2">
+            <span className="text-xs text-slate-500 dark:text-slate-400">Appearance</span>
+            <button
+              onClick={toggleTheme}
+              className="flex items-center space-x-2 px-3 py-1.5 rounded-lg border border-slate-300 dark:border-slate-800 text-xs font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800"
+            >
+              {theme === 'dark' ? (
+                <>
+                  <Sun className="w-3.5 h-3.5 text-amber-400" />
+                  <span>Light Mode</span>
+                </>
+              ) : (
+                <>
+                  <Moon className="w-3.5 h-3.5 text-slate-700" />
+                  <span>Dark Mode</span>
+                </>
+              )}
+            </button>
+          </div>
         </div>
       )}
     </header>
+
   );
 }

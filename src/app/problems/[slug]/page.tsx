@@ -42,7 +42,8 @@ export default function ProblemWorkspacePage({
 }) {
   const { slug } = use(params);
   const router = useRouter();
-  const { refreshProgress, isSolved } = usePlatform();
+  const { refreshProgress, isSolved, theme } = usePlatform();
+
 
   const [problem, setProblem] = useState<Problem | null>(null);
   const [loading, setLoading] = useState(true);
@@ -632,8 +633,10 @@ export default function ProblemWorkspacePage({
               value={code}
               onChange={handleCodeChange}
               onReset={handleResetCode}
+              theme={theme === 'dark' ? 'vs-dark' : 'light'}
             />
           </div>
+
 
           {/* Bottom Half: Test Cases / Output Dock */}
           <div className="h-[40%] p-2 bg-[#080c16]">

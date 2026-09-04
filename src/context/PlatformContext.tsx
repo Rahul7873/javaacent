@@ -115,8 +115,29 @@ export function PlatformProvider({ children }: { children: React.ReactNode }) {
     }
   };
 
+  const applyThemeToDom = (t: 'dark' | 'light') => {
+    if (typeof document !== 'undefined') {
+      if (t === 'light') {
+        document.documentElement.classList.remove('dark');
+        document.documentElement.classList.add('light');
+      } else {
+        document.documentElement.classList.remove('light');
+        document.documentElement.classList.add('dark');
+      }
+    }
+  };
+
   useEffect(() => {
     refreshAuth();
+    try {
+      const savedTheme = localStorage.getItem('javaascent_theme') as 'dark' | 'light' | null;
+      if (savedTheme === 'light' || savedTheme === 'dark') {
+        setTheme(savedTheme);
+        applyThemeToDom(savedTheme);
+      } else {
+        applyThemeToDom('dark');
+      }
+    } catch (e) {}
   }, []);
 
   const isSolved = (problemId: string) => {
@@ -128,7 +149,14 @@ export function PlatformProvider({ children }: { children: React.ReactNode }) {
   };
 
   const toggleTheme = () => {
-    setTheme(prev => (prev === 'dark' ? 'light' : 'dark'));
+    setTheme(prev => {
+      const nextTheme = prev === 'dark' ? 'light' : 'dark';
+      try {
+        localStorage.setItem('javaascent_theme', nextTheme);
+      } catch (e) {}
+      applyThemeToDom(nextTheme);
+      return nextTheme;
+    });
   };
 
   return (
@@ -148,11 +176,12 @@ export function PlatformProvider({ children }: { children: React.ReactNode }) {
         toggleTheme
       }}
     >
-      <div className={theme === 'dark' ? 'dark text-slate-100 bg-[#0c0e14] min-h-screen' : 'text-slate-900 bg-slate-50 min-h-screen'}>
+      <div className={theme === 'dark' ? 'dark text-slate-100 bg-[#0c0e14] min-h-screen transition-colors duration-200' : 'light text-slate-900 bg-slate-50 min-h-screen transition-colors duration-200'}>
         {children}
       </div>
     </PlatformContext.Provider>
   );
+
 }
 
 export function usePlatform() {
