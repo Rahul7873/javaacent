@@ -56,7 +56,7 @@ export default function ProfilePage() {
     <div className="min-h-screen bg-slate-50 dark:bg-[#080c16] text-slate-900 dark:text-slate-100 flex flex-col">
       <Navbar />
 
-      <main className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex-1 w-full space-y-8">
+      <main className="w-full px-4 sm:px-6 lg:px-8 xl:px-12 py-10 flex-1 space-y-8">
         {/* Guest Warning Banner if not signed in */}
         {!authLoading && !user && (
           <div className="p-4 sm:p-5 rounded-2xl bg-white dark:bg-amber-950/30 border border-slate-200 dark:border-amber-500/30 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">

@@ -62,8 +62,8 @@ export function Navbar() {
     : 'Guest Learner';
 
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-200 dark:border-slate-800/80 bg-white/95 dark:bg-[#0b0f19]/90 backdrop-blur-md">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+    <header className="sticky top-0 z-50 border-b border-slate-200 dark:border-slate-800/80 bg-white/95 dark:bg-[#0b0f19]/90 backdrop-blur-md w-full">
+      <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12 h-16 flex items-center justify-between">
         {/* Brand */}
         <div className="flex items-center space-x-8">
           <Link href="/" className="flex items-center space-x-3 group">

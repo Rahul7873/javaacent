@@ -58,7 +58,7 @@ export default function SubmissionsPage() {
     <div className="min-h-screen bg-slate-50 dark:bg-[#080c16] text-slate-900 dark:text-slate-100 flex flex-col">
       <Navbar />
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-1 w-full space-y-6">
+      <main className="w-full px-4 sm:px-6 lg:px-8 xl:px-12 py-8 flex-1 space-y-6">
         {/* Guest Banner */}
         {!user && (
           <div className="p-4 rounded-2xl bg-white dark:bg-indigo-950/30 border border-slate-200 dark:border-indigo-500/30 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">

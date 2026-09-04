@@ -261,7 +261,7 @@ export default function BasicPracticePage() {
     <div className="min-h-screen bg-slate-50 dark:bg-[#070a13] text-slate-900 dark:text-slate-100 flex flex-col selection:bg-amber-500/30">
       <Navbar />
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-1 w-full space-y-8">
+      <main className="w-full px-4 sm:px-6 lg:px-8 xl:px-12 py-8 flex-1 space-y-8">
         {/* Banner Section */}
         <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-amber-500/10 via-orange-500/5 to-slate-100 dark:from-amber-950/40 dark:via-orange-950/20 dark:to-slate-900 border border-amber-500/30 dark:border-amber-500/20 p-6 sm:p-8 shadow-sm dark:shadow-2xl">
           <div className="absolute -top-24 -right-24 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
@@ -477,7 +477,7 @@ export default function BasicPracticePage() {
           </div>
         ) : (
           <>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4">
 
               {paginatedProblems.map(prob => {
                 const solved = isSolved(prob.id);
